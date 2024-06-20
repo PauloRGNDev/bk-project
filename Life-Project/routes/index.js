@@ -16,7 +16,7 @@ router.get('/', async function(req, res, next) {
     foods[i] = foodsD[i];
     types[i] = {url: foodsD[i].typeUrl};
   }
-  res.render('index', {foods: foods, types:types, politics:politics, socialMedias:socialMedias,});
+  res.render('index', {foods: foods, types:types, politics:politics, socialMedias:socialMedias, shareText:"Fale conosco",});
 });
 
 module.exports = router;

@@ -19,10 +19,10 @@ block body
       each politic in politics 
         a(href=politic.url)= politic.name
     hr 
-        div#share 
-          p= shareText
-            each socialMedia in socialMedias
-              a#share(href=socialMedia.url)
-                div(class=`logo-${socialMedia.name}`)
+    div#share 
+      p= shareText
+        each socialMedia in socialMedias
+          a#share(href=socialMedia.url)
+            div(class=`logo-${socialMedia.name}`)
     div#image-rights  
       p Todos os direitos reservados
