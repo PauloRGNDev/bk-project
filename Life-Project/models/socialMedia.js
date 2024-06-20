@@ -6,4 +6,8 @@ const smSchema = new Schema({
     name: String,
 });
 
+smSchema.virtual("url").get(function(){
+  return `/social-media/${this._id}`;
+});
+
 module.exports = mongoose.model("social_media", smSchema);
