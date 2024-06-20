@@ -4,6 +4,7 @@ const db = require("../models");
 const SocialMedia = db.socialMedia;
 const Politic = db.politic;
 const Food = db.food;
+const debug = require("debug")("controllers");
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {
@@ -15,7 +16,11 @@ router.get('/', async function(req, res, next) {
   for(let i = 0; i < 3; i++){
     foods[i] = foodsD[i];
     types[i] = {url: foodsD[i].typeUrl};
+debug(foods[i].name);
+debug(foods[i].type);
   }
+debug("TESTE");
+
   res.render('index', {foods: foods, types:types, politics:politics, socialMedias:socialMedias, shareText:"Fale conosco",});
 });
 

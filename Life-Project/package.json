@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
-    "serverstart": "npm run devstart"
+    "serverstart": "DEBUG=controllers npm run devstart"
   },
   "dependencies": {
     "@babel/runtime": "^7.24.7",
