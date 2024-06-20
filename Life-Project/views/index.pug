@@ -1,0 +1,28 @@
+extends layout
+
+block body
+  nav 
+  main 
+    article.offer  
+      each food in foods  
+       div(class=`promotion-${food.name}`)
+         button() saiba mais
+    article.food-suggestions  
+      div(class=`food-suggestion-${food.type}`)
+        each type in types
+          form(method="POST")  
+            input(type="hidden" name="type-url" value=type.url)
+            button(type="submit")
+  footer  
+    div#logo  
+    div#user-politics  
+      each politic in politics 
+        a(href=politic.url)= politic.name
+    hr 
+        div#share 
+          p= shareText
+            each socialMedia in socialMedias
+              a#share(href=)
+                div(class=`logo-${socialMedia.name}`)
+    div#image-rights  
+      p Todos os direitos reservados
