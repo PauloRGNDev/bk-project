@@ -15,13 +15,8 @@ router.get('/', async function(req, res, next) {
   const types = [];
   for(let i = 0; i < 3; i++){
     foods[i] = foodsD[i];
-    types[i] = {url: foodsD[i].typeUrl};
-debug(foods[i].name);
-debug(foods[i].type);
-debug(foodsD[i].typeUrl);
-debug(types[i].url);
+    types[i] = {url: foodsD[i].typeUrl, name: foodsD[i].type};
   }
-debug("TESTE");
 
   res.render('index', {foods: foods, types:types, politics:politics, socialMedias:socialMedias, shareText:"Fale conosco",});
 });

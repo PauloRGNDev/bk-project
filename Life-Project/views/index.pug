@@ -8,8 +8,8 @@ block body
        div(class=`promotion-${food.name}`)
          button() saiba mais
     article.food-suggestions  
-      div(class=`food-suggestion-${food.type}`)
-        each type in types
+      each type in types
+        div(class=`food-suggestion-${type.name}`)
           form(method="POST")  
             input(type="hidden" name="type-url" value=type.url)
             button(type="submit")
