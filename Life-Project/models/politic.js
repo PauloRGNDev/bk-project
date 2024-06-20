@@ -11,4 +11,4 @@ politicSchema.virtual("url").get(function (){
     return `/politic/${this._id}`;
 });
 
-module.exports = mongoose.model("Politic", politicSchema);
+module.exports = mongoose.model("politic", politicSchema);

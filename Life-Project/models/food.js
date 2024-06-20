@@ -15,4 +15,4 @@ foodSchema.virtual("url").get(function (){
     return `/food/${this._id}`;
 });
 
-module.exports = mongoose.model("Food", foodSchema);
+module.exports = mongoose.model("food", foodSchema);

@@ -1,6 +1,6 @@
 const user = require("./user.js");
 const role = require("./role.js");
-const food = require("./role.js");
+const food = require("./food.js");
 const politic = require("./politic.js");
 const socialMedia = require("./socialMedia.js");
 

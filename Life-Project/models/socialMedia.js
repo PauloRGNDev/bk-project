@@ -6,4 +6,4 @@ const smSchema = new Schema({
     name: String,
 });
 
-module.exports = mongoose.model("Politic", smSchema);
+module.exports = mongoose.model("social_media", smSchema);
