@@ -18,6 +18,8 @@ router.get('/', async function(req, res, next) {
     types[i] = {url: foodsD[i].typeUrl};
 debug(foods[i].name);
 debug(foods[i].type);
+debug(foodsD[i].typeUrl);
+debug(types[i].url);
   }
 debug("TESTE");
 
