@@ -1,3 +1,45 @@
-*{
-    color: red;
+nav{
+    height: 6.25vh;
+    display: flex;
+    align-items: center;
+    background-image: url("images/logo.png");
+    background-size: 10% 110%;
+    background-position: 2vh left top;
+    background-repeat: no-repeat;
+}
+
+nav > *{
+    margin-inline-start: calc(2vh + 10%);
+}
+
+article.offer{
+    overflow: hidden;
+}
+
+article.offer div{
+    width: 100%;
+}
+
+article.offer div button{
+    height: 15%;
+    width: 30%;
+    position: relative;
+    left: 20%;
+    top: 40%;
+}
+
+article.food-suggestions{
+    overflow: hidden;
+}
+
+article.food-suggestions div{
+    width: 100%;
+}
+
+article.food-suggestions div button{
+    height: 15%;
+    width: 30%;
+    position: relative;
+    left: 20%;
+    top: 40%;
 }
