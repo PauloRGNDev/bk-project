@@ -49,20 +49,20 @@ img.offer{
 article.offer div > img[src$="arrow-left.png"]{
     position: absolute;
     bottom: 50%;
-    right: 0;
+    left: 0;
 }
 
 article.offer div > img[src$="arrow-right.png"]{
     position: absolute;
     bottom: 50%;
-    left: 0;
+    right: 0;
 }
 
 article.offer div button{
     height: 10%;
     width: 30%;
     position: relative;
-    left: 50%;
+    left: 35%;
     bottom: calc(10% + 2vh);
 }
 
@@ -89,13 +89,13 @@ article.food-suggestions div{
 article.food-suggestions div > img[src$="arrow-left.png"]{
     position: absolute;
     bottom: 50%;
-    right: 0;
+    left: 0;
 }
 
 article.food-suggestions div > img[src$="arrow-right.png"]{
     position: absolute;
     bottom: 50%;
-    left: 0;
+    right: 0;
 }
 
 article.food-suggestions div button{
