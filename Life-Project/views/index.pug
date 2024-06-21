@@ -21,7 +21,7 @@ block body
     article.food-suggestions  
       each type in types
         div(class=`food-suggestion-${type.name}`)
-          imgUrl = type.name;
+         imgUrl = type.name;
          each v, i in imgUrl 
            if v == " "
              v = "-"
