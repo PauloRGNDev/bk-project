@@ -13,7 +13,7 @@ block body
         each v, i in imgUrl 
           if v == " "
              - modifiedUrl  += "-"
-           else
+          else
              - modifiedUrl += v
          img.offer(src=`../stylesheets/images/${modifiedUrl}.png`)
          button() saiba mais
