@@ -9,10 +9,12 @@ block body
     article.offer  
       each food in foods  
        div(class=`offer-${food._id}`)
-       imgUrl = food.name;
-         each v, i in imgUrl 
-           if v == " "
-             v = "-"
+       - imgUrl = food.name;
+        each v, i in imgUrl 
+          if v == " "
+             - modifiedUrl  += "-"
+           else
+             - modifiedUrl += v
          img.offer(src=`../stylesheets/images/${modifiedUrl}.png`)
          button() saiba mais
          img(src="../stylesheets/images/arrow-left.png")
@@ -21,7 +23,7 @@ block body
       each type in types
         div(class=`food-suggestion-${type.name}`)
          - var modifiedUrl = "";
-         imgUrl = type.name
+         - imgUrl = type.name
          each v, i in imgUrl 
            if v == " "
              - modifiedUrl  += "-"
