@@ -17,25 +17,25 @@ block body
            else
              - modifiedUrl += v
          img.offer(src=`../stylesheets/images/${modifiedUrl}.png`)
-        button() saiba mais
-        img(src="../stylesheets/images/arrow-left.png")
-        img(src="../stylesheets/images/arrow-right.png")
+         button() saiba mais
+         img(src="../stylesheets/images/arrow-left.png")
+         img(src="../stylesheets/images/arrow-right.png")
     article.food-suggestions  
       each type in types
         div(class=`food-suggestion-${type.name}`)
           - var modifiedUrl = "";
           - imgUrl = type.name
           each v, i in imgUrl 
-           if v == " "
-             - modifiedUrl  += "-"
-           else
-             - modifiedUrl += v
+            if v == " "
+              - modifiedUrl  += "-"
+            else
+              - modifiedUrl += v
           img.suggestion(src=`../stylesheets/images/${modifiedUrl }.png`)
-         form(method="POST")  
-          input(type="hidden" name="type-url" value=type.url)
-          button(type="submit")
-         img(src="../stylesheets/images/arrow-left.png")
-         img(src="../stylesheets/images/arrow-right.png")
+          form(method="POST")  
+            input(type="hidden" name="type-url" value=type.url)
+            button(type="submit")
+          img(src="../stylesheets/images/arrow-left.png")
+          img(src="../stylesheets/images/arrow-right.png")
   footer  
     div#logo  
     div#user-politics  
