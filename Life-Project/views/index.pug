@@ -15,10 +15,10 @@ block body
              - modifiedUrl  += "-"
           else
              - modifiedUrl += v
-         img.offer(src=`../stylesheets/images/${modifiedUrl}.png`)
-         button() saiba mais
-         img(src="../stylesheets/images/arrow-left.png")
-         img(src="../stylesheets/images/arrow-right.png")
+        img.offer(src=`../stylesheets/images/${modifiedUrl}.png`)
+        button() saiba mais
+        img(src="../stylesheets/images/arrow-left.png")
+        img(src="../stylesheets/images/arrow-right.png")
     article.food-suggestions  
       each type in types
         div(class=`food-suggestion-${type.name}`)
