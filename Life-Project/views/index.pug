@@ -13,9 +13,9 @@ block body
          imgUrl = food.name;
          each v, i in imgUrl 
            if v != " "
-             imgUrl[i] = v 
+             imgUrl[i]= v 
            else 
-             imgUrl[i] = "-"
+             imgUrl[i]= "-"
          img.offer(src=`../stylesheets/images/${imgUrl}.png`)
          button() saiba mais
          img(src="../stylesheets/images/arrow-left.png")
@@ -26,9 +26,9 @@ block body
           imgUrl = type.name;
          each v, i in imgUrl 
            if i != " "
-             imgUrl[i] = v 
+             imgUrl[i]= v 
            else 
-             imgUrl[i] = "-"
+             imgUrl[i]= "-"
          img.suggestion(src=`../stylesheets/images/${imgUrl}.png`)
           form(method="POST")  
             input(type="hidden" name="type-url" value=type.url)
