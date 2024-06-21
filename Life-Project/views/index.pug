@@ -10,7 +10,7 @@ block body
     article.offer  
       each food in foods  
        div(class=`offer-${food._id}`)
-         imgUrl = food.name;
+       imgUrl = food.name;
          each v, i in imgUrl 
            if v == " "
              v = "-"
