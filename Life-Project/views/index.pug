@@ -9,28 +9,28 @@ block body
     article.offer  
       each food in foods  
        div(class=`offer-${food._id}`)
-         - imgUrl = food.name;
+         - imgUrl = food.english_name.toLowerCase();
          - modifiedUrl = "";
          each v, i in imgUrl 
            if v == " "
              - modifiedUrl  += "-"
            else
-             - modifiedUrl += v
+             - modifiedUrl += v.toLowerCase()
          img.offer(src=`../stylesheets/images/${modifiedUrl}.png`)
          button() saiba mais
          img(src="../stylesheets/images/arrow-left.png")
          img(src="../stylesheets/images/arrow-right.png")
     article.food-suggestions  
       each type in types
-        div(class=`food-suggestion-${type.name}`)
+        div(class=`food-suggestion-${type.english_type.toLowerCase()}`)
           - var modifiedUrl = "";
-          - imgUrl = type.name
+          - imgUrl = type.english_name
           each v, i in imgUrl 
             if v == " "
               - modifiedUrl  += "-"
             else
-              - modifiedUrl += v
-          img.suggestion(src=`../stylesheets/images/${modifiedUrl }.png`)
+              - modifiedUrl += v.toLowerCase()
+          img.suggestion(src=`../stylesheets/images/${modifiedUrl}.png`)
           form(method="POST")  
             input(type="hidden" name="type-url" value=type.url)
             button(type="submit")

@@ -4,11 +4,14 @@ const Schema = mongoose.Schema;
 
 const foodSchema = new Schema({
     type: String,
+    english_type: String,
     name: String,
+    english_name: String, 
 });
 
 foodSchema.virtual("typeUrl").get(function (){
-    return `/food/type/${this.type}`;
+    const typeName = this.type.toLowerCase();
+    return `/food/type/${typeName}`;
 });
 
 foodSchema.virtual("url").get(function (){
