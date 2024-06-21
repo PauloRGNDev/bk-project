@@ -1,10 +1,15 @@
+/*           ====  NAV STYLES  ====              */
+
 nav{
-    height: 6.25vh;
+    height: 9vh;
     display: flex;
+    position: fixed;
+    justify-content: center;
     align-items: center;
-    background-image: url("images/logo.png");
+
+    background-image: url("images/logo.svg");
     background-size: 10% 110%;
-    background-position: 2vh left top;
+    background-position: left 2vh top;
     background-repeat: no-repeat;
 }
 
@@ -12,34 +17,98 @@ nav > *{
     margin-inline-start: calc(2vh + 10%);
 }
 
+/*           ====  MAIN STYLES  ====              */
+
 article.offer{
+    height:80vh;
     overflow: hidden;
 }
 
 article.offer div{
     width: 100%;
+    height: 100%;
+}
+
+article.offer div > p:nth-child(1){
+    font-size: 30px;
+    line-height: calc(50% - 15px);
+    position: relative;
+    left: 0;
+}
+
+article.offer div > p:nth-child(2){
+    font-size: 30px;
+    line-height: calc(50% - 15px);
+    position: relative;
+    right: 0;
+}
+
+/* steak duplo  */
+article.offer div.offer-66743a2fed8e8915e1052771 {
+    background-image: url("./images/double-steak.png");
+}
+
+/* sundae */
+article.offer div.offer-66743adbed8e8915e1052772 {
+    background-image: url("./images/sundae.png");
+}
+
+/* balde de batatas */
+article.offer div.offer-66743b07ed8e8915e1052773 {
+    background-image: url("./images/bucket-potatoes.png");
 }
 
 article.offer div button{
     height: 15%;
     width: 30%;
     position: relative;
-    left: 20%;
-    top: 40%;
+    left: 50%;
+    bottom: calc(15% + 1vh);
 }
 
 article.food-suggestions{
+    height:80vh;
     overflow: hidden;
 }
 
+article.food-suggestions div > p:nth-child(1){
+    font-size: 30px;
+    line-height: calc(50% - 15px);
+    position: relative;
+    left: 0;
+}
+
+article.food-suggestions div > p:nth-child(2){
+    font-size: 30px;
+    line-height: calc(50% - 15px);
+    position: relative;
+    right: 0;
+}
+
+article.food-suggestions div.food-suggestion-steak {
+    background-image: url("./images/steak.png");
+}
+
+article.food-suggestions div.food-suggestion-dessert {
+    background-image: url("./images/dessert.png");
+}
+
+article.food-suggestions div.food-suggestion-side-dish {
+    background-image: url("./images/side-dish.png");
+}
+
+
 article.food-suggestions div{
     width: 100%;
+    height: 100%;
 }
 
 article.food-suggestions div button{
     height: 15%;
     width: 30%;
     position: relative;
-    left: 20%;
-    top: 40%;
+    left: 50%;
+    bottom: calc(15% + 1vh);
 }
+
+/*           ====  FOOTER STYLES  ====         */

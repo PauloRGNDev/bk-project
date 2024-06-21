@@ -7,14 +7,18 @@ block body
   main 
     article.offer  
       each food in foods  
-       div(class=`promotion-${food.name}`)
+       div(class=`offer-${food._id}`)
          button() saiba mais
+         p #{<}
+         p #{>}
     article.food-suggestions  
       each type in types
         div(class=`food-suggestion-${type.name}`)
           form(method="POST")  
             input(type="hidden" name="type-url" value=type.url)
             button(type="submit")
+          p #{<}
+          p #{>}
   footer  
     div#logo  
     div#user-politics  
