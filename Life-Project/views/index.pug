@@ -12,10 +12,8 @@ block body
        div(class=`offer-${food._id}`)
          imgUrl = food.name;
          each v, i in imgUrl 
-           if v != " "
-             imgUrl[i]= v 
-           else 
-             imgUrl[i]= "-"
+           if v == " "
+             v = "-"
          img.offer(src=`../stylesheets/images/${imgUrl}.png`)
          button() saiba mais
          img(src="../stylesheets/images/arrow-left.png")
