@@ -13,18 +13,21 @@ block body
          each v, i in imgUrl 
            if v == " "
              v = "-"
-         img.offer(src=`../stylesheets/images/${imgUrl}.png`)
+         img.offer(src=`../stylesheets/images/${modifiedUrl}.png`)
          button() saiba mais
          img(src="../stylesheets/images/arrow-left.png")
          img(src="../stylesheets/images/arrow-right.png")
     article.food-suggestions  
       each type in types
         div(class=`food-suggestion-${type.name}`)
-         imgUrl = type.name;
+         - var modifiedUrl = "";
+         imgUrl = type.name
          each v, i in imgUrl 
            if v == " "
-             v = "-"
-         img.suggestion(src=`../stylesheets/images/${imgUrl}.png`)
+             - modifiedUrl  += "-"
+           else
+             - modifiedUrl += v
+         img.suggestion(src=`../stylesheets/images/${modifiedUrl }.png`)
          form(method="POST")  
           input(type="hidden" name="type-url" value=type.url)
           button(type="submit")
