@@ -1,5 +1,7 @@
 extends layout
 
+- let imgUrl;
+
 block body
   nav  
     a(href="/") inicio 
@@ -8,12 +10,26 @@ block body
     article.offer  
       each food in foods  
        div(class=`offer-${food._id}`)
+         imgUrl = food.name;
+         each v, i in imgUrl 
+           if i != " "
+             imgUrl[i] = v 
+           else 
+             imgUrl[i] = "-"
+         img.offer(src=`../stylesheets/images/${imgUrl}.png`)
          button() saiba mais
          img(src="../stylesheets/images/arrow-left.png")
          img(src="../stylesheets/images/arrow-right.png")
     article.food-suggestions  
       each type in types
         div(class=`food-suggestion-${type.name}`)
+          imgUrl = type.name;
+         each v, i in imgUrl 
+           if i != " "
+             imgUrl[i] = v 
+           else 
+             imgUrl[i] = "-"
+         img.suggestion(src=`../stylesheets/images/${imgUrl}.png`)
           form(method="POST")  
             input(type="hidden" name="type-url" value=type.url)
             button(type="submit")
