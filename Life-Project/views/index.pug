@@ -37,15 +37,15 @@ block body
           img(src="../stylesheets/images/arrow-left.png")
           img(src="../stylesheets/images/arrow-right.png")
   footer  
-    div#logo  
-    div#user-politics  
+    div.logo  
+    div.user-politics  
       each politic in politics 
         a(href=politic.url)= politic.name
     hr 
-    div#share 
+    div.share 
       p= shareText
-        each socialMedia in socialMedias
-          a#share(href=socialMedia.url)
-            div(class=`logo-${socialMedia.name}`)
+      each socialMedia in socialMedias
+        a.share(href=socialMedia.url)
+          div(class=`logo-${socialMedia.name}`)
     div#image-rights  
       p Todos os direitos reservados
