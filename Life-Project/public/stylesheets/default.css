@@ -30,6 +30,7 @@ article:nth-child(1){
 article.offer{
     height:80vh;
     overflow: hidden;
+    position: relative;
 }
 
 article.offer div{
@@ -61,9 +62,9 @@ article.offer div > img[src$="arrow-right.png"]{
 article.offer div button{
     height: 10%;
     width: 30%;
-    position: relative;
+    position: absolute;
     left: 35%;
-    bottom: calc(10% + 2vh);
+    bottom: calc((13.5% - 10%)/ 2); /* eq = ((space between bottom img and div - button height) / space of corners) */
 }
 
 article.food-suggestions{
@@ -101,9 +102,9 @@ article.food-suggestions div > img[src$="arrow-right.png"]{
 article.food-suggestions div button{
     height: 10%;
     width: 30%;
-    position: relative;
+    position: absolute;
     left: 50%;
-    bottom: calc(10% + 2vh);
+    bottom: calc((13.5% - 10%)/ 2); /* eq = ((space between bottom img and div - button height) / space of corners) */
 }
 
 /*           ====  FOOTER STYLES  ====         */
