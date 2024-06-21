@@ -103,7 +103,7 @@ article.food-suggestions div button{
     height: 10%;
     width: 30%;
     position: absolute;
-    left: 50%;
+    left: 35%;
     bottom: calc((13.5% - 10%)/ 2); /* eq = ((space between bottom img and div - button height) / space of corners) */
 }
 
