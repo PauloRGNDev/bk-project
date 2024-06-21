@@ -23,10 +23,8 @@ block body
         div(class=`food-suggestion-${type.name}`)
           imgUrl = type.name;
          each v, i in imgUrl 
-           if i != " "
-             imgUrl[i]= v 
-           else 
-             imgUrl[i]= "-"
+           if v == " "
+             v = "-"
          img.suggestion(src=`../stylesheets/images/${imgUrl}.png`)
           form(method="POST")  
             input(type="hidden" name="type-url" value=type.url)
