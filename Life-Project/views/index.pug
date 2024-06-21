@@ -12,7 +12,7 @@ block body
        div(class=`offer-${food._id}`)
          imgUrl = food.name;
          each v, i in imgUrl 
-           if i != " "
+           if v != " "
              imgUrl[i] = v 
            else 
              imgUrl[i] = "-"
