@@ -9,16 +9,16 @@ block body
       each food in foods  
        div(class=`offer-${food._id}`)
          button() saiba mais
-         img(src="../public/stylesheets/images/arrow-left.png")
-         img(src="../public/stylesheets/images/arrow-right.png")
+         img(src="../stylesheets/images/arrow-left.png")
+         img(src="../stylesheets/images/arrow-right.png")
     article.food-suggestions  
       each type in types
         div(class=`food-suggestion-${type.name}`)
           form(method="POST")  
             input(type="hidden" name="type-url" value=type.url)
             button(type="submit")
-          img(src="../public/stylesheets/images/arrow-left.png")
-          img(src="../public/stylesheets/images/arrow-right.png")
+          img(src="../stylesheets/images/arrow-left.png")
+          img(src="../stylesheets/images/arrow-right.png")
   footer  
     div#logo  
     div#user-politics  
