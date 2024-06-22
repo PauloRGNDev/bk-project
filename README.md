@@ -8,7 +8,7 @@
 - kebab-case
 ### Diretórios e arquivos 
 - **DIRETÓRIOS**: lower snake_case
-- arquivos **JAVASCRIPT**: PascalCase
+- arquivos **JAVASCRIPT**: camalCase
 - arquivos **CSS/PUG/HTML**: kebab-case
 
 ### Código CSS 

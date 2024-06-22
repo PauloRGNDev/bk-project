@@ -117,7 +117,7 @@ exports.signin_POST = [
           res.render("signin_form", {title: "Estamos esperando por você", errors: errors.array(),});
            return;
        } else{
-         const token = jwt.sign({id: user._id}, authConfigs.secret, {
+         const token = jwt.sign({id: user._id}, authConfigs.SECRET, {
            algorithm: 'HS256',
            expiresIn: 60 * 60 * 24, //time in s
          });

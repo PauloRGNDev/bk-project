@@ -2,9 +2,9 @@ const db = require("./db");
 const cookieSession = require("./cookieSession");
 
 const config = {
-    secret: "jwt_Paulo",
-    db: db,
-    cookieSession: cookieSession,
+    SECRET: "jwt_Paulo",
+    DB: db,
+    COOKIE_SESSION: cookieSession,
 }
 
 module.exports = config;

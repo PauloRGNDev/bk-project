@@ -1,3 +1,9 @@
-@layer config, animations, fonts, default;
+@layer config, scale-position, animations, selectors-animated, fonts, extern-fonts,  color-definition, color-elements;
 @import url("./basic-configs.css") layer(config);
-@import url("./default.css") layer(default);
+@import url("./scale-position-styles.css") layer(scale-position);
+@import url("./colors.css") layer(color-definition);
+@import url("./extern-fonts.css") layer(extern-fonts);
+@import url("./fonts.css") layer(fonts);
+@import url("./color-elements.css") layer(color-elements);
+@import url("./animations.css") layer(scale-position);
+@import url("./selectors-animated.css") layer(selectors-animated);

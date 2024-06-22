@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 
 const smSchema = new Schema({
     name: String,
+    iconFormat: String
 });
 
 smSchema.virtual("url").get(function(){

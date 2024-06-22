@@ -1,0 +1,20 @@
+/* map an color to an specifi element (by an selector) */
+
+/*     === NAV STYLES ===    */
+
+nav{
+    background-color: darkblue;
+}
+
+/*     === MAIN STYLES ===    */
+
+article.offer div{
+    background-color: midnightblue;
+}
+
+article.food-suggestions div{
+    background-color: midnightblue;
+}
+
+/*     === FOOTER STYLES ===    */
+

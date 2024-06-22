@@ -7,7 +7,7 @@ const authMechanism = "SCRAM-SHA-256";
 let dbUrl = `mongodb+srv://prDev:${password}@${cluster}/${collectionName}?retryWrites=true&w=majority&appName=Cluster0`;
 
 const db = {
-    dbUrl: dbUrl,
+    DB_URL: dbUrl,
 };
 
 module.exports = db;

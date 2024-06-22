@@ -1,6 +1,6 @@
 const secreKey = "ck123";
 const ckSession = {
-    secreKey: secreKey,
+    SECRET_KEY: secreKey,
 };
 
 module.exports = ckSession;

@@ -9,7 +9,7 @@ block body
     article.offer  
       each food in foods  
        div(class=`offer-${food._id}`)
-         - imgUrl = food.english_name.toLowerCase();
+         - imgUrl = food.englishName.toLowerCase();
          - modifiedUrl = "";
          each v, i in imgUrl 
            if v == " "
@@ -22,9 +22,9 @@ block body
          img(src="../stylesheets/images/arrow-right.png")
     article.food-suggestions  
       each type in types
-        div(class=`food-suggestion-${type.english_name.toLowerCase()}`)
+        div(class=`food-suggestion-${type.englishName.toLowerCase()}`)
           - var modifiedUrl = "";
-          - imgUrl = type.english_name
+          - imgUrl = type.englishName
           each v, i in imgUrl 
             if v == " "
               - modifiedUrl  += "-"
@@ -40,12 +40,19 @@ block body
     div.logo  
     div.user-politics  
       each politic in politics 
-        a(href=politic.url)= politic.name
-    hr 
+        a(href=politic.url)= politic.name  
+    div.hr-conteiner
+      hr 
+    p= shareText
     div.share 
-      p= shareText
       each socialMedia in socialMedias
         a.share(href=socialMedia.url)
-          div(class=`logo-${socialMedia.name}`)
+          - socialMediaName = "";
+          each v in socialMedia.name
+            if v == " "
+              - socialMediaName +="-"
+            else 
+              - socialMediaName += v.toLowerCase()
+          img(src=`../stylesheets/images/${socialMediaName}-logo.${socialMedia.iconFormat}`)
     div#image-rights  
       p Todos os direitos reservados

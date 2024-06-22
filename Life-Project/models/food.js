@@ -4,9 +4,9 @@ const Schema = mongoose.Schema;
 
 const foodSchema = new Schema({
     type: String,
-    english_type: String,
+    englishType: String,
     name: String,
-    english_name: String, 
+    englishName: String, 
 });
 
 foodSchema.virtual("typeUrl").get(function (){

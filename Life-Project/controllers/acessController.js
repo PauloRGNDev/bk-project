@@ -12,7 +12,7 @@ exports.verifyJWT = asyncHandler(async function(req, res, next) {
     return res.redirect('/signin'); // Redireciona se não houver token
   }
    const token = req.session.token;
-   jwt.verify(token, config.secret, (err, decoded) => { // Adicionado parâmetro err
+   jwt.verify(token, config.SECRET, (err, decoded) => { // Adicionado parâmetro err
     if(err){
       res.status(401).send("Unauthorized: Invalid token"); return;
     } else {

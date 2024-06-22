@@ -32,7 +32,7 @@ app.use(limiter);
 // Set up mongoose connection
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
-const mongoDB = configs.db.dbUrl;
+const mongoDB = configs.DB.DB_URL;
 
 main().catch((err) => console.log(err));
 async function main() {
@@ -52,7 +52,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(
   cookieSession({
     name: "library-session",
-    keys: [configs.cookieSession.secreKey],
+    keys: [configs.COOKIE_SESSION.SECRET_KEY],
     httpOnly: true
   })
 );
