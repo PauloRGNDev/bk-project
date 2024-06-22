@@ -24,6 +24,21 @@ nav > *{
     margin-inline-start: calc(2vh + 10%);
 }
 
+nav div.user-info{
+    position: absolute;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+img[src*="user"]{
+    width: 40px;
+    height: 40px;
+}
+
 /*           ====  MAIN STYLES  ====              */
 
 article:nth-child(1){

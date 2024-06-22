@@ -1,0 +1,23 @@
+/* attach the color of element by the selector */
+
+/*     === NAV STYLES ===    */
+
+nav{
+    background-color: var(--nav-bar);
+}
+
+/*     === MAIN STYLES ===    */
+
+article.offer div{
+    background-color: midnightblue;
+}
+
+article.food-suggestions div{
+    background-color: midnightblue;
+}
+
+img[src*="arrow"]{
+    background-color: var(--arrow-pos);
+}
+
+/*     === FOOTER STYLES ===    */

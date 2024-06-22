@@ -1,0 +1,11 @@
+/* to setup aniamtions with keyframes */
+
+@keyframes dimming-pos-arrow{
+    to{
+        background-color: var(--arrow-pos);
+    }
+
+    from{
+        background-color: color-mix(in oklab, var(--arrow-pos) 60%, black 40%)
+    }
+}
