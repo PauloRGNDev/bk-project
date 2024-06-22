@@ -6,6 +6,6 @@
     }
 
     from{
-        background-color: color-mix(in oklab, var(--arrow-pos) 60%, black 40%)
+        background-color: color-mix(in oklab, var(--arrow-pos) 60%, black 40%);
     }
 }

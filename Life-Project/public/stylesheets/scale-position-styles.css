@@ -41,6 +41,12 @@ img[src*="user"]{
 
 /*           ====  MAIN STYLES  ====              */
 
+img[src*="arrow"]:hover{
+    animation-name: dimming-pos-arrow;
+    animation-delay: 1s;
+    animation-duration: 4s;
+}
+
 article:nth-child(1){
     margin-block-start: 9vh;
 }
