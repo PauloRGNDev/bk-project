@@ -9,11 +9,19 @@
 /*     === MAIN STYLES ===    */
 
 :root{
-    --arrow-pos: gray;
+    --arrow-pos: transparent;
+    --section-offer: navy;
+    --section-food-suggestion: purple;
 }
 
 /*     === FOOTER STYLES ===    */
 
 :root{
-    
+    --footer: black;
+}
+
+/*     === GENERAL STYLES ===    */
+
+:root {
+   --button: red;
 }

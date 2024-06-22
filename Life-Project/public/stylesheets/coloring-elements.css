@@ -9,11 +9,11 @@ nav{
 /*     === MAIN STYLES ===    */
 
 article.offer div{
-    background-color: midnightblue;
+    background-image: linear-gradient(deg 175, var(--section-offer), var(--section-food-suggestion) 80%);
 }
 
 article.food-suggestions div{
-    background-color: midnightblue;
+    background-image: linear-gradient(deg 173, var(--section-food-suggestion), black 80%);
 }
 
 img[src*="arrow"]{
@@ -21,3 +21,17 @@ img[src*="arrow"]{
 }
 
 /*     === FOOTER STYLES ===    */
+
+footer{
+    background-color: var(--footer);
+}
+
+/*     === GENRAL STYLES ===    */
+
+button{
+    background-color: var(--button);
+}
+
+* {
+    color: white;
+}

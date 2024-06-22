@@ -42,9 +42,8 @@ img[src*="user"]{
 /*           ====  MAIN STYLES  ====              */
 
 img[src*="arrow"]:hover{
-    animation-name: dimming-pos-arrow;
-    animation-delay: 1s;
-    animation-duration: 4s;
+    border-radius: 30px;
+    padding: 10px;
 }
 
 article:nth-child(1){
@@ -88,6 +87,8 @@ article.offer div button{
     position: absolute;
     left: 35%;
     bottom: calc((13.5% - 10%)/ 2); /* eq = ((space between bottom img and div - button height) / space of corners) */
+    border: 2px solid darkslateblue;
+    border-radius: 15px;
 }
 
 article.food-suggestions{
@@ -127,6 +128,8 @@ article.food-suggestions div button{
     position: absolute;
     left: 35%;
     bottom: calc((13.5% - 10%)/ 2); /* eq = ((space between bottom img and div - button height) / space of corners) */
+    border: 2px solid darkslateblue;
+    border-radius: 15px;
 }
 
 /*           ====  FOOTER STYLES  ====         */

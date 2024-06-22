@@ -1,0 +1,7 @@
+/* attachs animations to specif elements with selectors and animation propierty */
+
+img[src*="arrow"]:hover{
+    animation-name: dimming-pos-arrow;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
