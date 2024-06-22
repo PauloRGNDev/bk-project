@@ -130,34 +130,22 @@ div.user-politics{
 }
 
 div.hr-conteiner{
-    width: 100%;
+    width: calc(100% - 40px);
     height: 16px;
 }
 
 div.share{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 a.share{
-    background-size: 64px 64px;
+  width: 80px;
 }
 
-a.share div{
-    background-size: 100%;
-}
-
-a.share div.logo-twitter{
-    background-image: url("./images/twitter-logo.png");
-}
-
-
-a.share div.logo-instagram{
-    background-image: url("./images/instagram-logo.svg");
-}
-
-a.share div.logo-facebook{
-    background-image: url("./images/facebook-logo.png");
+a.share img[src*="logo"]{
+  width: 64px;
+  height: 64px;
 }
 
 div#images-rights{
