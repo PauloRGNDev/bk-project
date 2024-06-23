@@ -20,8 +20,8 @@ nav{
     background-repeat: no-repeat;
 }
 
-nav > *{
-    margin-inline-start: calc(2vh + 10%);
+nav > a:not(:first-child){
+    margin-inline-start: 10px;
 }
 
 nav div.user-info{
@@ -41,24 +41,66 @@ img[src*="user"]{
 
 /*           ====  MAIN STYLES  ====              */
 
-img[src*="arrow"]:hover{
+
+
+body{
+    position: relative;
+    top: 10vh;
+}
+
+img[src*="arrow"]{
     border-radius: 30px;
     padding: 10px;
 }
 
-article:nth-child(1){
-    margin-block-start: 9vh;
+img[src$="arrow-left.png"]{
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+}
+
+img[src$="arrow-right.png"]{
+    position: absolute;
+    bottom: 50%;
+    right: 0px;
+}
+
+button{
+    height: 10%;
+    width: clamp(200px, 30%, 30px);
+    position: absolute;
+    left: clamp(calc((100% - 200px) / 2),35%,calc((100% - 230px) / 2));
+    bottom: calc((13.5% - 10%)/ 2); /* eq = ((space between bottom img and div - button height) / space of corners) */
+    border: 2px solid darkslateblue;
+    border-radius: 15px;
+}
+
+article{
+    margin: 20px;
 }
 
 article.offer{
     height:80vh;
+    width: 90vw;
     overflow: hidden;
     position: relative;
+    left: calc((10vw - 40px) / 2);
+    border-radius: 30px;
 }
 
-article.offer div{
+div[class^="offer"]{
     width: 100%;
     height: 100%;
+    border-radius: 30px;
+    position: absolute;
+}
+
+div[class^="offer"]:nth-child(1){
+    left: -100%;
+}
+
+div[class^="offer"]:nth-child(3){
+    right: -100%;
 }
 
 img.offer{
@@ -69,32 +111,13 @@ img.offer{
     left: 7.5%;
 }
 
-article.offer div > img[src$="arrow-left.png"]{
-    position: absolute;
-    bottom: 50%;
-    left: 0;
-}
-
-article.offer div > img[src$="arrow-right.png"]{
-    position: absolute;
-    bottom: 50%;
-    right: 0;
-}
-
-article.offer div button{
-    height: 10%;
-    width: 30%;
-    position: absolute;
-    left: 35%;
-    bottom: calc((13.5% - 10%)/ 2); /* eq = ((space between bottom img and div - button height) / space of corners) */
-    border: 2px solid darkslateblue;
-    border-radius: 15px;
-}
-
 article.food-suggestions{
     height:80vh;
+    width: 90vw;
     overflow: hidden;
-    position:relative;
+    position: relative;
+    left: calc((10vw - 40px) / 2);
+    border-radius: 30px;
 }
 
 img.suggestion{
@@ -105,31 +128,19 @@ img.suggestion{
     left: 7.5%;
 }
 
-article.food-suggestions div{
+div[class^="food-suggestion"]{
     width: 100%;
     height: 100%;
+    border-radius: 30px;
+    position: absolute;
 }
 
-article.food-suggestions div > img[src$="arrow-left.png"]{
-    position: absolute;
-    bottom: 50%;
-    left: 0;
+div[class^="food-suggestion"]:nth-child(1){
+    left: -110%;
 }
 
-article.food-suggestions div > img[src$="arrow-right.png"]{
-    position: absolute;
-    bottom: 50%;
-    right: 0;
-}
-
-article.food-suggestions div button{
-    height: 10%;
-    width: 30%;
-    position: absolute;
-    left: 35%;
-    bottom: calc((13.5% - 10%)/ 2); /* eq = ((space between bottom img and div - button height) / space of corners) */
-    border: 2px solid darkslateblue;
-    border-radius: 15px;
+div[class^="food-suggestion"]:nth-child(3){
+    right: -110%;
 }
 
 /*           ====  FOOTER STYLES  ====         */

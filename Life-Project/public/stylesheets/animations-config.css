@@ -2,6 +2,6 @@
 
 img[src*="arrow"]:hover{
     animation-name: dimming-pos-arrow;
-    animation-delay: 1s;
+    animation-delay: 0.2s;
     animation-duration: 3s;
 }

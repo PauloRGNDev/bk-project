@@ -8,6 +8,14 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const debug = require("debug")("authentication_controller");
 
+exports.initAuth = asyncHandler(async function(req, res, next){
+  if(req.userId == null){
+    res.redirect('../routes/auth/signin');
+  } else{
+    res.redirect('../routes/auth/signout');
+  }
+});
+
 exports.signup_GET = asyncHandler(async function(req, res, next){
     res.render("signup_form", {title: "Bem vindo, crie uma conta"});
 });
@@ -150,6 +158,12 @@ res.status(200).send({
 ];
 
 exports.signout_GET = asyncHandler(async function(req, res, next){
+    res.render("signout_form");
+});
+
+exports.signout_POST = asyncHandler(async function(req, res, next){
+  if(req.body.ans == "yes"){
     req.session.token = null;
-    res.render("signup_form", {title: "Bem vindo, crie uma conta"});
+  } 
+  res.redirect('/');
 });

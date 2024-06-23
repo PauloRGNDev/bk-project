@@ -1,0 +1,10 @@
+extends layout
+
+block body 
+  h1 Deseja mesmo encerrar a sessão? 
+  form(method='POST') 
+    input(type='hidden' name='ans' value='yes')
+    button.accept-end-session(type='submit') SIM
+  form(method='POST') 
+    input.recuse-end-session(type='hidden' name='ans' value='not')
+    button(type='submit') NÃO

@@ -1,0 +1,14 @@
+extends layout 
+
+block body 
+  h1= title 
+  form(method="POST") 
+    label(for="user-input") Coloque seu nome
+    input(type="text" name="username" placeholder="Nome de usuário") 
+    label(for="password-input") Coloque sua senha
+    input(type="text" name="password" placeholder="Senha") 
+    button.btn-primary(type="submit") Submit
+  if errors
+    each error in errors 
+      ul 
+        li= error.msg

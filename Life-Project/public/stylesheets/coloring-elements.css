@@ -9,21 +9,28 @@ nav{
 /*     === MAIN STYLES ===    */
 
 article.offer div{
-    background-image: linear-gradient(deg 175, var(--section-offer), var(--section-food-suggestion) 80%);
+    background-image: linear-gradient(160deg, var(--section-offer), var(--section-food-suggestion) 80%);
 }
 
 article.food-suggestions div{
-    background-image: linear-gradient(deg 173, var(--section-food-suggestion), black 80%);
+    background-image: linear-gradient(200deg, var(--section-food-suggestion) 55%, black 80%);
 }
 
 img[src*="arrow"]{
     background-color: var(--arrow-pos);
 }
 
+button.accept-end-session{
+    background-color: greenyellow;
+}
+button.recuse-end-session{
+    background-color: red;
+}
+
 /*     === FOOTER STYLES ===    */
 
 footer{
-    background-color: var(--footer);
+    background-image: linear-gradient(180deg, black 30%, gray);
 }
 
 /*     === GENRAL STYLES ===    */
