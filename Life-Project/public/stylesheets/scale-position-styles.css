@@ -42,7 +42,6 @@ img[src*="user"]{
 /*           ====  MAIN STYLES  ====              */
 
 
-
 body{
     position: relative;
     top: 10vh;
@@ -65,7 +64,7 @@ img[src$="arrow-right.png"]{
     right: 0px;
 }
 
-button{
+html.initial-page button{
     height: 10%;
     width: clamp(200px, 30%, 30px);
     position: absolute;
@@ -185,4 +184,17 @@ a.share img[src*="logo"]{
 
 div#images-rights{
     left: calc(50%);
+}
+
+/*           ====  STYLES OF AUTH  ====         */
+
+/*           ====  MAIN STYLES  ====         */
+
+main.sigin-form{
+  height: 60vh;
+  width: 40vw;
+  position: relative;
+  top: 20vh;
+  left: 40vh;
+  border: 2px solid black;
 }

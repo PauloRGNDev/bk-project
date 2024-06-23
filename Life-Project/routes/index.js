@@ -18,7 +18,7 @@ router.get('/', async function(req, res, next) {
     types[i] = {url: foodsD[i].typeUrl, name: foodsD[i].type, englishName: foodsD[i].englishType};
   }
 
-  res.render('index', {foods: foods, types:types, politics:politics, socialMedias:socialMedias, shareText:"Fale conosco",});
+  res.render('index', {foods: foods, types:types, politics:politics, socialMedias:socialMedias, shareText:"Fale conosco", pageName: 'initial-page'});
 });
 
 module.exports = router;

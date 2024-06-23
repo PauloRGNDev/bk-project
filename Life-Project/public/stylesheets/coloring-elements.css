@@ -2,7 +2,7 @@
 
 /*     === NAV STYLES ===    */
 
-nav{
+html.initial-page nav{
     background-color: var(--nav-bar);
 }
 
@@ -20,6 +20,34 @@ img[src*="arrow"]{
     background-color: var(--arrow-pos);
 }
 
+/*     === FOOTER STYLES ===    */
+
+footer{
+    background-image: linear-gradient(180deg, black 30%, gray);
+}
+
+/*     === GENRAL STYLES ===    */
+
+html.initial-page button{
+    background-color: var(--button);
+}
+
+html.initial-page a {
+    color: #00B7FF;
+}
+
+html.initial-page{
+  background-color: black;
+}
+
+html.initial-page {
+    color: white;
+}
+
+/*     === STYLES TO SINGNIN ===    */
+
+/*     === MAIN STYLES ===    */
+
 button.accept-end-session{
     background-color: greenyellow;
 }
@@ -29,16 +57,3 @@ button.recuse-end-session{
 
 /*     === FOOTER STYLES ===    */
 
-footer{
-    background-image: linear-gradient(180deg, black 30%, gray);
-}
-
-/*     === GENRAL STYLES ===    */
-
-button{
-    background-color: var(--button);
-}
-
-* {
-    color: white;
-}

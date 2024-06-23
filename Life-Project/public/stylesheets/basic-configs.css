@@ -3,14 +3,6 @@ body {
     margin: 0px;
     padding: 0px;
   }
-  
-  a {
-    color: #00B7FF;
-  }
-
-html{
-  background-color: black;
-}
 
 *{
   box-sizing: border-box;
