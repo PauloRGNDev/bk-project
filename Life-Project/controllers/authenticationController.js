@@ -10,9 +10,9 @@ const debug = require("debug")("authentication_controller");
 
 exports.initAuth = asyncHandler(async function(req, res, next){
   if(req.userId == null){
-    res.redirect('/signin');
+    res.redirect('/auth/signin');
   } else{
-    res.redirect('/signout');
+    res.redirect('/auth/signout');
   }
 });
 
@@ -159,7 +159,7 @@ res.status(200).send({
 ];
 
 exports.signout_GET = asyncHandler(async function(req, res, next){
-    res.render("signout_form", {title: "Tem certeza que deseja encerrar sessão?"});
+    res.render("signout_form", {pageType: 'signout'});
 });
 
 exports.signout_POST = asyncHandler(async function(req, res, next){

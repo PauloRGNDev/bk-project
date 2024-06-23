@@ -11,7 +11,17 @@ nav a{
 
 /*            ====  MAIN STYLES  ====              */
 
+html.auth label{
+  font-size: 18px;
+}
 
+html.auth input{
+  font-size: 15px;
+}
+
+html.auth button{
+  font-size: 18px;
+}
 
 /*           ====  FOOTER STYLES  ====         */
 

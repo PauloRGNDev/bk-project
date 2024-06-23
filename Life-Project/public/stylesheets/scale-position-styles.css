@@ -190,28 +190,90 @@ div#images-rights{
 
 /*           ====  MAIN STYLES  ====         */
 
+html.auth{
+    background-image: url('./images/sunset.jpg');
+}
+
+html.signout{
+    background-image: url('./images/sunset.jpg');
+}
+
 html.auth main{
   height: 80vh;
   width: 65vw;
+  max-width: 525px;
   position: relative;
   top: 2vh;
-  left: 17.5vw;
+  left: clamp(calc((100% - 525px) / 2) ,17.5vw, 90px);
   border: 4px solid black;
   border-radius: 30px;
+}
+
+html.auth form{
+    position: relative;
+    top: 9vh;
+}
+
+html.auth input{
+    height: 6vh;
+    border-radius: 30px;
 }
 
 html.auth button{
     border: 2px solid black;
     border-radius: 30px;
+    width: 50%;
+    max-width: 282px;
+    min-width: 25px;
+    height: 7vh;
+    position: relative;
+    left: calc((100% - 252px) / 2);
 }
 
 html.auth div{
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin-block-end: 20px;  
+}
+
+html.auth label{
+    margin-block-end: 10px;
 }
 
 html.auth h1{
     position: relative;
-    left: 12.5%;
+    left: 12%;
+}
+
+main.signout-form div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.signout-form{
+  height: 60vh;
+  width: 65vw;
+  max-width: 670px;
+  position: relative;
+  top: 9vh;
+  left: 17.5vw;
+  border: 4px solid black;
+  border-radius: 30px;
+}
+
+main.signout-form h1{
+  position: relative;
+  left: 7vw;
+}
+
+main.signout-form button{
+  width: 25%;
+  max-width: 670px;
+  height: 6vh;
+  margin-inline-start: 20px; 
+  border-radius: 30px;
 }

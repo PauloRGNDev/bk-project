@@ -44,17 +44,22 @@ html.initial-page {
     color: white;
 }
 
-/*     === STYLES TO SINGNIN ===    */
+/*     === STYLES TO AUTH===    */
 
 /*     === MAIN STYLES ===    */
 
 html.auth main{
-    background-image: linear-gradient(160deg, skyblue 70%, crimson);
+    background-image: linear-gradient(160deg, skyblue 45%, crimson);
 }
 
 html.auth button{
     background-color: blue;
 }
+
+main.signout-form{
+    background-image: linear-gradient(160deg, skyblue 50%, crimson);
+}
+
 
 button.accept-end-session{
     background-color: greenyellow;

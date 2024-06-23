@@ -9,3 +9,23 @@
         background-color: rgb(0 0 0/ 0.6);
     }
 }
+
+@keyframes accept-btn-signout-active{
+    from{
+        background-color: greenyellow;
+    }
+
+    to{
+        background-color: color-mix(in oklab, greenyellow 65%, black 35%);
+    }
+}
+
+@keyframes recuse-btn-signout-active{
+    from{
+        background-color: red;
+    }
+
+    to{
+        background-color: color-mix(in oklab, red 65%, black 35%);
+    }
+}
