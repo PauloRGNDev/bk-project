@@ -4,13 +4,16 @@ block body
   main.signup-form
     h1= title 
     form(method="POST") 
-      label(for="user-input") Coloque seu nome
-      input.user-input(type="text" name="username" placeholder="Nome de usuário") 
-      label(for="email-input") Coloque seu email
-      input.email-input(type="text" name="email" placeholder="Email") 
-      label(for="password-input") Coloque sua senha
-      input.password-input(type="text" name="password" placeholder="Senha") 
-      button.btn-primary(type="submit") Submit
+      div
+        label(for="user-input") Coloque seu nome
+        input.user-input(type="text" name="username" placeholder="Nome de usuário") 
+      div
+        label(for="email-input") Coloque seu email
+        input.email-input(type="text" name="email" placeholder="Email") 
+      div
+        label(for="password-input") Coloque sua senha
+        input.password-input(type="text" name="password" placeholder="Senha") 
+      button.btn-primary(type="submit") Criar Conta
     if errors
       ul
         each error in errors  

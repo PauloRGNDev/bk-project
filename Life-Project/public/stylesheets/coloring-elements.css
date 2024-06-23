@@ -48,6 +48,14 @@ html.initial-page {
 
 /*     === MAIN STYLES ===    */
 
+html.auth main{
+    background-image: linear-gradient(160deg, skyblue 70%, crimson);
+}
+
+html.auth button{
+    background-color: blue;
+}
+
 button.accept-end-session{
     background-color: greenyellow;
 }

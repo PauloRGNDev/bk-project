@@ -190,11 +190,28 @@ div#images-rights{
 
 /*           ====  MAIN STYLES  ====         */
 
-main.sigin-form{
-  height: 60vh;
-  width: 40vw;
+html.auth main{
+  height: 80vh;
+  width: 65vw;
   position: relative;
-  top: 20vh;
-  left: 40vh;
-  border: 2px solid black;
+  top: 2vh;
+  left: 17.5vw;
+  border: 4px solid black;
+  border-radius: 30px;
+}
+
+html.auth button{
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+html.auth div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+html.auth h1{
+    position: relative;
+    left: 12.5%;
 }

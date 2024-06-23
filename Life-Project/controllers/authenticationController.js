@@ -10,14 +10,14 @@ const debug = require("debug")("authentication_controller");
 
 exports.initAuth = asyncHandler(async function(req, res, next){
   if(req.userId == null){
-    res.redirect('../routes/auth/signin');
+    res.redirect('/signin');
   } else{
-    res.redirect('../routes/auth/signout');
+    res.redirect('/signout');
   }
 });
 
 exports.signup_GET = asyncHandler(async function(req, res, next){
-    res.render("signup_form", {title: "Bem vindo, crie uma conta"});
+    res.render("signup_form", {title: "Bem vindo, crie uma conta", pageType:"auth"});
 });
 
 exports.signup_POST = [
@@ -61,6 +61,7 @@ exports.signup_POST = [
             return res.render("signup_form", {
                 title: "Bem vindo, crie uma conta",
                 errors: errors.array(),
+                pageType:"auth",
             });
         }
 
@@ -85,7 +86,7 @@ exports.signup_POST = [
 
 
 exports.signin_GET = asyncHandler(async function(req, res, next){
-    res.render("signin_form", {title: "Estamos esperando por você"});
+    res.render("signin_form", {title: "Estamos esperando por você", pageType:"auth"});
 });
 
 exports.signin_POST = [
@@ -122,7 +123,7 @@ exports.signin_POST = [
       const errors = validationResult(req);
        const user = await User.findOne({username: req.body.username}).populate("roles", "-__v").exec();
        if(!errors.isEmpty()){
-          res.render("signin_form", {title: "Estamos esperando por você", errors: errors.array(),});
+          res.render("signin_form", {title: "Estamos esperando por você", errors: errors.array(), pageType:"auth",});
            return;
        } else{
          const token = jwt.sign({id: user._id}, authConfigs.SECRET, {
@@ -158,7 +159,7 @@ res.status(200).send({
 ];
 
 exports.signout_GET = asyncHandler(async function(req, res, next){
-    res.render("signout_form");
+    res.render("signout_form", {title: "Tem certeza que deseja encerrar sessão?"});
 });
 
 exports.signout_POST = asyncHandler(async function(req, res, next){

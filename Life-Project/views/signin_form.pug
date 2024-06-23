@@ -4,11 +4,13 @@ block body
   main.signin-form
     h1= title 
     form(method="POST") 
-      label(for="user-input") Coloque seu nome
-      input.user-input(type="text" name="username" placeholder="Nome de usuário") 
-      label(for="password-input") Coloque sua senha
-      input.password-input(type="text" name="password" placeholder="Senha") 
-      button.btn-primary(type="submit") Submit
+      div
+        label(for="user-input") Coloque seu nome
+        input.user-input(type="text" name="username" placeholder="Nome de usuário") 
+      div
+        label(for="password-input") Coloque sua senha
+        input.password-input(type="text" name="password" placeholder="Senha") 
+      button.btn-primary(type="submit") Login
     if errors
       ul
         each error in errors  

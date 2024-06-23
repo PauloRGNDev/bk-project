@@ -1,0 +1,10 @@
+extends layout 
+
+block body 
+  main.signout-form 
+    h1= title 
+    form(method='POST')
+      input(type='hidden' name='ans' value='yes')
+      button(type='submit') SIM
+      input(type='hidden' name='ans' value='not')
+      button(type='submit') NÃO
