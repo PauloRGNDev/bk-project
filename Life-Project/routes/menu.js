@@ -23,6 +23,9 @@ router.get('/', async function(req, res, next) {
 });
 debug(categorizedFoods['side-dish']);
 debug(categorizedFoods['dessert']);
+for(let i = 0; i < typesOfFoods.length; i++){
+debug(categorizedFoods[typesOfFoods[i]]);
+}
   res.render('index', {typesOfFoods: typesOfFoods, categorizedFoods:categorizedFoods, pageType: 'menu-page'});
 });
 
