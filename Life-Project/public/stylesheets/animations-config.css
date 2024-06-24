@@ -2,9 +2,9 @@
 
 html.initial-page {
   animation-name: background;
-  animation-duration: 15s;
+  animation-duration: 12s;
   animation-timing-function: ease;
-  animation-iteration-count: 2; /* Executar duas vezes */
+  animation-iteration-count: 1; /* Executar duas vezes */
 }
 
 img[src*="arrow"]:hover{

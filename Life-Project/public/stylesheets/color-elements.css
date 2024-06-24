@@ -3,13 +3,13 @@
 /*     === NAV STYLES ===    */
 
 :root{
-    --nav-bar: color-mix(in oklab, burlywood 15%, white);
+    --nav-bar: color-mix(in oklab, burlywood 65%, white);
     --nav-opt: color-mix(in oklab, burlywood 40%, black);
 }
 
 :root{
     --arrow-pos: transparent;
-    --section-offer: yellow;s
+    --section-offer: yellow;
     --section-food-suggestion: red;
 }
 
