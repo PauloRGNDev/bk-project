@@ -6,6 +6,12 @@ img[src*="arrow"]:hover{
     animation-duration: 3s;
 }
 
+html.auth button:hover{
+    animation-name: btn-auth;
+    animation-delay: 0.2s;
+    animation-duration: 4s;
+}
+
 button.accept-end-session:hover{
     animation-name: accept-btn-signout-active;
     animation-delay: 0.1s;

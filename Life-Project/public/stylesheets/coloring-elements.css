@@ -53,7 +53,7 @@ html.auth main{
 }
 
 html.auth button{
-    background-color: blue;
+    background-color: var(--btn-auth);
 }
 
 main.signout-form{

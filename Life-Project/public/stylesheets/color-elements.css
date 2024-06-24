@@ -25,3 +25,9 @@
 :root {
    --button: red;
 }
+
+/*     === AUTH STYLES ===    */
+
+:root{
+    --btn-auth: color-mix(in oklab, blue 60%, white 40%);
+}

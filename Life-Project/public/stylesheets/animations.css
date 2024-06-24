@@ -10,6 +10,30 @@
     }
 }
 
+@keyframes btn-auth{
+    @keyframes btn-auth{
+    0%{
+        background-color: var(--btn-auth);
+    }
+    
+    25%{
+        background-color: color-mix(in oklab, var(--btn-auth) 93.75%, black 6.25%);
+    }
+
+    50%{
+        background-color: color-mix(in oklab, var(--btn-auth) 87.5%, black 12.5%);
+    }
+
+    75%{
+        background-color: color-mix(in oklab, var(--btn-auth) 81.25%, black 18.75%);
+    }
+
+    100%{
+        background-color: color-mix(in oklab, var(--btn-auth) 75%, black 25%);
+    }
+}
+}
+
 @keyframes accept-btn-signout-active{
     from{
         background-color: greenyellow;

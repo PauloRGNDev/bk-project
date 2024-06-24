@@ -2,6 +2,8 @@
    an element using selectors
 */
 
+/*           ====  STYLES OF INDEX  ====              */
+
 /*           ====  NAV STYLES  ====              */
 
 nav{
@@ -186,16 +188,20 @@ div#images-rights{
     left: calc(50%);
 }
 
-/*           ====  STYLES OF AUTH  ====         */
+/*           ======  STYLES OF AUTH  ======         */
 
 /*           ====  MAIN STYLES  ====         */
 
 html.auth{
     background-image: url('./images/sunset.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
 }
 
 html.signout{
     background-image: url('./images/sunset.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
 }
 
 html.auth main{
@@ -248,32 +254,61 @@ html.auth h1{
     left: 12%;
 }
 
-main.signout-form div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 main.signout-form{
   height: 60vh;
   width: 65vw;
-  max-width: 670px;
+  max-width: 427px;
   position: relative;
   top: 9vh;
-  left: 17.5vw;
+  left: calc((100% - 427px) / 2);
   border: 4px solid black;
   border-radius: 30px;
 }
 
+main.signout-form div{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
 main.signout-form h1{
   position: relative;
-  left: 7vw;
+  left: 4vw;
+}
+
+main.signout-form form{
+  width: 20%;
+  margin-inline-start: 20px;
 }
 
 main.signout-form button{
-  width: 25%;
+  width: 100%;
   max-width: 670px;
   height: 6vh;
-  margin-inline-start: 20px; 
   border-radius: 30px;
 }
+
+/*           ======  STYLES OF MENU  ======         */
+
+/*           ====  NAV STYLES  ====         */
+
+
+
+/*           ====  MAIN STYLES  ====         */
+
+html.menu-page div.conteiner{
+  display: grid;
+  width: 90%;
+  left: 5%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: repeat(3, 200px);
+  gap: 20px;
+  margin-block-end: 15px;
+}
+
+html.menu-page div.conteiner div.food{
+    border: 3px solid black;
+    border-radius: 30px;
+  }
