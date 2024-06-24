@@ -8,10 +8,12 @@ const debug = require("debug")("menu");
 router.get('/', async function(req, res, next) {
   const foodsD = await Food.find().exec();
   const categorizedFoods = [];
-  const typesOfFoods = new Set();
+  const typesOfFoods = [];
     foodsD.forEach(food => {
     const {englishType, name} = food;
-    typesOfFoods.add(englishType);
+    if (!typesOfFoods.includes(englishType)) {
+      typesOfFoods.push(englishType);
+    }
     if(!categorizedFoods[englishType]){
         categorizedFoods[englishType] = [];
     }
