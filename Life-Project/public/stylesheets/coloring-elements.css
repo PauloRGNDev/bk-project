@@ -70,3 +70,10 @@ button.recuse-end-session{
 
 /*     === FOOTER STYLES ===    */
 
+/*     === STYLES TO MENU ===    */
+
+/*     === MAIN STYLES ===    */
+burlywood
+html.menu-page div.conteiner div.food{
+   background-image: linear-gradient(180deg, burlywood, white 85%)
+}

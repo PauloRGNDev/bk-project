@@ -307,10 +307,12 @@ main.signout-form button{
 
 html.menu-page div.conteiner{
   display: grid;
-  width: 90%;
-  left: 5%;
+  width: calc(30vw * 3);
+  height: 58vh;
+  position: relative;
+  left: calc((100% - 30vw * 0.95 * 3) / 2);
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: repeat(3, 600px);
+  grid-auto-rows: 90%;
   gap: 20px;
   margin-block-end: 15px;
 }
@@ -323,3 +325,8 @@ html.menu-page div.conteiner div.food{
     border: 3px solid black;
     border-radius: 30px;
   }
+
+html.menu-page div.conteiner div.food h2{
+    position: relative;
+    top: 91%;
+}
