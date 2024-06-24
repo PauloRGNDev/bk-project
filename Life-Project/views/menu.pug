@@ -5,7 +5,8 @@ block body
     each type in typesOfFoods
       div.conteiner  
         h1= type
-        each food in categorizedFoods[type]
-        div.food 
-          p= food
+        if categorizedFoods[type]
+          each food in categorizedFoods[type]
+          div.food 
+            p= food
           

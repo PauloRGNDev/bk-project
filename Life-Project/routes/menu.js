@@ -21,7 +21,11 @@ router.get('/', async function(req, res, next) {
     debug(categorizedFoods);
     debug(typesOfFoods);
 });
+debug(categorizedFoods['side-dish']);
+debug(categorizedFoods['dessert']);
 
+debug(categorizedFoods[side-dish]);
+debug(categorizedFoods[dessert]);
   res.render('index', {typesOfFoods: typesOfFoods, categorizedFoods:categorizedFoods, pageType: 'menu-page'});
 });
 
