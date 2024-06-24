@@ -17,16 +17,8 @@ router.get('/', async function(req, res, next) {
     }
 
     categorizedFoods[englishType].push(name);
-    debug(`Type: ${englishType}, name food: ${name}`);
-    debug(categorizedFoods);
-    debug(typesOfFoods);
 });
-debug(categorizedFoods['side-dish']);
-debug(categorizedFoods['dessert']);
-for(let i = 0; i < typesOfFoods.length; i++){
-debug(categorizedFoods[typesOfFoods[i]]);
-}
-  res.render('index', {typesOfFoods: typesOfFoods, categorizedFoods:categorizedFoods, pageType: 'menu-page'});
+  res.render('menu', {typesOfFoods: typesOfFoods, categorizedFoods:categorizedFoods, pageType: 'menu-page'});
 });
 
 module.exports = router;
