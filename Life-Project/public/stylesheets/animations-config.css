@@ -1,5 +1,12 @@
 /* attachs animations to specif elements with selectors and animation propierty */
 
+html.initial-page {
+  animation-name: background;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+  animation-iteration-count: 2; /* Executar duas vezes */
+}
+
 img[src*="arrow"]:hover{
     animation-name: dimming-pos-arrow;
     animation-delay: 0.2s;

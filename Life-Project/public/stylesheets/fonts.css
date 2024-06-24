@@ -5,11 +5,16 @@
 /*           ====  NAV STYLES  ====              */
 
 nav a{
+    font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: var(--nav-opt);
 }
 
 /*            ====  MAIN STYLES  ====              */
+
+html.initial-page {
+    color: white;
+}
 
 html.auth label{
   font-size: 18px;

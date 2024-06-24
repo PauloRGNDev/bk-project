@@ -3,25 +3,27 @@
 /*     === NAV STYLES ===    */
 
 :root{
-    --nav-bar: midnightblue;
-    --nav-opt: black;
+    --nav-bar: color-mix(in oklab, burlywood 15%, white);
+    --nav-opt: color-mix(in oklab, burlywood 40%, black);
 }
-
-/*     === MAIN STYLES ===    */
 
 :root{
     --arrow-pos: transparent;
-    --section-offer: navy;
-    --section-food-suggestion: purple;
+    --section-offer: yellow;s
+    --section-food-suggestion: red;
 }
 
 /*     === FOOTER STYLES ===    */
 
 :root{
-    --footer: black;
+    --footer: saddlebrown;
 }
 
 /*     === GENERAL STYLES ===    */
+
+:root {
+   --background-page: color-mix(in oklab, darkorange 90% ,white);
+}
 
 :root {
    --button: red;
