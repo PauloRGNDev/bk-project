@@ -104,12 +104,19 @@ div[class^="offer"]:nth-child(3){
     right: -100%;
 }
 
+/*
+   Algorithm to calc responsive width and height:
+    add a size to the bigger side  = x
+    get the proportion between the bigger and smallest size=>
+    k = y / x where x is the original bigger side of image and y of the smallest
+    add size to the smallest size in css, equal to = k * x
+*/
 img.offer{
-    width: 85%;
-    height: 85%;
+    width: calc(80vh * 0.7033952594490711);
+    height: 80vh;
     position: relative;
-    top: 1.5%;
-    left: 7.5%;
+    top: 0%;
+    left: calc((100% - 80vh * 0.7033952594490711) / 2);
 }
 
 article.food-suggestions{
@@ -122,11 +129,11 @@ article.food-suggestions{
 }
 
 img.suggestion{
-    width: 85%;
-    height: 85%;
-    position: relative;
-    top: 1.5%;
-    left: 7.5%;
+     width: 80vw;
+    height: calc(80vw * 0.75);
+    position: relative; 
+    top: calc((100% - 80vw * 0.75) / 2);
+    left: calc((100% - 80vw) / 2);
 }
 
 div[class^="food-suggestion"]{
