@@ -2,10 +2,11 @@ extends layout
 
 block body
   main 
-   each type in typesFoods
+    each type in typesOfFoods
+      h1= type
       div.conteiner  
-        h1= type
-        each food in foods[type]
-          div.food
-            p= food
+        if categorizedFoods[type]
+          each food in categorizedFoods[type]
+            div.food 
+              p= food
           
