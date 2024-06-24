@@ -1,7 +1,13 @@
 extends layout 
 
 block body
+  nav  
+    a(href="/") Início 
+    a(href="/menu") Cardápio
+    div.user-info 
+      img(src="../stylesheets/images/login.png")
   main 
+    h1.title
     each type in typesOfFoods
       h1= type
       div.conteiner  

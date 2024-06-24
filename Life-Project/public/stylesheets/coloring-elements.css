@@ -2,9 +2,15 @@
 
 /*     === NAV STYLES ===    */
 
-html.initial-page nav{
+nav{
     background-color: var(--nav-bar);
 }
+
+nav a{
+    background-color: var(--nav-opt);
+}
+
+/*     === STYLES TO INDEX PAGE ===    */
 
 /*     === MAIN STYLES ===    */
 
@@ -32,9 +38,6 @@ html.initial-page button{
     background-color: var(--button);
 }
 
-html.initial-page a {
-    color: #00B7FF;
-}
 
 html.initial-page{
   background-color: black;
@@ -73,7 +76,20 @@ button.recuse-end-session{
 /*     === STYLES TO MENU ===    */
 
 /*     === MAIN STYLES ===    */
-burlywood
-html.menu-page div.conteiner div.food{
-   background-image: linear-gradient(180deg, burlywood, white 85%)
+
+html.menu-page div.conteiner div.food {
+  position: relative;
+  background-color: color-mix(in oklab, burlywood 70%, white); /* Cor inicial (80%) */
+  overflow: hidden;
+
+  /* Adicione um pseudo-elemento para os 20% finais */
+}
+html.menu-page div.conteiner div.food::after {
+  content: "";
+  position: absolute;
+  top: 75%; /* Posição onde a segunda cor começa (80%) */
+  left: 0;
+  width: 100%;
+  height: 25%; /* Altura correspondente aos 20% finais */
+  background-color: white; /* Cor final (20%) */
 }

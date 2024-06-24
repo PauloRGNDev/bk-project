@@ -23,5 +23,10 @@ html.auth button{
   font-size: 18px;
 }
 
-/*           ====  FOOTER STYLES  ====         */
+/*           ====  STYLES OF MENU  ====         */
 
+/*           ====  MAIN STYLES  ====         */
+
+html.menu-page h1.title{
+  font-size: 3.5rem;
+}
