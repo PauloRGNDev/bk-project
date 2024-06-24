@@ -13,11 +13,15 @@ router.get('/', async function(req, res, next) {
   const socialMedias = await SocialMedia.find().exec();
   const foods = [];
   const types = [];
-  for(let i = 0; i < 3; i++){
-    foods[i] = foodsD[i];
-    types[i] = {url: foodsD[i].typeUrl, name: foodsD[i].type, englishName: foodsD[i].englishType};
-  }
-
+  foodsD.forEach(food => {
+     if(food.inPromotion == true){
+       foods.push(food);
+       if(!types.includes({url: food.typeUrl, name: food.type, englishName: food.englishType})){
+         types.push({url: food.typeUrl, name: food.type, englishName: food.englishType});
+       }
+     }
+  });
+  
   res.render('index', {foods: foods, types:types, politics:politics, socialMedias:socialMedias, shareText:"Fale conosco", pageType: 'initial-page'});
 });
 

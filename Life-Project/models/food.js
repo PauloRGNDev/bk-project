@@ -7,6 +7,7 @@ const foodSchema = new Schema({
     englishType: String,
     name: String,
     englishName: String, 
+    inPromotion: {type: Boolean, default: false},
 });
 
 foodSchema.virtual("typeUrl").get(function (){
