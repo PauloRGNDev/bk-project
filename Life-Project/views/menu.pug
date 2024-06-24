@@ -2,15 +2,11 @@ extends layout
 
 block body
   main 
-   div
-     h1= JSON.stringify(typesOfFoods)
-     p= JSON.stringify(categorizedFoods)
-
-   each type in typesOfFoods
+   each type in typesFoods
       div.conteiner  
         h1= type
-        if categorizedFoods[type]
-          each food in categorizedFoods[type]
+        if foods[type]
+          each food in foods[type]
             div.food 
               p= food
           
