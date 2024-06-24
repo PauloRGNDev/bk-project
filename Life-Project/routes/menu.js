@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require("../models");
 const Food = db.food;
+const debug = require("debug")("menu");
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {
@@ -16,6 +17,9 @@ router.get('/', async function(req, res, next) {
     }
 
     categorizedFoods[englishType].push(name);
+    debug(`Type: ${englishType}, name food: ${name}`);
+    debug(categorizedFoods);
+    debug(typesOfFoods);
 });
 
   res.render('index', {typesOfFoods: typesOfFoods, categorizedFoods:categorizedFoods, pageType: 'menu-page'});

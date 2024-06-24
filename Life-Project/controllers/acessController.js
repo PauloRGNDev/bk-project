@@ -9,7 +9,7 @@ const debug = require("debug")("acess_controller");
 exports.verifyJWT = asyncHandler(async function(req, res, next) {
    if (!req.session.token) {
       debug('Token decodificado não contém _id');
-    return res.redirect('/signin'); // Redireciona se não houver token
+    return res.redirect('/auth/signin'); // Redireciona se não houver token
   }
    const token = req.session.token;
    jwt.verify(token, config.SECRET, (err, decoded) => { // Adicionado parâmetro err
