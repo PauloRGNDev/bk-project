@@ -18,6 +18,8 @@ router.get('/', async function(req, res, next) {
 
     categorizedFoods[englishType].push(name);
 });
+debug(typesOfFoods);
+debug(categorizedFoods);
   res.render('menu', {typesOfFoods: typesOfFoods, categorizedFoods:categorizedFoods, pageType: 'menu-page'});
 });
 
