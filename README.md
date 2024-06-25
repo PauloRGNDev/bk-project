@@ -15,7 +15,7 @@
    - **Package.json**: Responsável por instalar e gerenciar as dependências do projeto
    - 
 ### Javascript Client
-  - ***Arquivo index***: Reponsável por importar arquivos externos(ponto de partida da aplicação js)
+  - ***Arquivo main***: Reponsável por importar arquivos externos(ponto de partida da aplicação js)
   - ***Arquivo  eventListener***: Responsável por chamar ouvintes de eventos gerados por ações do usuario na interação usuário-página
   - ***Arquivo handlers***: contém os arquivos que criam respontas aos eventos do usuário
 ### PUG
