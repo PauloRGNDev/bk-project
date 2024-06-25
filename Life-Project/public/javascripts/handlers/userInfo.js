@@ -1,7 +1,7 @@
 export async function signupClick(){
     try{
         console.log("clicked signup area");
-        const response = await fetch('/auth/signup');
+        window.location.replace('/auth/signup');
     } catch(error){
         console.error("erro ao enviar mensagem: ", error);
     }
