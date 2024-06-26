@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+const apiRestFul = require('./routes/apirestful');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
@@ -67,6 +68,7 @@ app.use(function (req, res, next){
 });
 
 app.use('/', indexRouter);
+app.use('/apirestful', apiRestFul);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/menu', menuRouter);
