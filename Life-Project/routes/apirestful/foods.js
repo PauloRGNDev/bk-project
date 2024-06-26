@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../../models");
 const foods = db.food;
 
 exports.sendFood = async function(req, res){
