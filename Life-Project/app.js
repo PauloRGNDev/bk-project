@@ -55,7 +55,7 @@ readdirp(staticFolder) // Filtra apenas arquivos JS (opcional)
         numFiles++;
     })
     .on('end', () => {
-        console.log(`Número total de arquivos: ${count}`);
+        console.log(`Número total de arquivos: ${numFiles}`);
     });
 const numPageChanges = numFiles * 6/* número de mudanças */;
 const limiter = RateLimit({
