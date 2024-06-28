@@ -66,15 +66,15 @@ app.use(function (req, res, next){
     next();
 });
 
-app.use('/', (req, res) => {
+app.use('/', (req, res, next) => {
     fs.readdir('./public', (err, files) => {
         if (err) {
             console.error('Erro ao ler a pasta:', err);
-            res.status(500).send('Erro interno do servidor');
-        } else {
-            const numFiles = files.length;
-            res.send(`Número de arquivos: ${numFiles}`);
+	    next(); return;
         }
+        const numFiles = files.length;
+        console.log(`Number of files: ${numFiles}`);
+        next();
     });
 } ,indexRouter);
 app.use('/api-restful-resources-sende', apiRestFulResSender);
@@ -88,6 +88,7 @@ const limiter = RateLimit({
   max: numPageChanges,
 });
 app.use(limiter);
+console.log(`Number of files: ${numPageChanges }`);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
