@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const fs = require('fs');
+const readdirp = require('readdirp');
 
 const apiRestFulResSender = require('./routes/api_restful_resources_sender');
 const indexRouter = require('./routes/index');
@@ -49,7 +49,21 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 const staticFolder = './public';
-let numFiles;
+let numFiles = 0;
+readdirp(staticFolder) // Filtra apenas arquivos JS (opcional)
+    .on('data', entry => {
+        numFiles++;
+    })
+    .on('end', () => {
+        console.log(`Número total de arquivos: ${count}`);
+    });
+const numPageChanges = numFiles * 6/* número de mudanças */;
+const limiter = RateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: numPageChanges,
+});
+app.use(limiter);
+console.log(`Number of files: ${numPageChanges }`);
 
 app.use(
   cookieSession({
@@ -66,31 +80,11 @@ app.use(function (req, res, next){
     next();
 });
 
-app.use('/', (req, res, next) => {
-    fs.readdir('./public', (err, files) => {
-        if (err) {
-            console.error('Erro ao ler a pasta:', err);
-	    next(); return;
-        }
-        const numFiles = files.length;
-        console.log(`Number of files: ${numFiles}`);
-        next();
-    });
-});
-
 app.use('/', indexRouter);
 app.use('/api-restful-resources-sende', apiRestFulResSender);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/menu', menuRouter);
-
-const numPageChanges = numFiles * 6/* número de mudanças */;
-const limiter = RateLimit({
-  windowMs: 1 * 60 * 1000, // 1 minute
-  max: numPageChanges,
-});
-app.use(limiter);
-console.log(`Number of files: ${numPageChanges }`);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
