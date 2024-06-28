@@ -66,7 +66,7 @@ app.use(function (req, res, next){
     next();
 });
 
-app.use('/', fs.readdir('./public', (req, res) => {
+app.use('/', (req, res) => {
     fs.readdir('./public', (err, files) => {
         if (err) {
             console.error('Erro ao ler a pasta:', err);
