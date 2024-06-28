@@ -6,18 +6,22 @@
   - **views**: Contém todos os arquivos da engine de vizualização, arquivos estes responsável por gerar html dinamicamente
   - **models**: Contém todas as coleções do banco de dados, coleções essas usadas de base para gerar documentos que são armazenados em um banco de dados, podendo serem acessados por exemplo por uma ODM que pode alterar e obter dados do banco de dados
   - **routes**: Contém todos os arquivos que contém codigo que intercepta requisições enviadas pelo cliente, podendo responder no proprio arquivo ou chamando um script na pasta ***controllers***
+    - ***api_restful_resources_sender***: Contém arquivos, que ainda possuem rotas, entretanto, essas rotas de destino tem o objetivo principal de enviar recursos ao cliente
   - **public**: Possuem todos os arquivos que são "estáticos" funcionando no lado do cliente
   - **configs**: Contém arquivos responsáveis pelas configurações usadas em contexto global, para acesso ao banco de dados ou a um sistema externo especifico como o sistema de transferência de dados jwt.
   - **controllers**: Contém todos os arquivos que contém codigos específicos para criar métodos que são feitos para responder uma solicitação específica do cliente
 - Arquivos principais:
+    - ***api_restful_resources_sender***: Contém arquivos, que ainda possuem controllers, entretanto, esses controllers tem o objetivo principal de fornecer funções que respondem adequadamente a um recurso que um cliente exige, por meio de uma rota
    - **www.js**: localizando dentro da pasta bin, responsável por fazer as configurações mais básicas do servidor, para posteriormente, chamar o ponto de entrada de fato da aplicação do servidor
    - **app.js** responsável por carregar recursos externos essenciais para o funcionamento e manutenção da aplicação e gerenciador das rotas acessadas diretamente do servidor principal(ou seja, recursos que não são acessados como subrecurso de outro recurso)
-   - **Package.json**: Responsável por instalar e gerenciar as dependências do projeto
-   - 
+   - **Package.json**: Responsável por instalar e gerenciar as dependências do projeto 
 ### Javascript Client
-  - ***Arquivo main***: Reponsável por importar arquivos externos(ponto de partida da aplicação js)
-  - ***Arquivo  eventListener***: Responsável por chamar ouvintes de eventos gerados por ações do usuario na interação usuário-página
-  - ***Arquivo handlers***: contém os arquivos que criam respontas aos eventos do usuário
+  - **Arquivos Básicos**:
+    - ***Arquivo main***: Reponsável por importar arquivos externos(ponto de partida da aplicação js)
+  - **Pastas Principais:**
+    - ***Arquivo  event_listeners***: Contém arquivos que ouvem eventos gerados por ações do usuario na interação user-page
+    - ***Arquivo handlers***: contém os arquivos que criam respostas aos eventos do usuário
+      - ***Arquivo api_restful_resources_getter***: Ainda contendo handlers, entretanto, aqueles relacionados a obter recursos do servidor usando a metoodologia de api restful
 ### PUG
   - Inserido dentro da pasta views, com nomes fazendo referência a uma parte da página, o arquivo ***layout.pug*** faz referência a configurações essenciais do cabeçalho e do elemento raiz da página(html), e ***error.pug*** responsável por exibir mensagens de erro
 ### CSS  
@@ -48,6 +52,9 @@
 - **DIRETÓRIOS**: lower snake_case
 - arquivos **JAVASCRIPT**: camalCase
 - arquivos **CSS/PUG/HTML**: kebab-case
+
+### Recursos (Parte path of resources na URL)
+ - Cada parte do path of resources é separada por uma / e os caracteres nesta parte são denotados por ***kebab-case***
 
 ### Código CSS 
 - Uso de kebab-case
