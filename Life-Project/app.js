@@ -50,20 +50,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const staticFolder = './public';
 let numFiles = 0;
-readdirp(staticFolder) // Filtra apenas arquivos JS (opcional)
+readdirp(staticFolder)
     .on('data', entry => {
         numFiles++;
     })
     .on('end', () => {
-        console.log(`Número total de arquivos: ${numFiles}`);
-    });
-const numPageChanges = numFiles * 6/* número de mudanças */;
-const limiter = RateLimit({
-  windowMs: 1 * 60 * 1000, // 1 minute
-  max: numPageChanges,
+        const numPageChanges = numFiles * 6/* número de mudanças */;
+	const limiter = RateLimit({
+  	   windowMs: 1 * 60 * 1000, // 1 minute
+  	   max: numPageChanges,
+           app.use(limiter);
+	   console.log(`Number of files to load in one minute: ${numPageChanges }`);
+        });
 });
-app.use(limiter);
-console.log(`Number of files: ${numPageChanges }`);
 
 app.use(
   cookieSession({
