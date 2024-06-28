@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const fs = require('fs');
 
-const apiRestFul = require('./routes/apirestful');
+const apiRestFulResSender = require('./routes/api_restful_resources_sender');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
@@ -53,10 +53,8 @@ let numFiles;
 fs.readdir(staticFolder, (err, files) => {
   if (err) {
       console.error('Erro ao ler a pasta:', err);
-      res.status(500).send('Erro ao ler a pasta.');
   } else {
       numFiles = files.length;
-      res.send(`Número de arquivos na pasta: ${numFiles}`);
   }
 });
 
@@ -83,7 +81,7 @@ app.use(function (req, res, next){
 });
 
 app.use('/', indexRouter);
-app.use('/api-restful', apiRestFul);
+app.use('/api-restful-resources-sende', apiRestFulResSender);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/menu', menuRouter);
