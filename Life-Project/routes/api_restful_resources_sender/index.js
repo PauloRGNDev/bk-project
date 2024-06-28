@@ -1,7 +1,7 @@
 const express = require("express");
-const foodsC = require("./foods");
+const foodsRouter = require("./foods");
 const router = express.Router();
 
 //signup route(start)
-router.get("/foods", foodsC.sendFood);
+router.get("/foods", foodsRouter);
 module.exports = router;

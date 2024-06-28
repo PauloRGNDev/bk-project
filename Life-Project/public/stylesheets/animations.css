@@ -1,6 +1,6 @@
 /* to setup aniamtions with keyframes */
 
-@keyframes background{
+@keyframes background-anim{
   0%{
     background-position: 100% 50%;
   }
@@ -25,7 +25,6 @@
 }
 
 @keyframes btn-auth{
-    @keyframes btn-auth{
     0%{
         background-color: var(--btn-auth);
     }
@@ -45,7 +44,6 @@
     100%{
         background-color: color-mix(in oklab, var(--btn-auth) 75%, black 25%);
     }
-}
 }
 
 @keyframes accept-btn-signout-active{

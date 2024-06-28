@@ -1,7 +1,7 @@
 /* attachs animations to specif elements with selectors and animation propierty */
 
 html.initial-page {
-  animation-name: background;
+  animation-name: background-anim;
   animation-duration: 12s;
   animation-timing-function: ease;
   animation-iteration-count: 1; /* Executar duas vezes */

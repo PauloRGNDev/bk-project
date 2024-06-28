@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const fs = require('fs');
 
 const apiRestFul = require('./routes/apirestful');
 const indexRouter = require('./routes/index');
@@ -26,11 +27,6 @@ app.use(
     },
   }),
 );
-const limiter = RateLimit({
-  windowMs: 1 * 60 * 1000, // 1 minute
-  max: 60,
-});
-app.use(limiter);
 //connect mongoose to database
 // Set up mongoose connection
 const mongoose = require("mongoose");
@@ -52,6 +48,25 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+const staticFolder = './public';
+let numFiles;
+fs.readdir(staticFolder, (err, files) => {
+  if (err) {
+      console.error('Erro ao ler a pasta:', err);
+      res.status(500).send('Erro ao ler a pasta.');
+  } else {
+      numFiles = files.length;
+      res.send(`Número de arquivos na pasta: ${numFiles}`);
+  }
+});
+
+const numPageChanges = numFiles * 6/* número de mudanças */;
+const limiter = RateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: numPageChanges,
+});
+app.use(limiter);
+
 app.use(
   cookieSession({
     name: "library-session",
@@ -68,7 +83,7 @@ app.use(function (req, res, next){
 });
 
 app.use('/', indexRouter);
-app.use('/apirestful', apiRestFul);
+app.use('/api-restful', apiRestFul);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/menu', menuRouter);

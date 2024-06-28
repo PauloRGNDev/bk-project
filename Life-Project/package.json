@@ -9,8 +9,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
-    "serverstart": "DEBUG=controllers,menu nodemon --watch public/stylesheets/sass --exec \"npm run build-css & npm run devstart\""
-},
+    "serverstart": "DEBUG=controllers,menu sass --watch public/stylesheets/sass:public/stylesheets/sass_css_mappers npm run devstart"
+  },
   "dependencies": {
     "@babel/runtime": "^7.24.7",
     "@babel/runtime-corejs3": "^7.24.7",
