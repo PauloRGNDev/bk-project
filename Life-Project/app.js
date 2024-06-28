@@ -76,7 +76,9 @@ app.use('/', (req, res, next) => {
         console.log(`Number of files: ${numFiles}`);
         next();
     });
-} ,indexRouter);
+});
+
+app.use('/', indexRouter);
 app.use('/api-restful-resources-sende', apiRestFulResSender);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
