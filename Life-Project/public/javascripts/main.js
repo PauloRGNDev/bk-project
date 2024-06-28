@@ -1,2 +1,2 @@
 import './event_listeners/mouseClick.js';
-import './handlers/loadFoodsDB.js';
+import './handlers/api_restful_resources_getter/loadFoodsDB.js';

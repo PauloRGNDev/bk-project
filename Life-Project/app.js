@@ -50,20 +50,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const staticFolder = './public';
 let numFiles;
-fs.readdir(staticFolder, (err, files) => {
-  if (err) {
-      console.error('Erro ao ler a pasta:', err);
-  } else {
-      numFiles = files.length;
-  }
-});
-
-const numPageChanges = numFiles * 6/* número de mudanças */;
-const limiter = RateLimit({
-  windowMs: 1 * 60 * 1000, // 1 minute
-  max: numPageChanges,
-});
-app.use(limiter);
 
 app.use(
   cookieSession({
@@ -80,11 +66,28 @@ app.use(function (req, res, next){
     next();
 });
 
-app.use('/', indexRouter);
+app.use('/', fs.readdir('./public', (req, res) => {
+    fs.readdir('./public', (err, files) => {
+        if (err) {
+            console.error('Erro ao ler a pasta:', err);
+            res.status(500).send('Erro interno do servidor');
+        } else {
+            const numFiles = files.length;
+            res.send(`Número de arquivos: ${numFiles}`);
+        }
+    });
+} ,indexRouter);
 app.use('/api-restful-resources-sende', apiRestFulResSender);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/menu', menuRouter);
+
+const numPageChanges = numFiles * 6/* número de mudanças */;
+const limiter = RateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: numPageChanges,
+});
+app.use(limiter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
