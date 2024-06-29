@@ -52,7 +52,7 @@ const staticFolder = './public';
 let numFiles = 0;
 let limiter;
 let endLimiterCalc = false;
-await readdirp(staticFolder)
+readdirp(staticFolder)
     .on('data', entry => {
         numFiles++;
     })
