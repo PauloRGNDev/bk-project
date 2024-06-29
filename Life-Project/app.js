@@ -66,7 +66,10 @@ readdirp(staticFolder)
         endLimiterCalc = true;
 });
 
-if(endLimiterCalc) app.use(limiter);
+if(endLimiterCalc) {
+app.use(limiter);
+console.log(limiter);
+}
 
 app.use(
   cookieSession({
