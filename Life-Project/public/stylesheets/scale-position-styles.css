@@ -115,11 +115,7 @@ div[class^="offer"]:nth-child(3){
     add size to the smallest size in css, equal to = k * x
 */
 img.offer{
-    width: calc(80vh * 0.7033952594490711);
-    height: 80vh;
     position: relative;
-    top: 0%;
-    left: calc((100% - 80vh * 0.7033952594490711) / 2);
 }
 
 article.food-suggestions{
@@ -133,11 +129,7 @@ article.food-suggestions{
 }
 
 img.suggestion{
-     width: 80vw;
-    height: calc(80vw * 0.75);
     position: relative; 
-    top: calc((100% - 80vw * 0.75) / 2);
-    left: calc((100% - 80vw) / 2);
 }
 
 div[class^="food-suggestion"]{
@@ -313,12 +305,13 @@ html.menu-page main{
 html.menu-page div.conteiner {
   display: grid;
   width: 90vw;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-auto-rows: minmax(300px, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+  grid-auto-rows: minmax(170px, 1fr);
   gap: 20px;
   /* height: 58vh; */
   position: relative;
   left: calc((100% - 90vw) / 2);
+  justify-content: center;
   margin-block-end: 15px;
 }
  
