@@ -5,14 +5,36 @@ const images = [
 ...imagesSuggestion
 ];
 
+const arrow = document.querySelector('html.initial-page img[src*="arrow"]');
+const btn = document.querySelector('html.initial-page main button');
+
+//btn variables
+const btnH = btn.clientHeight;
+const computedBtn = getComputedStyle(btn);
+const btnOffsetStr = computedBtn.getPropertyValue('bottom');
+const btnOffset = parseFloat(btnOffsetStr);
+const btnOccupiedArea = btnOffset + btnH;
+
+//arrow variables
+const arrowWidth = arrow.offsetWidth;
+
+//parent variables
+const partOccupiedOfAvaliableParent = 0.8;
+const parentElement = image.parentNode;
+const parentWidth = parentElement.clientWidth;
+const parentHeight= parentElement.clientHeight;
+const avaliableParentAreaH = parentHeight - btnOccupiedArea;
+const avaliableParentAreaW = parentWidth - arrowWidth;
+
+//final calc
+const relativeSizeW = avaliableParentAreaW * partOccupiedOfAvaliableParent;
+const relativeSizeH = avaliableParentAreaH * partOccupiedOfAvaliableParent;
+
 export function setImgsSize() {
     images.forEach(image => {
         const w = image.naturalWidth;
         const h = image.naturalHeight;
-        const partOccupiedOfParent = 0.8;
-        const parentElement = image.parentNode;
-        const relativeSizeW = parentElement.clientWidth * partOccupiedOfParent;
-        const relativeSizeH = parentElement.clientHeight * partOccupiedOfParent;
+
         if(w > h){
             const smallProportion = h / w;
             const finalW = relativeSizeW;
@@ -34,9 +56,8 @@ export function alignCenterImgs(){
     images.forEach(image => {
         const w = image.clientWidth;
         const h = image.clientHeight;
-        const parentElement = image.parentNode;
-        const wParent = parentElement.clientWidth;
-        const hParent = parentElement.clientHeight;
+        const wParent = avaliableParentAreaW;
+        const hParent = avaliableParentAreaH;
         const wDeslocation = (wParent - w) / 2;
         const hDeslocation = (hParent - h) / 2;
         image.style.setProperty('left', `${wDeslocation}px`);

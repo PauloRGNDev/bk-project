@@ -8,4 +8,3 @@
 @import url("./coloring-elements.css") layer(coloring-elements);
 @import url("./animations.css") layer(scale-position);
 @import url("./animations-config.css") layer(animations-config);
-@import url("./sass_css_mappers/test.css");
