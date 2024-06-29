@@ -11,8 +11,8 @@ export function setImgsSize() {
         const h = image.naturalHeight;
         const partOccupiedOfParent = 0.8;
         const parentElement = image.parentNode;
-        const relativeSizeW = parentNode.clientWidth * partOccupiedOfParent;
-        const relativeSizeH = parentNode.clientHeight * partOccupiedOfParent;
+        const relativeSizeW = parentElement.clientWidth * partOccupiedOfParent;
+        const relativeSizeH = parentElement.clientHeight * partOccupiedOfParent;
         if(w > h){
             const smallProportion = h / w;
             const finalW = relativeSizeW;
