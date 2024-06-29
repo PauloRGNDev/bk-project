@@ -1,9 +1,10 @@
-/* ALGORITMO:
-1 - pega um conjunto de imagens html
-2 - coloca um tamanho neles de forma que a imagem não fique distorcidade
+/* 
+ALGORITMO:
+ 1 - pega um conjunto de imagens html
+ 2 - coloca um tamanho neles de forma que a imagem não fique distorcidade
   1 - com o maior lado com um tamanho relativo ao tamanho do pai
   2 - menor lado seguindo a proporção relativa ao maior lado
-3 - centraliza-os com relação ao espaço disponível no elemento pai
+ 3 - centraliza-os com relação ao espaço disponível no elemento pai
 */
 
 //images variables
@@ -35,21 +36,25 @@ function basicConfigs(){
         const parentElement = image.parentNode;
         const parentWidth = parentElement.clientWidth;
         const parentHeight= parentElement.clientHeight;
-        const avaliableParentAreaH = parentHeight - btnOccupiedArea;
-        const avaliableParentAreaW = parentWidth - arrowWidth;
+        avaliableParentAreaH = parentHeight - btnOccupiedArea;
+        avaliableParentAreaW = parentWidth - arrowWidth;
 
         //final calc
-        const relativeSizeW = avaliableParentAreaW * partOccupiedOfAvaliableParent;
-        const relativeSizeH = avaliableParentAreaH * partOccupiedOfAvaliableParent;
+        relativeSizeW = avaliableParentAreaW * partOccupiedOfAvaliableParent;
+        relativeSizeH = avaliableParentAreaH * partOccupiedOfAvaliableParent;
     });
 }
 
-basicConfigs();
 
 export function setImgsSize() {
     images.forEach(image => {
         const w = image.naturalWidth;
         const h = image.naturalHeight;
+        let avaliableParentAreaH;
+        let avaliableParentAreaW;
+        let relativeSizeW;
+        let relativeSizeH;
+        basicConfigs();
 
         if(w > h){
             const smallProportion = h / w;
@@ -72,6 +77,11 @@ export function alignCenterImgs(){
     images.forEach(image => {
         const w = image.clientWidth;
         const h = image.clientHeight;
+        let avaliableParentAreaH;
+        let avaliableParentAreaW;
+        let relativeSizeW;
+        let relativeSizeH;
+        basicConfigs();
         const wParent = avaliableParentAreaW;
         const hParent = avaliableParentAreaH;
         const wDeslocation = (wParent - w) / 2;
