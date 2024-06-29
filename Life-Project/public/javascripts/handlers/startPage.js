@@ -29,19 +29,19 @@ const btnOccupiedArea = btnOffset + btnH;
 //arrow variables
 const arrowWidth = arrow.offsetWidth;
 
-function basicConfigs(){
+function basicConfigs(configsObj){
     images.forEach(image => {
         //parent variables
         const partOccupiedOfAvaliableParent = 0.8;
         const parentElement = image.parentNode;
         const parentWidth = parentElement.clientWidth;
         const parentHeight= parentElement.clientHeight;
-        avaliableParentAreaH = parentHeight - btnOccupiedArea;
-        avaliableParentAreaW = parentWidth - arrowWidth;
+        configsObj.av_parent_area_h = parentHeight - btnOccupiedArea;
+        configsObj.av_parent_area_w = parentWidth - arrowWidth;
 
         //final calc
-        relativeSizeW = avaliableParentAreaW * partOccupiedOfAvaliableParent;
-        relativeSizeH = avaliableParentAreaH * partOccupiedOfAvaliableParent;
+        configsObj.relative_size_w = configsObj.av_parent_area_w * partOccupiedOfAvaliableParent;
+        configsObj.relative_size_h = configsObj.av_parent_area_h * partOccupiedOfAvaliableParent;
     });
 }
 
@@ -50,11 +50,19 @@ export function setImgsSize() {
     images.forEach(image => {
         const w = image.naturalWidth;
         const h = image.naturalHeight;
-        let avaliableParentAreaH;
-        let avaliableParentAreaW;
-        let relativeSizeW;
-        let relativeSizeH;
-        basicConfigs();
+
+        //basic configs
+        let configsObj = {
+            av_parent_area_w,
+            av_parent_area_h,
+            relative_size_w,
+            relative_size_h,
+        };
+        basicConfigs(configsObj);
+        let avaliableParentAreaH = configsObj.av_parent_area_h;
+        let avaliableParentAreaW = configsObj.av_parent_area_w;
+        let relativeSizeW = configsObj.relative_size_w;
+        let relativeSizeH = configsObj.relative_size_h;
 
         if(w > h){
             const smallProportion = h / w;
@@ -77,11 +85,19 @@ export function alignCenterImgs(){
     images.forEach(image => {
         const w = image.clientWidth;
         const h = image.clientHeight;
-        let avaliableParentAreaH;
-        let avaliableParentAreaW;
-        let relativeSizeW;
-        let relativeSizeH;
-        basicConfigs();
+        //basic configs
+        let configsObj = {
+            av_parent_area_w,
+            av_parent_area_h,
+            relative_size_w,
+            relative_size_h,
+        };
+        basicConfigs(configsObj);
+        let avaliableParentAreaH = configsObj.av_parent_area_h;
+        let avaliableParentAreaW = configsObj.av_parent_area_w;
+        let relativeSizeW = configsObj.relative_size_w;
+        let relativeSizeH = configsObj.relative_size_h;
+
         const wParent = avaliableParentAreaW;
         const hParent = avaliableParentAreaH;
         const wDeslocation = (wParent - w) / 2;
