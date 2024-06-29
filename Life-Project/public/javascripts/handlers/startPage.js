@@ -87,10 +87,10 @@ export function alignCenterImgs(){
         const h = image.clientHeight;
         //basic configs
         let configsObj = {
-            av_parent_area_w,
-            av_parent_area_h,
-            relative_size_w,
-            relative_size_h,
+            av_parent_area_w: 0,
+            av_parent_area_h: 0,
+            relative_size_w: 0,
+            relative_size_h: 0,
         };
         basicConfigs(configsObj);
         let avaliableParentAreaH = configsObj.av_parent_area_h;
