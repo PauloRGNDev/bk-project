@@ -50,13 +50,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const staticFolder = './public';
 let numFiles = 0;
+const limiter;
 readdirp(staticFolder)
     .on('data', entry => {
         numFiles++;
     })
     .on('end', () => {
         const numPageChanges = numFiles * 6/* número de mudanças */;
-	const limiter = RateLimit({
+	limiter = RateLimit({
   	   windowMs: 1 * 60 * 1000, // 1 minute
   	   max: numPageChanges,
         });
