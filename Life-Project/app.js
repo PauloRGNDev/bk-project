@@ -60,9 +60,10 @@ readdirp(staticFolder)
   	   windowMs: 1 * 60 * 1000, // 1 minute
   	   max: numPageChanges,
         });
-        app.use(limiter);
 	console.log(`Number of files to load in one minute: ${numPageChanges }`);
 });
+
+app.use(limiter);
 
 app.use(
   cookieSession({
