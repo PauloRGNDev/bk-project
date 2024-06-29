@@ -63,16 +63,17 @@ readdirp(staticFolder)
   	   max: numPageChanges,
         });
 	console.log(`Number of files to load in one minute: ${numPageChanges }`);
+        console.log(limiter);
         endLimiterCalc = true;
 });
 
 if(endLimiterCalc) {
 app.use(limiter);
 console.log(limiter);
-console.log("hello");
+console.log("hello 1");
 } else{
 console.log(limiter);
-console.log("hello");
+console.log("hello 2");
 }
 
 app.use(
