@@ -50,7 +50,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const staticFolder = './public';
 let numFiles = 0;
-const limiter;
+let limiter;
 readdirp(staticFolder)
     .on('data', entry => {
         numFiles++;
