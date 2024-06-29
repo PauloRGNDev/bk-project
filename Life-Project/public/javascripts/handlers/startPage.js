@@ -91,8 +91,7 @@ export function alignCenterImgs(){
         const parentHeight= parentElement.clientHeight;
 
         const wDeslocation = (parentWidth - w) / 2;
-        const hDeslocation = (parentHeight - h) / 2;
-        hDeslocation += btnOccupiedArea;
+        const hDeslocation = (parentHeight - h) / 2 + btnOccupiedArea;
         image.style.setProperty('left', `${wDeslocation}px`);
         image.style.setProperty('top', `${hDeslocation}px`);
     });
