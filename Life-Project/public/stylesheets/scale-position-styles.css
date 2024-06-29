@@ -312,17 +312,16 @@ html.menu-page main{
 
 html.menu-page div.conteiner {
   display: grid;
-  width: calc(30vw * 3);
+  width: 90vw;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: minmax(300px, 1fr);
+  gap: 20px;
   /* height: 58vh; */
   position: relative;
-  left: calc((100% - 30vw * 0.95 * 3) / 2);
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  left: calc((100% - 90vw) / 2);
   margin-block-end: 15px;
-  /* Defina uma altura mínima para as células */
-  grid-auto-rows: minmax(300px, 1fr);
 }
-
+ 
 /* Remova a definição de altura fixa (height) para permitir que as linhas se redimensionem */
 /* html.menu-page div.conteiner {
   height: 58vh;

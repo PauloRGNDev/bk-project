@@ -1,9 +1,48 @@
+/* Tentativa de codigo para obter numero de arquivos dinamicamente
+  const staticFolder = './public';
+  let numFiles = 0;
+  let limiter;
+  let endLimiterCalc = false;
+  readdirp(staticFolder)
+    .on('data', entry => { 
+        numFiles++;
+    })
+    .on('end', () => {
+        const numPageChanges = numFiles * 6;
+	limiter = RateLimit({
+  	   windowMs: 1 * 60 * 1000, // 1 minute
+  	   max: numPageChanges,
+        });
+	console.log(`Number of files to load in one minute: ${numPageChanges }`);
+        console.log(limiter);
+        endLimiterCalc = true;
+  });
+
+  while(true){
+  if(endLimiterCalc) {
+   app.use(limiter);
+   console.log(limiter);
+   console.log("hello 1");
+   break;
+  }
+  }
+
+  if(endLimiterCalc) {
+  app.use(limiter);
+  console.log(limiter);
+  console.log("hello 1");
+  } else{
+console.log(limiter);
+  console.log("hello 2");
+  }
+*/
+
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const readdirp = require('readdirp');
+const fs = require('fs');
 
 const apiRestFulResSender = require('./routes/api_restful_resources_sender');
 const indexRouter = require('./routes/index');
@@ -49,32 +88,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 const staticFolder = './public';
-let numFiles = 0;
-let limiter;
-let endLimiterCalc = false;
-readdirp(staticFolder)
-    .on('data', entry => {
-        numFiles++;
-    })
-    .on('end', () => {
-        const numPageChanges = numFiles * 6/* número de mudanças */;
-	limiter = RateLimit({
-  	   windowMs: 1 * 60 * 1000, // 1 minute
-  	   max: numPageChanges,
-        });
-	console.log(`Number of files to load in one minute: ${numPageChanges }`);
-        console.log(limiter);
-        endLimiterCalc = true;
+let numFiles = 40;
+const numPageChanges = numFiles * 12/* número de mudanças */;
+const limiter = RateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: numPageChanges,
 });
-
-while(true){
-  if(endLimiterCalc) {
-   app.use(limiter);
-   console.log(limiter);
-   console.log("hello 1");
-   break;
-}
-}
+app.use(limiter);
 
 app.use(
   cookieSession({
@@ -92,7 +112,7 @@ app.use(function (req, res, next){
 });
 
 app.use('/', indexRouter);
-app.use('/api-restful-resources-sende', apiRestFulResSender);
+app.use('/api-restful-resources-sender', apiRestFulResSender);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/menu', menuRouter);
