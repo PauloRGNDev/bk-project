@@ -67,13 +67,13 @@ readdirp(staticFolder)
         endLimiterCalc = true;
 });
 
-if(endLimiterCalc) {
-app.use(limiter);
-console.log(limiter);
-console.log("hello 1");
-} else{
-console.log(limiter);
-console.log("hello 2");
+while(true){
+  if(endLimiterCalc) {
+   app.use(limiter);
+   console.log(limiter);
+   console.log("hello 1");
+   break;
+}
 }
 
 app.use(
