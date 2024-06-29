@@ -51,6 +51,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const staticFolder = './public';
 let numFiles = 0;
 let limiter;
+bool endLimiterCalc = false;
 await readdirp(staticFolder)
     .on('data', entry => {
         numFiles++;
@@ -62,9 +63,10 @@ await readdirp(staticFolder)
   	   max: numPageChanges,
         });
 	console.log(`Number of files to load in one minute: ${numPageChanges }`);
+        endLimiterCalc = true;
 });
 
-app.use(limiter);
+if(endLimiterCalc) app.use(limiter);
 
 app.use(
   cookieSession({
