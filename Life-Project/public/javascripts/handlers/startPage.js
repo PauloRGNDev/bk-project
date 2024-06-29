@@ -1,4 +1,9 @@
-const images = document.querySelector('html.initial-page img');
+const imagesOffer = document.querySelectorAll('html.initial-page img.offer');
+const imagesSuggestion = document.querySelectorAll('html.initial-page img.suggestion');
+const images = [
+...imagesOffer,
+...imagesSuggestion
+];
 
 export function setImgsSize() {
     images.forEach(image => {
@@ -12,14 +17,15 @@ export function setImgsSize() {
             const smallProportion = h / w;
             const finalW = relativeSizeW;
             const finalH = smallProportion * relativeSizeW;
-            image.style.ssetProperty('width', `${finalW}px`);
+            image.style.setProperty('width', `${finalW}px`);
             image.style.setProperty('height', `${finalH}px`);
         } else{
             const smallProportion = w / h;
             const finalW = relativeSizeH * smallProportion;
             const finalH = relativeSizeH;
-            image.style.ssetProperty('width', `${finalW}px`);
+            image.style.setProperty('width', `${finalW}px`);
             image.style.setProperty('height', `${finalH}px`);
+            console.log(finalW);
         }
     });
 }
@@ -35,5 +41,6 @@ export function alignCenterImgs(){
         const hDeslocation = (hParent - h) / 2;
         image.style.setProperty('left', `${wDeslocation}px`);
         image.style.setProperty('top', `${hDeslocation}px`);
+        console.log(wDeslocation);
     });
 }
