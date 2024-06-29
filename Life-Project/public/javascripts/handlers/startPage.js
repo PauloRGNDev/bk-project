@@ -76,7 +76,6 @@ export function setImgsSize() {
             const finalH = relativeSizeH;
             image.style.setProperty('width', `${finalW}px`);
             image.style.setProperty('height', `${finalH}px`);
-            console.log(finalW);
         }
     });
 }
@@ -85,25 +84,15 @@ export function alignCenterImgs(){
     images.forEach(image => {
         const w = image.clientWidth;
         const h = image.clientHeight;
-        //basic configs
-        let configsObj = {
-            av_parent_area_w: 0,
-            av_parent_area_h: 0,
-            relative_size_w: 0,
-            relative_size_h: 0,
-        };
-        basicConfigs(configsObj);
-        let avaliableParentAreaH = configsObj.av_parent_area_h;
-        let avaliableParentAreaW = configsObj.av_parent_area_w;
-        let relativeSizeW = configsObj.relative_size_w;
-        let relativeSizeH = configsObj.relative_size_h;
 
-        const wParent = avaliableParentAreaW;
-        const hParent = avaliableParentAreaH;
-        const wDeslocation = (wParent - w) / 2;
-        const hDeslocation = (hParent - h) / 2;
+        //parent configs
+        const parentElement = image.parentNode;
+        const parentWidth = parentElement.clientWidth;
+        const parentHeight= parentElement.clientHeight;
+
+        const wDeslocation = (parentWidth - w) / 2;
+        const hDeslocation = (parentHeight - h) / 2;
         image.style.setProperty('left', `${wDeslocation}px`);
         image.style.setProperty('top', `${hDeslocation}px`);
-        console.log(wDeslocation);
     });
 }
