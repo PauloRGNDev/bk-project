@@ -69,6 +69,10 @@ readdirp(staticFolder)
 if(endLimiterCalc) {
 app.use(limiter);
 console.log(limiter);
+console.log("hello");
+} else{
+console.log(limiter);
+console.log("hello");
 }
 
 app.use(
