@@ -7,4 +7,5 @@
 @import url("./color-elements.css") layer(color-elements);
 @import url("./coloring-elements.css") layer(coloring-elements);
 @import url("./animations.css") layer(scale-position);
+@import url('./sass_css_mappers/animations.css');
 @import url("./animations-config.css") layer(animations-config);

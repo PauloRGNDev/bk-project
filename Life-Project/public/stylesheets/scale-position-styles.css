@@ -196,13 +196,13 @@ div#images-rights{
 /*           ====  MAIN STYLES  ====         */
 
 html.auth{
-    background-image: url('./images/sunset.jpg');
+    background-image: url('/images/sunset.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100vh;
 }
 
 html.signout{
-    background-image: url('./images/sunset.jpg');
+    background-image: url('/images/sunset.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100vh;
 }
