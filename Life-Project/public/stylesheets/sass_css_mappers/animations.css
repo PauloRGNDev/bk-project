@@ -1,916 +1,916 @@
 @keyframes btn-auth {
   0% {
-    background-color: color-mix(in oklab, mainColor 100%, secondaryColor 0%);
+    background-color: color-mix(in oklab, var(--btn-auth) 100%, black 0%);
   }
   1% {
-    background-color: color-mix(in oklab, mainColor 99.75%, secondaryColor 0.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 99.75%, black 0.25%);
   }
   2% {
-    background-color: color-mix(in oklab, mainColor 99.5%, secondaryColor 0.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 99.5%, black 0.5%);
   }
   3% {
-    background-color: color-mix(in oklab, mainColor 99.25%, secondaryColor 0.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 99.25%, black 0.75%);
   }
   4% {
-    background-color: color-mix(in oklab, mainColor 99%, secondaryColor 1%);
+    background-color: color-mix(in oklab, var(--btn-auth) 99%, black 1%);
   }
   5% {
-    background-color: color-mix(in oklab, mainColor 98.75%, secondaryColor 1.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 98.75%, black 1.25%);
   }
   6% {
-    background-color: color-mix(in oklab, mainColor 98.5%, secondaryColor 1.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 98.5%, black 1.5%);
   }
   7% {
-    background-color: color-mix(in oklab, mainColor 98.25%, secondaryColor 1.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 98.25%, black 1.75%);
   }
   8% {
-    background-color: color-mix(in oklab, mainColor 98%, secondaryColor 2%);
+    background-color: color-mix(in oklab, var(--btn-auth) 98%, black 2%);
   }
   9% {
-    background-color: color-mix(in oklab, mainColor 97.75%, secondaryColor 2.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 97.75%, black 2.25%);
   }
   10% {
-    background-color: color-mix(in oklab, mainColor 97.5%, secondaryColor 2.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 97.5%, black 2.5%);
   }
   11% {
-    background-color: color-mix(in oklab, mainColor 97.25%, secondaryColor 2.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 97.25%, black 2.75%);
   }
   12% {
-    background-color: color-mix(in oklab, mainColor 97%, secondaryColor 3%);
+    background-color: color-mix(in oklab, var(--btn-auth) 97%, black 3%);
   }
   13% {
-    background-color: color-mix(in oklab, mainColor 96.75%, secondaryColor 3.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 96.75%, black 3.25%);
   }
   14% {
-    background-color: color-mix(in oklab, mainColor 96.5%, secondaryColor 3.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 96.5%, black 3.5%);
   }
   15% {
-    background-color: color-mix(in oklab, mainColor 96.25%, secondaryColor 3.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 96.25%, black 3.75%);
   }
   16% {
-    background-color: color-mix(in oklab, mainColor 96%, secondaryColor 4%);
+    background-color: color-mix(in oklab, var(--btn-auth) 96%, black 4%);
   }
   17% {
-    background-color: color-mix(in oklab, mainColor 95.75%, secondaryColor 4.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 95.75%, black 4.25%);
   }
   18% {
-    background-color: color-mix(in oklab, mainColor 95.5%, secondaryColor 4.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 95.5%, black 4.5%);
   }
   19% {
-    background-color: color-mix(in oklab, mainColor 95.25%, secondaryColor 4.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 95.25%, black 4.75%);
   }
   20% {
-    background-color: color-mix(in oklab, mainColor 95%, secondaryColor 5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 95%, black 5%);
   }
   21% {
-    background-color: color-mix(in oklab, mainColor 94.75%, secondaryColor 5.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 94.75%, black 5.25%);
   }
   22% {
-    background-color: color-mix(in oklab, mainColor 94.5%, secondaryColor 5.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 94.5%, black 5.5%);
   }
   23% {
-    background-color: color-mix(in oklab, mainColor 94.25%, secondaryColor 5.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 94.25%, black 5.75%);
   }
   24% {
-    background-color: color-mix(in oklab, mainColor 94%, secondaryColor 6%);
+    background-color: color-mix(in oklab, var(--btn-auth) 94%, black 6%);
   }
   25% {
-    background-color: color-mix(in oklab, mainColor 93.75%, secondaryColor 6.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 93.75%, black 6.25%);
   }
   26% {
-    background-color: color-mix(in oklab, mainColor 93.5%, secondaryColor 6.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 93.5%, black 6.5%);
   }
   27% {
-    background-color: color-mix(in oklab, mainColor 93.25%, secondaryColor 6.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 93.25%, black 6.75%);
   }
   28% {
-    background-color: color-mix(in oklab, mainColor 93%, secondaryColor 7%);
+    background-color: color-mix(in oklab, var(--btn-auth) 93%, black 7%);
   }
   29% {
-    background-color: color-mix(in oklab, mainColor 92.75%, secondaryColor 7.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 92.75%, black 7.25%);
   }
   30% {
-    background-color: color-mix(in oklab, mainColor 92.5%, secondaryColor 7.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 92.5%, black 7.5%);
   }
   31% {
-    background-color: color-mix(in oklab, mainColor 92.25%, secondaryColor 7.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 92.25%, black 7.75%);
   }
   32% {
-    background-color: color-mix(in oklab, mainColor 92%, secondaryColor 8%);
+    background-color: color-mix(in oklab, var(--btn-auth) 92%, black 8%);
   }
   33% {
-    background-color: color-mix(in oklab, mainColor 91.75%, secondaryColor 8.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 91.75%, black 8.25%);
   }
   34% {
-    background-color: color-mix(in oklab, mainColor 91.5%, secondaryColor 8.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 91.5%, black 8.5%);
   }
   35% {
-    background-color: color-mix(in oklab, mainColor 91.25%, secondaryColor 8.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 91.25%, black 8.75%);
   }
   36% {
-    background-color: color-mix(in oklab, mainColor 91%, secondaryColor 9%);
+    background-color: color-mix(in oklab, var(--btn-auth) 91%, black 9%);
   }
   37% {
-    background-color: color-mix(in oklab, mainColor 90.75%, secondaryColor 9.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 90.75%, black 9.25%);
   }
   38% {
-    background-color: color-mix(in oklab, mainColor 90.5%, secondaryColor 9.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 90.5%, black 9.5%);
   }
   39% {
-    background-color: color-mix(in oklab, mainColor 90.25%, secondaryColor 9.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 90.25%, black 9.75%);
   }
   40% {
-    background-color: color-mix(in oklab, mainColor 90%, secondaryColor 10%);
+    background-color: color-mix(in oklab, var(--btn-auth) 90%, black 10%);
   }
   41% {
-    background-color: color-mix(in oklab, mainColor 89.75%, secondaryColor 10.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 89.75%, black 10.25%);
   }
   42% {
-    background-color: color-mix(in oklab, mainColor 89.5%, secondaryColor 10.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 89.5%, black 10.5%);
   }
   43% {
-    background-color: color-mix(in oklab, mainColor 89.25%, secondaryColor 10.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 89.25%, black 10.75%);
   }
   44% {
-    background-color: color-mix(in oklab, mainColor 89%, secondaryColor 11%);
+    background-color: color-mix(in oklab, var(--btn-auth) 89%, black 11%);
   }
   45% {
-    background-color: color-mix(in oklab, mainColor 88.75%, secondaryColor 11.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 88.75%, black 11.25%);
   }
   46% {
-    background-color: color-mix(in oklab, mainColor 88.5%, secondaryColor 11.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 88.5%, black 11.5%);
   }
   47% {
-    background-color: color-mix(in oklab, mainColor 88.25%, secondaryColor 11.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 88.25%, black 11.75%);
   }
   48% {
-    background-color: color-mix(in oklab, mainColor 88%, secondaryColor 12%);
+    background-color: color-mix(in oklab, var(--btn-auth) 88%, black 12%);
   }
   49% {
-    background-color: color-mix(in oklab, mainColor 87.75%, secondaryColor 12.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 87.75%, black 12.25%);
   }
   50% {
-    background-color: color-mix(in oklab, mainColor 87.5%, secondaryColor 12.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 87.5%, black 12.5%);
   }
   51% {
-    background-color: color-mix(in oklab, mainColor 87.25%, secondaryColor 12.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 87.25%, black 12.75%);
   }
   52% {
-    background-color: color-mix(in oklab, mainColor 87%, secondaryColor 13%);
+    background-color: color-mix(in oklab, var(--btn-auth) 87%, black 13%);
   }
   53% {
-    background-color: color-mix(in oklab, mainColor 86.75%, secondaryColor 13.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 86.75%, black 13.25%);
   }
   54% {
-    background-color: color-mix(in oklab, mainColor 86.5%, secondaryColor 13.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 86.5%, black 13.5%);
   }
   55% {
-    background-color: color-mix(in oklab, mainColor 86.25%, secondaryColor 13.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 86.25%, black 13.75%);
   }
   56% {
-    background-color: color-mix(in oklab, mainColor 86%, secondaryColor 14%);
+    background-color: color-mix(in oklab, var(--btn-auth) 86%, black 14%);
   }
   57% {
-    background-color: color-mix(in oklab, mainColor 85.75%, secondaryColor 14.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 85.75%, black 14.25%);
   }
   58% {
-    background-color: color-mix(in oklab, mainColor 85.5%, secondaryColor 14.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 85.5%, black 14.5%);
   }
   59% {
-    background-color: color-mix(in oklab, mainColor 85.25%, secondaryColor 14.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 85.25%, black 14.75%);
   }
   60% {
-    background-color: color-mix(in oklab, mainColor 85%, secondaryColor 15%);
+    background-color: color-mix(in oklab, var(--btn-auth) 85%, black 15%);
   }
   61% {
-    background-color: color-mix(in oklab, mainColor 84.75%, secondaryColor 15.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 84.75%, black 15.25%);
   }
   62% {
-    background-color: color-mix(in oklab, mainColor 84.5%, secondaryColor 15.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 84.5%, black 15.5%);
   }
   63% {
-    background-color: color-mix(in oklab, mainColor 84.25%, secondaryColor 15.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 84.25%, black 15.75%);
   }
   64% {
-    background-color: color-mix(in oklab, mainColor 84%, secondaryColor 16%);
+    background-color: color-mix(in oklab, var(--btn-auth) 84%, black 16%);
   }
   65% {
-    background-color: color-mix(in oklab, mainColor 83.75%, secondaryColor 16.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 83.75%, black 16.25%);
   }
   66% {
-    background-color: color-mix(in oklab, mainColor 83.5%, secondaryColor 16.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 83.5%, black 16.5%);
   }
   67% {
-    background-color: color-mix(in oklab, mainColor 83.25%, secondaryColor 16.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 83.25%, black 16.75%);
   }
   68% {
-    background-color: color-mix(in oklab, mainColor 83%, secondaryColor 17%);
+    background-color: color-mix(in oklab, var(--btn-auth) 83%, black 17%);
   }
   69% {
-    background-color: color-mix(in oklab, mainColor 82.75%, secondaryColor 17.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 82.75%, black 17.25%);
   }
   70% {
-    background-color: color-mix(in oklab, mainColor 82.5%, secondaryColor 17.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 82.5%, black 17.5%);
   }
   71% {
-    background-color: color-mix(in oklab, mainColor 82.25%, secondaryColor 17.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 82.25%, black 17.75%);
   }
   72% {
-    background-color: color-mix(in oklab, mainColor 82%, secondaryColor 18%);
+    background-color: color-mix(in oklab, var(--btn-auth) 82%, black 18%);
   }
   73% {
-    background-color: color-mix(in oklab, mainColor 81.75%, secondaryColor 18.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 81.75%, black 18.25%);
   }
   74% {
-    background-color: color-mix(in oklab, mainColor 81.5%, secondaryColor 18.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 81.5%, black 18.5%);
   }
   75% {
-    background-color: color-mix(in oklab, mainColor 81.25%, secondaryColor 18.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 81.25%, black 18.75%);
   }
   76% {
-    background-color: color-mix(in oklab, mainColor 81%, secondaryColor 19%);
+    background-color: color-mix(in oklab, var(--btn-auth) 81%, black 19%);
   }
   77% {
-    background-color: color-mix(in oklab, mainColor 80.75%, secondaryColor 19.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 80.75%, black 19.25%);
   }
   78% {
-    background-color: color-mix(in oklab, mainColor 80.5%, secondaryColor 19.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 80.5%, black 19.5%);
   }
   79% {
-    background-color: color-mix(in oklab, mainColor 80.25%, secondaryColor 19.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 80.25%, black 19.75%);
   }
   80% {
-    background-color: color-mix(in oklab, mainColor 80%, secondaryColor 20%);
+    background-color: color-mix(in oklab, var(--btn-auth) 80%, black 20%);
   }
   81% {
-    background-color: color-mix(in oklab, mainColor 79.75%, secondaryColor 20.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 79.75%, black 20.25%);
   }
   82% {
-    background-color: color-mix(in oklab, mainColor 79.5%, secondaryColor 20.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 79.5%, black 20.5%);
   }
   83% {
-    background-color: color-mix(in oklab, mainColor 79.25%, secondaryColor 20.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 79.25%, black 20.75%);
   }
   84% {
-    background-color: color-mix(in oklab, mainColor 79%, secondaryColor 21%);
+    background-color: color-mix(in oklab, var(--btn-auth) 79%, black 21%);
   }
   85% {
-    background-color: color-mix(in oklab, mainColor 78.75%, secondaryColor 21.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 78.75%, black 21.25%);
   }
   86% {
-    background-color: color-mix(in oklab, mainColor 78.5%, secondaryColor 21.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 78.5%, black 21.5%);
   }
   87% {
-    background-color: color-mix(in oklab, mainColor 78.25%, secondaryColor 21.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 78.25%, black 21.75%);
   }
   88% {
-    background-color: color-mix(in oklab, mainColor 78%, secondaryColor 22%);
+    background-color: color-mix(in oklab, var(--btn-auth) 78%, black 22%);
   }
   89% {
-    background-color: color-mix(in oklab, mainColor 77.75%, secondaryColor 22.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 77.75%, black 22.25%);
   }
   90% {
-    background-color: color-mix(in oklab, mainColor 77.5%, secondaryColor 22.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 77.5%, black 22.5%);
   }
   91% {
-    background-color: color-mix(in oklab, mainColor 77.25%, secondaryColor 22.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 77.25%, black 22.75%);
   }
   92% {
-    background-color: color-mix(in oklab, mainColor 77%, secondaryColor 23%);
+    background-color: color-mix(in oklab, var(--btn-auth) 77%, black 23%);
   }
   93% {
-    background-color: color-mix(in oklab, mainColor 76.75%, secondaryColor 23.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 76.75%, black 23.25%);
   }
   94% {
-    background-color: color-mix(in oklab, mainColor 76.5%, secondaryColor 23.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 76.5%, black 23.5%);
   }
   95% {
-    background-color: color-mix(in oklab, mainColor 76.25%, secondaryColor 23.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 76.25%, black 23.75%);
   }
   96% {
-    background-color: color-mix(in oklab, mainColor 76%, secondaryColor 24%);
+    background-color: color-mix(in oklab, var(--btn-auth) 76%, black 24%);
   }
   97% {
-    background-color: color-mix(in oklab, mainColor 75.75%, secondaryColor 24.25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 75.75%, black 24.25%);
   }
   98% {
-    background-color: color-mix(in oklab, mainColor 75.5%, secondaryColor 24.5%);
+    background-color: color-mix(in oklab, var(--btn-auth) 75.5%, black 24.5%);
   }
   99% {
-    background-color: color-mix(in oklab, mainColor 75.25%, secondaryColor 24.75%);
+    background-color: color-mix(in oklab, var(--btn-auth) 75.25%, black 24.75%);
   }
   100% {
-    background-color: color-mix(in oklab, mainColor 75%, secondaryColor 25%);
+    background-color: color-mix(in oklab, var(--btn-auth) 75%, black 25%);
   }
 }
 @keyframes accept-btn-signout-active {
   0% {
-    background-color: color-mix(in oklab, mainColor 100%, secondaryColor 0%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 100%, black 0%);
   }
   1% {
-    background-color: color-mix(in oklab, mainColor 99.75%, secondaryColor 0.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 99.75%, black 0.25%);
   }
   2% {
-    background-color: color-mix(in oklab, mainColor 99.5%, secondaryColor 0.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 99.5%, black 0.5%);
   }
   3% {
-    background-color: color-mix(in oklab, mainColor 99.25%, secondaryColor 0.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 99.25%, black 0.75%);
   }
   4% {
-    background-color: color-mix(in oklab, mainColor 99%, secondaryColor 1%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 99%, black 1%);
   }
   5% {
-    background-color: color-mix(in oklab, mainColor 98.75%, secondaryColor 1.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 98.75%, black 1.25%);
   }
   6% {
-    background-color: color-mix(in oklab, mainColor 98.5%, secondaryColor 1.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 98.5%, black 1.5%);
   }
   7% {
-    background-color: color-mix(in oklab, mainColor 98.25%, secondaryColor 1.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 98.25%, black 1.75%);
   }
   8% {
-    background-color: color-mix(in oklab, mainColor 98%, secondaryColor 2%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 98%, black 2%);
   }
   9% {
-    background-color: color-mix(in oklab, mainColor 97.75%, secondaryColor 2.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 97.75%, black 2.25%);
   }
   10% {
-    background-color: color-mix(in oklab, mainColor 97.5%, secondaryColor 2.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 97.5%, black 2.5%);
   }
   11% {
-    background-color: color-mix(in oklab, mainColor 97.25%, secondaryColor 2.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 97.25%, black 2.75%);
   }
   12% {
-    background-color: color-mix(in oklab, mainColor 97%, secondaryColor 3%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 97%, black 3%);
   }
   13% {
-    background-color: color-mix(in oklab, mainColor 96.75%, secondaryColor 3.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 96.75%, black 3.25%);
   }
   14% {
-    background-color: color-mix(in oklab, mainColor 96.5%, secondaryColor 3.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 96.5%, black 3.5%);
   }
   15% {
-    background-color: color-mix(in oklab, mainColor 96.25%, secondaryColor 3.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 96.25%, black 3.75%);
   }
   16% {
-    background-color: color-mix(in oklab, mainColor 96%, secondaryColor 4%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 96%, black 4%);
   }
   17% {
-    background-color: color-mix(in oklab, mainColor 95.75%, secondaryColor 4.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 95.75%, black 4.25%);
   }
   18% {
-    background-color: color-mix(in oklab, mainColor 95.5%, secondaryColor 4.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 95.5%, black 4.5%);
   }
   19% {
-    background-color: color-mix(in oklab, mainColor 95.25%, secondaryColor 4.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 95.25%, black 4.75%);
   }
   20% {
-    background-color: color-mix(in oklab, mainColor 95%, secondaryColor 5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 95%, black 5%);
   }
   21% {
-    background-color: color-mix(in oklab, mainColor 94.75%, secondaryColor 5.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 94.75%, black 5.25%);
   }
   22% {
-    background-color: color-mix(in oklab, mainColor 94.5%, secondaryColor 5.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 94.5%, black 5.5%);
   }
   23% {
-    background-color: color-mix(in oklab, mainColor 94.25%, secondaryColor 5.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 94.25%, black 5.75%);
   }
   24% {
-    background-color: color-mix(in oklab, mainColor 94%, secondaryColor 6%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 94%, black 6%);
   }
   25% {
-    background-color: color-mix(in oklab, mainColor 93.75%, secondaryColor 6.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 93.75%, black 6.25%);
   }
   26% {
-    background-color: color-mix(in oklab, mainColor 93.5%, secondaryColor 6.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 93.5%, black 6.5%);
   }
   27% {
-    background-color: color-mix(in oklab, mainColor 93.25%, secondaryColor 6.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 93.25%, black 6.75%);
   }
   28% {
-    background-color: color-mix(in oklab, mainColor 93%, secondaryColor 7%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 93%, black 7%);
   }
   29% {
-    background-color: color-mix(in oklab, mainColor 92.75%, secondaryColor 7.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 92.75%, black 7.25%);
   }
   30% {
-    background-color: color-mix(in oklab, mainColor 92.5%, secondaryColor 7.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 92.5%, black 7.5%);
   }
   31% {
-    background-color: color-mix(in oklab, mainColor 92.25%, secondaryColor 7.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 92.25%, black 7.75%);
   }
   32% {
-    background-color: color-mix(in oklab, mainColor 92%, secondaryColor 8%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 92%, black 8%);
   }
   33% {
-    background-color: color-mix(in oklab, mainColor 91.75%, secondaryColor 8.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 91.75%, black 8.25%);
   }
   34% {
-    background-color: color-mix(in oklab, mainColor 91.5%, secondaryColor 8.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 91.5%, black 8.5%);
   }
   35% {
-    background-color: color-mix(in oklab, mainColor 91.25%, secondaryColor 8.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 91.25%, black 8.75%);
   }
   36% {
-    background-color: color-mix(in oklab, mainColor 91%, secondaryColor 9%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 91%, black 9%);
   }
   37% {
-    background-color: color-mix(in oklab, mainColor 90.75%, secondaryColor 9.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 90.75%, black 9.25%);
   }
   38% {
-    background-color: color-mix(in oklab, mainColor 90.5%, secondaryColor 9.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 90.5%, black 9.5%);
   }
   39% {
-    background-color: color-mix(in oklab, mainColor 90.25%, secondaryColor 9.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 90.25%, black 9.75%);
   }
   40% {
-    background-color: color-mix(in oklab, mainColor 90%, secondaryColor 10%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 90%, black 10%);
   }
   41% {
-    background-color: color-mix(in oklab, mainColor 89.75%, secondaryColor 10.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 89.75%, black 10.25%);
   }
   42% {
-    background-color: color-mix(in oklab, mainColor 89.5%, secondaryColor 10.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 89.5%, black 10.5%);
   }
   43% {
-    background-color: color-mix(in oklab, mainColor 89.25%, secondaryColor 10.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 89.25%, black 10.75%);
   }
   44% {
-    background-color: color-mix(in oklab, mainColor 89%, secondaryColor 11%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 89%, black 11%);
   }
   45% {
-    background-color: color-mix(in oklab, mainColor 88.75%, secondaryColor 11.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 88.75%, black 11.25%);
   }
   46% {
-    background-color: color-mix(in oklab, mainColor 88.5%, secondaryColor 11.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 88.5%, black 11.5%);
   }
   47% {
-    background-color: color-mix(in oklab, mainColor 88.25%, secondaryColor 11.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 88.25%, black 11.75%);
   }
   48% {
-    background-color: color-mix(in oklab, mainColor 88%, secondaryColor 12%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 88%, black 12%);
   }
   49% {
-    background-color: color-mix(in oklab, mainColor 87.75%, secondaryColor 12.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 87.75%, black 12.25%);
   }
   50% {
-    background-color: color-mix(in oklab, mainColor 87.5%, secondaryColor 12.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 87.5%, black 12.5%);
   }
   51% {
-    background-color: color-mix(in oklab, mainColor 87.25%, secondaryColor 12.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 87.25%, black 12.75%);
   }
   52% {
-    background-color: color-mix(in oklab, mainColor 87%, secondaryColor 13%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 87%, black 13%);
   }
   53% {
-    background-color: color-mix(in oklab, mainColor 86.75%, secondaryColor 13.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 86.75%, black 13.25%);
   }
   54% {
-    background-color: color-mix(in oklab, mainColor 86.5%, secondaryColor 13.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 86.5%, black 13.5%);
   }
   55% {
-    background-color: color-mix(in oklab, mainColor 86.25%, secondaryColor 13.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 86.25%, black 13.75%);
   }
   56% {
-    background-color: color-mix(in oklab, mainColor 86%, secondaryColor 14%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 86%, black 14%);
   }
   57% {
-    background-color: color-mix(in oklab, mainColor 85.75%, secondaryColor 14.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 85.75%, black 14.25%);
   }
   58% {
-    background-color: color-mix(in oklab, mainColor 85.5%, secondaryColor 14.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 85.5%, black 14.5%);
   }
   59% {
-    background-color: color-mix(in oklab, mainColor 85.25%, secondaryColor 14.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 85.25%, black 14.75%);
   }
   60% {
-    background-color: color-mix(in oklab, mainColor 85%, secondaryColor 15%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 85%, black 15%);
   }
   61% {
-    background-color: color-mix(in oklab, mainColor 84.75%, secondaryColor 15.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 84.75%, black 15.25%);
   }
   62% {
-    background-color: color-mix(in oklab, mainColor 84.5%, secondaryColor 15.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 84.5%, black 15.5%);
   }
   63% {
-    background-color: color-mix(in oklab, mainColor 84.25%, secondaryColor 15.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 84.25%, black 15.75%);
   }
   64% {
-    background-color: color-mix(in oklab, mainColor 84%, secondaryColor 16%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 84%, black 16%);
   }
   65% {
-    background-color: color-mix(in oklab, mainColor 83.75%, secondaryColor 16.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 83.75%, black 16.25%);
   }
   66% {
-    background-color: color-mix(in oklab, mainColor 83.5%, secondaryColor 16.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 83.5%, black 16.5%);
   }
   67% {
-    background-color: color-mix(in oklab, mainColor 83.25%, secondaryColor 16.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 83.25%, black 16.75%);
   }
   68% {
-    background-color: color-mix(in oklab, mainColor 83%, secondaryColor 17%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 83%, black 17%);
   }
   69% {
-    background-color: color-mix(in oklab, mainColor 82.75%, secondaryColor 17.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 82.75%, black 17.25%);
   }
   70% {
-    background-color: color-mix(in oklab, mainColor 82.5%, secondaryColor 17.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 82.5%, black 17.5%);
   }
   71% {
-    background-color: color-mix(in oklab, mainColor 82.25%, secondaryColor 17.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 82.25%, black 17.75%);
   }
   72% {
-    background-color: color-mix(in oklab, mainColor 82%, secondaryColor 18%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 82%, black 18%);
   }
   73% {
-    background-color: color-mix(in oklab, mainColor 81.75%, secondaryColor 18.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 81.75%, black 18.25%);
   }
   74% {
-    background-color: color-mix(in oklab, mainColor 81.5%, secondaryColor 18.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 81.5%, black 18.5%);
   }
   75% {
-    background-color: color-mix(in oklab, mainColor 81.25%, secondaryColor 18.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 81.25%, black 18.75%);
   }
   76% {
-    background-color: color-mix(in oklab, mainColor 81%, secondaryColor 19%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 81%, black 19%);
   }
   77% {
-    background-color: color-mix(in oklab, mainColor 80.75%, secondaryColor 19.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 80.75%, black 19.25%);
   }
   78% {
-    background-color: color-mix(in oklab, mainColor 80.5%, secondaryColor 19.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 80.5%, black 19.5%);
   }
   79% {
-    background-color: color-mix(in oklab, mainColor 80.25%, secondaryColor 19.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 80.25%, black 19.75%);
   }
   80% {
-    background-color: color-mix(in oklab, mainColor 80%, secondaryColor 20%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 80%, black 20%);
   }
   81% {
-    background-color: color-mix(in oklab, mainColor 79.75%, secondaryColor 20.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 79.75%, black 20.25%);
   }
   82% {
-    background-color: color-mix(in oklab, mainColor 79.5%, secondaryColor 20.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 79.5%, black 20.5%);
   }
   83% {
-    background-color: color-mix(in oklab, mainColor 79.25%, secondaryColor 20.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 79.25%, black 20.75%);
   }
   84% {
-    background-color: color-mix(in oklab, mainColor 79%, secondaryColor 21%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 79%, black 21%);
   }
   85% {
-    background-color: color-mix(in oklab, mainColor 78.75%, secondaryColor 21.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 78.75%, black 21.25%);
   }
   86% {
-    background-color: color-mix(in oklab, mainColor 78.5%, secondaryColor 21.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 78.5%, black 21.5%);
   }
   87% {
-    background-color: color-mix(in oklab, mainColor 78.25%, secondaryColor 21.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 78.25%, black 21.75%);
   }
   88% {
-    background-color: color-mix(in oklab, mainColor 78%, secondaryColor 22%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 78%, black 22%);
   }
   89% {
-    background-color: color-mix(in oklab, mainColor 77.75%, secondaryColor 22.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 77.75%, black 22.25%);
   }
   90% {
-    background-color: color-mix(in oklab, mainColor 77.5%, secondaryColor 22.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 77.5%, black 22.5%);
   }
   91% {
-    background-color: color-mix(in oklab, mainColor 77.25%, secondaryColor 22.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 77.25%, black 22.75%);
   }
   92% {
-    background-color: color-mix(in oklab, mainColor 77%, secondaryColor 23%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 77%, black 23%);
   }
   93% {
-    background-color: color-mix(in oklab, mainColor 76.75%, secondaryColor 23.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 76.75%, black 23.25%);
   }
   94% {
-    background-color: color-mix(in oklab, mainColor 76.5%, secondaryColor 23.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 76.5%, black 23.5%);
   }
   95% {
-    background-color: color-mix(in oklab, mainColor 76.25%, secondaryColor 23.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 76.25%, black 23.75%);
   }
   96% {
-    background-color: color-mix(in oklab, mainColor 76%, secondaryColor 24%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 76%, black 24%);
   }
   97% {
-    background-color: color-mix(in oklab, mainColor 75.75%, secondaryColor 24.25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 75.75%, black 24.25%);
   }
   98% {
-    background-color: color-mix(in oklab, mainColor 75.5%, secondaryColor 24.5%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 75.5%, black 24.5%);
   }
   99% {
-    background-color: color-mix(in oklab, mainColor 75.25%, secondaryColor 24.75%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 75.25%, black 24.75%);
   }
   100% {
-    background-color: color-mix(in oklab, mainColor 75%, secondaryColor 25%);
+    background-color: color-mix(in oklab, var(--btn-accept-signout) 75%, black 25%);
   }
 }
 @keyframes recuse-btn-signout-active {
   0% {
-    background-color: color-mix(in oklab, mainColor 100%, secondaryColor 0%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 100%, black 0%);
   }
   1% {
-    background-color: color-mix(in oklab, mainColor 99.75%, secondaryColor 0.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 99.75%, black 0.25%);
   }
   2% {
-    background-color: color-mix(in oklab, mainColor 99.5%, secondaryColor 0.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 99.5%, black 0.5%);
   }
   3% {
-    background-color: color-mix(in oklab, mainColor 99.25%, secondaryColor 0.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 99.25%, black 0.75%);
   }
   4% {
-    background-color: color-mix(in oklab, mainColor 99%, secondaryColor 1%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 99%, black 1%);
   }
   5% {
-    background-color: color-mix(in oklab, mainColor 98.75%, secondaryColor 1.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 98.75%, black 1.25%);
   }
   6% {
-    background-color: color-mix(in oklab, mainColor 98.5%, secondaryColor 1.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 98.5%, black 1.5%);
   }
   7% {
-    background-color: color-mix(in oklab, mainColor 98.25%, secondaryColor 1.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 98.25%, black 1.75%);
   }
   8% {
-    background-color: color-mix(in oklab, mainColor 98%, secondaryColor 2%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 98%, black 2%);
   }
   9% {
-    background-color: color-mix(in oklab, mainColor 97.75%, secondaryColor 2.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 97.75%, black 2.25%);
   }
   10% {
-    background-color: color-mix(in oklab, mainColor 97.5%, secondaryColor 2.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 97.5%, black 2.5%);
   }
   11% {
-    background-color: color-mix(in oklab, mainColor 97.25%, secondaryColor 2.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 97.25%, black 2.75%);
   }
   12% {
-    background-color: color-mix(in oklab, mainColor 97%, secondaryColor 3%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 97%, black 3%);
   }
   13% {
-    background-color: color-mix(in oklab, mainColor 96.75%, secondaryColor 3.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 96.75%, black 3.25%);
   }
   14% {
-    background-color: color-mix(in oklab, mainColor 96.5%, secondaryColor 3.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 96.5%, black 3.5%);
   }
   15% {
-    background-color: color-mix(in oklab, mainColor 96.25%, secondaryColor 3.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 96.25%, black 3.75%);
   }
   16% {
-    background-color: color-mix(in oklab, mainColor 96%, secondaryColor 4%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 96%, black 4%);
   }
   17% {
-    background-color: color-mix(in oklab, mainColor 95.75%, secondaryColor 4.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 95.75%, black 4.25%);
   }
   18% {
-    background-color: color-mix(in oklab, mainColor 95.5%, secondaryColor 4.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 95.5%, black 4.5%);
   }
   19% {
-    background-color: color-mix(in oklab, mainColor 95.25%, secondaryColor 4.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 95.25%, black 4.75%);
   }
   20% {
-    background-color: color-mix(in oklab, mainColor 95%, secondaryColor 5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 95%, black 5%);
   }
   21% {
-    background-color: color-mix(in oklab, mainColor 94.75%, secondaryColor 5.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 94.75%, black 5.25%);
   }
   22% {
-    background-color: color-mix(in oklab, mainColor 94.5%, secondaryColor 5.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 94.5%, black 5.5%);
   }
   23% {
-    background-color: color-mix(in oklab, mainColor 94.25%, secondaryColor 5.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 94.25%, black 5.75%);
   }
   24% {
-    background-color: color-mix(in oklab, mainColor 94%, secondaryColor 6%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 94%, black 6%);
   }
   25% {
-    background-color: color-mix(in oklab, mainColor 93.75%, secondaryColor 6.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 93.75%, black 6.25%);
   }
   26% {
-    background-color: color-mix(in oklab, mainColor 93.5%, secondaryColor 6.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 93.5%, black 6.5%);
   }
   27% {
-    background-color: color-mix(in oklab, mainColor 93.25%, secondaryColor 6.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 93.25%, black 6.75%);
   }
   28% {
-    background-color: color-mix(in oklab, mainColor 93%, secondaryColor 7%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 93%, black 7%);
   }
   29% {
-    background-color: color-mix(in oklab, mainColor 92.75%, secondaryColor 7.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 92.75%, black 7.25%);
   }
   30% {
-    background-color: color-mix(in oklab, mainColor 92.5%, secondaryColor 7.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 92.5%, black 7.5%);
   }
   31% {
-    background-color: color-mix(in oklab, mainColor 92.25%, secondaryColor 7.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 92.25%, black 7.75%);
   }
   32% {
-    background-color: color-mix(in oklab, mainColor 92%, secondaryColor 8%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 92%, black 8%);
   }
   33% {
-    background-color: color-mix(in oklab, mainColor 91.75%, secondaryColor 8.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 91.75%, black 8.25%);
   }
   34% {
-    background-color: color-mix(in oklab, mainColor 91.5%, secondaryColor 8.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 91.5%, black 8.5%);
   }
   35% {
-    background-color: color-mix(in oklab, mainColor 91.25%, secondaryColor 8.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 91.25%, black 8.75%);
   }
   36% {
-    background-color: color-mix(in oklab, mainColor 91%, secondaryColor 9%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 91%, black 9%);
   }
   37% {
-    background-color: color-mix(in oklab, mainColor 90.75%, secondaryColor 9.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 90.75%, black 9.25%);
   }
   38% {
-    background-color: color-mix(in oklab, mainColor 90.5%, secondaryColor 9.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 90.5%, black 9.5%);
   }
   39% {
-    background-color: color-mix(in oklab, mainColor 90.25%, secondaryColor 9.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 90.25%, black 9.75%);
   }
   40% {
-    background-color: color-mix(in oklab, mainColor 90%, secondaryColor 10%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 90%, black 10%);
   }
   41% {
-    background-color: color-mix(in oklab, mainColor 89.75%, secondaryColor 10.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 89.75%, black 10.25%);
   }
   42% {
-    background-color: color-mix(in oklab, mainColor 89.5%, secondaryColor 10.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 89.5%, black 10.5%);
   }
   43% {
-    background-color: color-mix(in oklab, mainColor 89.25%, secondaryColor 10.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 89.25%, black 10.75%);
   }
   44% {
-    background-color: color-mix(in oklab, mainColor 89%, secondaryColor 11%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 89%, black 11%);
   }
   45% {
-    background-color: color-mix(in oklab, mainColor 88.75%, secondaryColor 11.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 88.75%, black 11.25%);
   }
   46% {
-    background-color: color-mix(in oklab, mainColor 88.5%, secondaryColor 11.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 88.5%, black 11.5%);
   }
   47% {
-    background-color: color-mix(in oklab, mainColor 88.25%, secondaryColor 11.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 88.25%, black 11.75%);
   }
   48% {
-    background-color: color-mix(in oklab, mainColor 88%, secondaryColor 12%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 88%, black 12%);
   }
   49% {
-    background-color: color-mix(in oklab, mainColor 87.75%, secondaryColor 12.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 87.75%, black 12.25%);
   }
   50% {
-    background-color: color-mix(in oklab, mainColor 87.5%, secondaryColor 12.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 87.5%, black 12.5%);
   }
   51% {
-    background-color: color-mix(in oklab, mainColor 87.25%, secondaryColor 12.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 87.25%, black 12.75%);
   }
   52% {
-    background-color: color-mix(in oklab, mainColor 87%, secondaryColor 13%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 87%, black 13%);
   }
   53% {
-    background-color: color-mix(in oklab, mainColor 86.75%, secondaryColor 13.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 86.75%, black 13.25%);
   }
   54% {
-    background-color: color-mix(in oklab, mainColor 86.5%, secondaryColor 13.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 86.5%, black 13.5%);
   }
   55% {
-    background-color: color-mix(in oklab, mainColor 86.25%, secondaryColor 13.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 86.25%, black 13.75%);
   }
   56% {
-    background-color: color-mix(in oklab, mainColor 86%, secondaryColor 14%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 86%, black 14%);
   }
   57% {
-    background-color: color-mix(in oklab, mainColor 85.75%, secondaryColor 14.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 85.75%, black 14.25%);
   }
   58% {
-    background-color: color-mix(in oklab, mainColor 85.5%, secondaryColor 14.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 85.5%, black 14.5%);
   }
   59% {
-    background-color: color-mix(in oklab, mainColor 85.25%, secondaryColor 14.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 85.25%, black 14.75%);
   }
   60% {
-    background-color: color-mix(in oklab, mainColor 85%, secondaryColor 15%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 85%, black 15%);
   }
   61% {
-    background-color: color-mix(in oklab, mainColor 84.75%, secondaryColor 15.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 84.75%, black 15.25%);
   }
   62% {
-    background-color: color-mix(in oklab, mainColor 84.5%, secondaryColor 15.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 84.5%, black 15.5%);
   }
   63% {
-    background-color: color-mix(in oklab, mainColor 84.25%, secondaryColor 15.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 84.25%, black 15.75%);
   }
   64% {
-    background-color: color-mix(in oklab, mainColor 84%, secondaryColor 16%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 84%, black 16%);
   }
   65% {
-    background-color: color-mix(in oklab, mainColor 83.75%, secondaryColor 16.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 83.75%, black 16.25%);
   }
   66% {
-    background-color: color-mix(in oklab, mainColor 83.5%, secondaryColor 16.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 83.5%, black 16.5%);
   }
   67% {
-    background-color: color-mix(in oklab, mainColor 83.25%, secondaryColor 16.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 83.25%, black 16.75%);
   }
   68% {
-    background-color: color-mix(in oklab, mainColor 83%, secondaryColor 17%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 83%, black 17%);
   }
   69% {
-    background-color: color-mix(in oklab, mainColor 82.75%, secondaryColor 17.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 82.75%, black 17.25%);
   }
   70% {
-    background-color: color-mix(in oklab, mainColor 82.5%, secondaryColor 17.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 82.5%, black 17.5%);
   }
   71% {
-    background-color: color-mix(in oklab, mainColor 82.25%, secondaryColor 17.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 82.25%, black 17.75%);
   }
   72% {
-    background-color: color-mix(in oklab, mainColor 82%, secondaryColor 18%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 82%, black 18%);
   }
   73% {
-    background-color: color-mix(in oklab, mainColor 81.75%, secondaryColor 18.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 81.75%, black 18.25%);
   }
   74% {
-    background-color: color-mix(in oklab, mainColor 81.5%, secondaryColor 18.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 81.5%, black 18.5%);
   }
   75% {
-    background-color: color-mix(in oklab, mainColor 81.25%, secondaryColor 18.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 81.25%, black 18.75%);
   }
   76% {
-    background-color: color-mix(in oklab, mainColor 81%, secondaryColor 19%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 81%, black 19%);
   }
   77% {
-    background-color: color-mix(in oklab, mainColor 80.75%, secondaryColor 19.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 80.75%, black 19.25%);
   }
   78% {
-    background-color: color-mix(in oklab, mainColor 80.5%, secondaryColor 19.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 80.5%, black 19.5%);
   }
   79% {
-    background-color: color-mix(in oklab, mainColor 80.25%, secondaryColor 19.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 80.25%, black 19.75%);
   }
   80% {
-    background-color: color-mix(in oklab, mainColor 80%, secondaryColor 20%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 80%, black 20%);
   }
   81% {
-    background-color: color-mix(in oklab, mainColor 79.75%, secondaryColor 20.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 79.75%, black 20.25%);
   }
   82% {
-    background-color: color-mix(in oklab, mainColor 79.5%, secondaryColor 20.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 79.5%, black 20.5%);
   }
   83% {
-    background-color: color-mix(in oklab, mainColor 79.25%, secondaryColor 20.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 79.25%, black 20.75%);
   }
   84% {
-    background-color: color-mix(in oklab, mainColor 79%, secondaryColor 21%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 79%, black 21%);
   }
   85% {
-    background-color: color-mix(in oklab, mainColor 78.75%, secondaryColor 21.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 78.75%, black 21.25%);
   }
   86% {
-    background-color: color-mix(in oklab, mainColor 78.5%, secondaryColor 21.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 78.5%, black 21.5%);
   }
   87% {
-    background-color: color-mix(in oklab, mainColor 78.25%, secondaryColor 21.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 78.25%, black 21.75%);
   }
   88% {
-    background-color: color-mix(in oklab, mainColor 78%, secondaryColor 22%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 78%, black 22%);
   }
   89% {
-    background-color: color-mix(in oklab, mainColor 77.75%, secondaryColor 22.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 77.75%, black 22.25%);
   }
   90% {
-    background-color: color-mix(in oklab, mainColor 77.5%, secondaryColor 22.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 77.5%, black 22.5%);
   }
   91% {
-    background-color: color-mix(in oklab, mainColor 77.25%, secondaryColor 22.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 77.25%, black 22.75%);
   }
   92% {
-    background-color: color-mix(in oklab, mainColor 77%, secondaryColor 23%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 77%, black 23%);
   }
   93% {
-    background-color: color-mix(in oklab, mainColor 76.75%, secondaryColor 23.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 76.75%, black 23.25%);
   }
   94% {
-    background-color: color-mix(in oklab, mainColor 76.5%, secondaryColor 23.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 76.5%, black 23.5%);
   }
   95% {
-    background-color: color-mix(in oklab, mainColor 76.25%, secondaryColor 23.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 76.25%, black 23.75%);
   }
   96% {
-    background-color: color-mix(in oklab, mainColor 76%, secondaryColor 24%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 76%, black 24%);
   }
   97% {
-    background-color: color-mix(in oklab, mainColor 75.75%, secondaryColor 24.25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 75.75%, black 24.25%);
   }
   98% {
-    background-color: color-mix(in oklab, mainColor 75.5%, secondaryColor 24.5%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 75.5%, black 24.5%);
   }
   99% {
-    background-color: color-mix(in oklab, mainColor 75.25%, secondaryColor 24.75%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 75.25%, black 24.75%);
   }
   100% {
-    background-color: color-mix(in oklab, mainColor 75%, secondaryColor 25%);
+    background-color: color-mix(in oklab, var(--btn-recuse-signout) 75%, black 25%);
   }
 }
 

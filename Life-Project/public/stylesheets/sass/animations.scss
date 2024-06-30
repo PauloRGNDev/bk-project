@@ -5,7 +5,7 @@
         #{$cur-v}% {
             $secondary-percent: math.div($cur-v, 100) * $endSecondaryPercent;
             $main-percent: 100 - $secondary-percent;
-            background-color: color-mix(in oklab, mainColor $main-percent * 1%, secondaryColor $secondary-percent * 1%);
+            background-color: color-mix(in oklab, $mainColor $main-percent * 1%, $secondaryColor $secondary-percent * 1%);
         }
     }
 }
