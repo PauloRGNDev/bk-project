@@ -1,7 +1,6 @@
 extends layout
 
 block body
-  - let imgUrl;
   nav  
     a(href="/") Início 
     a(href="/menu") Cardápio
@@ -10,31 +9,31 @@ block body
   main 
     article.offer  
       each food in foods 
-       - imgUrl = food.englishName.toLowerCase();
-       - modifiedUrl = "";
-         each v, i in imgUrl 
+       - foodEnglishName = food.englishName.toLowerCase();
+       - formatedFoodEnglishName = "";
+         each v, i in foodEnglishName 
            if v == " "
-             - modifiedUrl  += "-"
+             - formatedFoodEnglishName  += "-"
            else
-             - modifiedUrl += v.toLowerCase() 
-       div(class=`offer-${modifiedUrl}`)
-         img.offer(src=`../stylesheets/images/${modifiedUrl}.png`)
+             - formatedFoodEnglishName += v.toLowerCase() 
+       div(class=`offer-${formatedFoodEnglishName}`)
+         img.offer(src= food.urlImage)
          button() saiba mais
          img(src="../stylesheets/images/arrow-left.png")
          img(src="../stylesheets/images/arrow-right.png")
     article.food-suggestions  
       each type in types
-        div(class=`food-suggestion-${type.englishName.toLowerCase()}`)
-          - var modifiedUrl = "";
-          - imgUrl = type.englishName
-          each v, i in imgUrl 
+        - var formatedFoodTypeEnglishName = ""
+          - foodTypeEnglishName = type.englishName
+          each v, i in foodTypeEnglishName 
             if v == " "
-              - modifiedUrl  += "-"
+              - formatedFoodTypeEnglishName  += "-"
             else
-              - modifiedUrl += v.toLowerCase()
-          img.suggestion(src=`../stylesheets/images/${modifiedUrl}.png`)
+              - formatedFoodTypeEnglishName += v.toLowerCase()
+        div(class=`food-suggestion-${formatedFoodTypeEnglishName}`)
+          img.suggestion(src= type.urlImage)
           form(method="POST")  
-            input(type="hidden" name="type-url" value=type.url)
+            - //input(type="hidden" name="type-url" value=type.url)
             button(type="submit") Ver mais
           img(src="../stylesheets/images/arrow-left.png")
           img(src="../stylesheets/images/arrow-right.png")
