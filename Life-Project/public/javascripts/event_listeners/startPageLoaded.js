@@ -1,3 +1,3 @@
 import {setImgsSize, alignCenterImgs} from '../handlers/startPage.js';
-window.addEventListener('load', setImgsSize);
-window.addEventListener('load', alignCenterImgs);
+document.addEventListener('DOMContentLoaded', setImgsSize);
+document.addEventListener('DOMContentLoaded', alignCenterImgs);

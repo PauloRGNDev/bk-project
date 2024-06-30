@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+@mixin btn-anim($mainColor, $secondaryColor ,$endSecondaryPercent){
+    @for $cur-v from 0 through 100{
+        #{$cur-v}% {
+            $secondary-percent: math.div($cur-v, 100) * $endSecondaryPercent;
+            $main-percent: 100 - $secondary-percent;
+            background-color: color-mix(in oklab, mainColor $main-percent * 1%, secondaryColor $secondary-percent * 1%);
+        }
+    }
+}
+
+@keyframes btn-auth{
+    @include btn-anim(var(--btn-auth), black, 25);
+}
+
+@keyframes accept-btn-signout-active{
+    @include btn-anim(var(--btn-accept-signout), black, 25);
+}
+
+@keyframes recuse-btn-signout-active{
+    @include btn-anim(var(--btn-recuse-signout), black, 25);
+}

@@ -1,0 +1,917 @@
+@keyframes btn-auth {
+  0% {
+    background-color: color-mix(in oklab, mainColor 100%, secondaryColor 0%);
+  }
+  1% {
+    background-color: color-mix(in oklab, mainColor 99.75%, secondaryColor 0.25%);
+  }
+  2% {
+    background-color: color-mix(in oklab, mainColor 99.5%, secondaryColor 0.5%);
+  }
+  3% {
+    background-color: color-mix(in oklab, mainColor 99.25%, secondaryColor 0.75%);
+  }
+  4% {
+    background-color: color-mix(in oklab, mainColor 99%, secondaryColor 1%);
+  }
+  5% {
+    background-color: color-mix(in oklab, mainColor 98.75%, secondaryColor 1.25%);
+  }
+  6% {
+    background-color: color-mix(in oklab, mainColor 98.5%, secondaryColor 1.5%);
+  }
+  7% {
+    background-color: color-mix(in oklab, mainColor 98.25%, secondaryColor 1.75%);
+  }
+  8% {
+    background-color: color-mix(in oklab, mainColor 98%, secondaryColor 2%);
+  }
+  9% {
+    background-color: color-mix(in oklab, mainColor 97.75%, secondaryColor 2.25%);
+  }
+  10% {
+    background-color: color-mix(in oklab, mainColor 97.5%, secondaryColor 2.5%);
+  }
+  11% {
+    background-color: color-mix(in oklab, mainColor 97.25%, secondaryColor 2.75%);
+  }
+  12% {
+    background-color: color-mix(in oklab, mainColor 97%, secondaryColor 3%);
+  }
+  13% {
+    background-color: color-mix(in oklab, mainColor 96.75%, secondaryColor 3.25%);
+  }
+  14% {
+    background-color: color-mix(in oklab, mainColor 96.5%, secondaryColor 3.5%);
+  }
+  15% {
+    background-color: color-mix(in oklab, mainColor 96.25%, secondaryColor 3.75%);
+  }
+  16% {
+    background-color: color-mix(in oklab, mainColor 96%, secondaryColor 4%);
+  }
+  17% {
+    background-color: color-mix(in oklab, mainColor 95.75%, secondaryColor 4.25%);
+  }
+  18% {
+    background-color: color-mix(in oklab, mainColor 95.5%, secondaryColor 4.5%);
+  }
+  19% {
+    background-color: color-mix(in oklab, mainColor 95.25%, secondaryColor 4.75%);
+  }
+  20% {
+    background-color: color-mix(in oklab, mainColor 95%, secondaryColor 5%);
+  }
+  21% {
+    background-color: color-mix(in oklab, mainColor 94.75%, secondaryColor 5.25%);
+  }
+  22% {
+    background-color: color-mix(in oklab, mainColor 94.5%, secondaryColor 5.5%);
+  }
+  23% {
+    background-color: color-mix(in oklab, mainColor 94.25%, secondaryColor 5.75%);
+  }
+  24% {
+    background-color: color-mix(in oklab, mainColor 94%, secondaryColor 6%);
+  }
+  25% {
+    background-color: color-mix(in oklab, mainColor 93.75%, secondaryColor 6.25%);
+  }
+  26% {
+    background-color: color-mix(in oklab, mainColor 93.5%, secondaryColor 6.5%);
+  }
+  27% {
+    background-color: color-mix(in oklab, mainColor 93.25%, secondaryColor 6.75%);
+  }
+  28% {
+    background-color: color-mix(in oklab, mainColor 93%, secondaryColor 7%);
+  }
+  29% {
+    background-color: color-mix(in oklab, mainColor 92.75%, secondaryColor 7.25%);
+  }
+  30% {
+    background-color: color-mix(in oklab, mainColor 92.5%, secondaryColor 7.5%);
+  }
+  31% {
+    background-color: color-mix(in oklab, mainColor 92.25%, secondaryColor 7.75%);
+  }
+  32% {
+    background-color: color-mix(in oklab, mainColor 92%, secondaryColor 8%);
+  }
+  33% {
+    background-color: color-mix(in oklab, mainColor 91.75%, secondaryColor 8.25%);
+  }
+  34% {
+    background-color: color-mix(in oklab, mainColor 91.5%, secondaryColor 8.5%);
+  }
+  35% {
+    background-color: color-mix(in oklab, mainColor 91.25%, secondaryColor 8.75%);
+  }
+  36% {
+    background-color: color-mix(in oklab, mainColor 91%, secondaryColor 9%);
+  }
+  37% {
+    background-color: color-mix(in oklab, mainColor 90.75%, secondaryColor 9.25%);
+  }
+  38% {
+    background-color: color-mix(in oklab, mainColor 90.5%, secondaryColor 9.5%);
+  }
+  39% {
+    background-color: color-mix(in oklab, mainColor 90.25%, secondaryColor 9.75%);
+  }
+  40% {
+    background-color: color-mix(in oklab, mainColor 90%, secondaryColor 10%);
+  }
+  41% {
+    background-color: color-mix(in oklab, mainColor 89.75%, secondaryColor 10.25%);
+  }
+  42% {
+    background-color: color-mix(in oklab, mainColor 89.5%, secondaryColor 10.5%);
+  }
+  43% {
+    background-color: color-mix(in oklab, mainColor 89.25%, secondaryColor 10.75%);
+  }
+  44% {
+    background-color: color-mix(in oklab, mainColor 89%, secondaryColor 11%);
+  }
+  45% {
+    background-color: color-mix(in oklab, mainColor 88.75%, secondaryColor 11.25%);
+  }
+  46% {
+    background-color: color-mix(in oklab, mainColor 88.5%, secondaryColor 11.5%);
+  }
+  47% {
+    background-color: color-mix(in oklab, mainColor 88.25%, secondaryColor 11.75%);
+  }
+  48% {
+    background-color: color-mix(in oklab, mainColor 88%, secondaryColor 12%);
+  }
+  49% {
+    background-color: color-mix(in oklab, mainColor 87.75%, secondaryColor 12.25%);
+  }
+  50% {
+    background-color: color-mix(in oklab, mainColor 87.5%, secondaryColor 12.5%);
+  }
+  51% {
+    background-color: color-mix(in oklab, mainColor 87.25%, secondaryColor 12.75%);
+  }
+  52% {
+    background-color: color-mix(in oklab, mainColor 87%, secondaryColor 13%);
+  }
+  53% {
+    background-color: color-mix(in oklab, mainColor 86.75%, secondaryColor 13.25%);
+  }
+  54% {
+    background-color: color-mix(in oklab, mainColor 86.5%, secondaryColor 13.5%);
+  }
+  55% {
+    background-color: color-mix(in oklab, mainColor 86.25%, secondaryColor 13.75%);
+  }
+  56% {
+    background-color: color-mix(in oklab, mainColor 86%, secondaryColor 14%);
+  }
+  57% {
+    background-color: color-mix(in oklab, mainColor 85.75%, secondaryColor 14.25%);
+  }
+  58% {
+    background-color: color-mix(in oklab, mainColor 85.5%, secondaryColor 14.5%);
+  }
+  59% {
+    background-color: color-mix(in oklab, mainColor 85.25%, secondaryColor 14.75%);
+  }
+  60% {
+    background-color: color-mix(in oklab, mainColor 85%, secondaryColor 15%);
+  }
+  61% {
+    background-color: color-mix(in oklab, mainColor 84.75%, secondaryColor 15.25%);
+  }
+  62% {
+    background-color: color-mix(in oklab, mainColor 84.5%, secondaryColor 15.5%);
+  }
+  63% {
+    background-color: color-mix(in oklab, mainColor 84.25%, secondaryColor 15.75%);
+  }
+  64% {
+    background-color: color-mix(in oklab, mainColor 84%, secondaryColor 16%);
+  }
+  65% {
+    background-color: color-mix(in oklab, mainColor 83.75%, secondaryColor 16.25%);
+  }
+  66% {
+    background-color: color-mix(in oklab, mainColor 83.5%, secondaryColor 16.5%);
+  }
+  67% {
+    background-color: color-mix(in oklab, mainColor 83.25%, secondaryColor 16.75%);
+  }
+  68% {
+    background-color: color-mix(in oklab, mainColor 83%, secondaryColor 17%);
+  }
+  69% {
+    background-color: color-mix(in oklab, mainColor 82.75%, secondaryColor 17.25%);
+  }
+  70% {
+    background-color: color-mix(in oklab, mainColor 82.5%, secondaryColor 17.5%);
+  }
+  71% {
+    background-color: color-mix(in oklab, mainColor 82.25%, secondaryColor 17.75%);
+  }
+  72% {
+    background-color: color-mix(in oklab, mainColor 82%, secondaryColor 18%);
+  }
+  73% {
+    background-color: color-mix(in oklab, mainColor 81.75%, secondaryColor 18.25%);
+  }
+  74% {
+    background-color: color-mix(in oklab, mainColor 81.5%, secondaryColor 18.5%);
+  }
+  75% {
+    background-color: color-mix(in oklab, mainColor 81.25%, secondaryColor 18.75%);
+  }
+  76% {
+    background-color: color-mix(in oklab, mainColor 81%, secondaryColor 19%);
+  }
+  77% {
+    background-color: color-mix(in oklab, mainColor 80.75%, secondaryColor 19.25%);
+  }
+  78% {
+    background-color: color-mix(in oklab, mainColor 80.5%, secondaryColor 19.5%);
+  }
+  79% {
+    background-color: color-mix(in oklab, mainColor 80.25%, secondaryColor 19.75%);
+  }
+  80% {
+    background-color: color-mix(in oklab, mainColor 80%, secondaryColor 20%);
+  }
+  81% {
+    background-color: color-mix(in oklab, mainColor 79.75%, secondaryColor 20.25%);
+  }
+  82% {
+    background-color: color-mix(in oklab, mainColor 79.5%, secondaryColor 20.5%);
+  }
+  83% {
+    background-color: color-mix(in oklab, mainColor 79.25%, secondaryColor 20.75%);
+  }
+  84% {
+    background-color: color-mix(in oklab, mainColor 79%, secondaryColor 21%);
+  }
+  85% {
+    background-color: color-mix(in oklab, mainColor 78.75%, secondaryColor 21.25%);
+  }
+  86% {
+    background-color: color-mix(in oklab, mainColor 78.5%, secondaryColor 21.5%);
+  }
+  87% {
+    background-color: color-mix(in oklab, mainColor 78.25%, secondaryColor 21.75%);
+  }
+  88% {
+    background-color: color-mix(in oklab, mainColor 78%, secondaryColor 22%);
+  }
+  89% {
+    background-color: color-mix(in oklab, mainColor 77.75%, secondaryColor 22.25%);
+  }
+  90% {
+    background-color: color-mix(in oklab, mainColor 77.5%, secondaryColor 22.5%);
+  }
+  91% {
+    background-color: color-mix(in oklab, mainColor 77.25%, secondaryColor 22.75%);
+  }
+  92% {
+    background-color: color-mix(in oklab, mainColor 77%, secondaryColor 23%);
+  }
+  93% {
+    background-color: color-mix(in oklab, mainColor 76.75%, secondaryColor 23.25%);
+  }
+  94% {
+    background-color: color-mix(in oklab, mainColor 76.5%, secondaryColor 23.5%);
+  }
+  95% {
+    background-color: color-mix(in oklab, mainColor 76.25%, secondaryColor 23.75%);
+  }
+  96% {
+    background-color: color-mix(in oklab, mainColor 76%, secondaryColor 24%);
+  }
+  97% {
+    background-color: color-mix(in oklab, mainColor 75.75%, secondaryColor 24.25%);
+  }
+  98% {
+    background-color: color-mix(in oklab, mainColor 75.5%, secondaryColor 24.5%);
+  }
+  99% {
+    background-color: color-mix(in oklab, mainColor 75.25%, secondaryColor 24.75%);
+  }
+  100% {
+    background-color: color-mix(in oklab, mainColor 75%, secondaryColor 25%);
+  }
+}
+@keyframes accept-btn-signout-active {
+  0% {
+    background-color: color-mix(in oklab, mainColor 100%, secondaryColor 0%);
+  }
+  1% {
+    background-color: color-mix(in oklab, mainColor 99.75%, secondaryColor 0.25%);
+  }
+  2% {
+    background-color: color-mix(in oklab, mainColor 99.5%, secondaryColor 0.5%);
+  }
+  3% {
+    background-color: color-mix(in oklab, mainColor 99.25%, secondaryColor 0.75%);
+  }
+  4% {
+    background-color: color-mix(in oklab, mainColor 99%, secondaryColor 1%);
+  }
+  5% {
+    background-color: color-mix(in oklab, mainColor 98.75%, secondaryColor 1.25%);
+  }
+  6% {
+    background-color: color-mix(in oklab, mainColor 98.5%, secondaryColor 1.5%);
+  }
+  7% {
+    background-color: color-mix(in oklab, mainColor 98.25%, secondaryColor 1.75%);
+  }
+  8% {
+    background-color: color-mix(in oklab, mainColor 98%, secondaryColor 2%);
+  }
+  9% {
+    background-color: color-mix(in oklab, mainColor 97.75%, secondaryColor 2.25%);
+  }
+  10% {
+    background-color: color-mix(in oklab, mainColor 97.5%, secondaryColor 2.5%);
+  }
+  11% {
+    background-color: color-mix(in oklab, mainColor 97.25%, secondaryColor 2.75%);
+  }
+  12% {
+    background-color: color-mix(in oklab, mainColor 97%, secondaryColor 3%);
+  }
+  13% {
+    background-color: color-mix(in oklab, mainColor 96.75%, secondaryColor 3.25%);
+  }
+  14% {
+    background-color: color-mix(in oklab, mainColor 96.5%, secondaryColor 3.5%);
+  }
+  15% {
+    background-color: color-mix(in oklab, mainColor 96.25%, secondaryColor 3.75%);
+  }
+  16% {
+    background-color: color-mix(in oklab, mainColor 96%, secondaryColor 4%);
+  }
+  17% {
+    background-color: color-mix(in oklab, mainColor 95.75%, secondaryColor 4.25%);
+  }
+  18% {
+    background-color: color-mix(in oklab, mainColor 95.5%, secondaryColor 4.5%);
+  }
+  19% {
+    background-color: color-mix(in oklab, mainColor 95.25%, secondaryColor 4.75%);
+  }
+  20% {
+    background-color: color-mix(in oklab, mainColor 95%, secondaryColor 5%);
+  }
+  21% {
+    background-color: color-mix(in oklab, mainColor 94.75%, secondaryColor 5.25%);
+  }
+  22% {
+    background-color: color-mix(in oklab, mainColor 94.5%, secondaryColor 5.5%);
+  }
+  23% {
+    background-color: color-mix(in oklab, mainColor 94.25%, secondaryColor 5.75%);
+  }
+  24% {
+    background-color: color-mix(in oklab, mainColor 94%, secondaryColor 6%);
+  }
+  25% {
+    background-color: color-mix(in oklab, mainColor 93.75%, secondaryColor 6.25%);
+  }
+  26% {
+    background-color: color-mix(in oklab, mainColor 93.5%, secondaryColor 6.5%);
+  }
+  27% {
+    background-color: color-mix(in oklab, mainColor 93.25%, secondaryColor 6.75%);
+  }
+  28% {
+    background-color: color-mix(in oklab, mainColor 93%, secondaryColor 7%);
+  }
+  29% {
+    background-color: color-mix(in oklab, mainColor 92.75%, secondaryColor 7.25%);
+  }
+  30% {
+    background-color: color-mix(in oklab, mainColor 92.5%, secondaryColor 7.5%);
+  }
+  31% {
+    background-color: color-mix(in oklab, mainColor 92.25%, secondaryColor 7.75%);
+  }
+  32% {
+    background-color: color-mix(in oklab, mainColor 92%, secondaryColor 8%);
+  }
+  33% {
+    background-color: color-mix(in oklab, mainColor 91.75%, secondaryColor 8.25%);
+  }
+  34% {
+    background-color: color-mix(in oklab, mainColor 91.5%, secondaryColor 8.5%);
+  }
+  35% {
+    background-color: color-mix(in oklab, mainColor 91.25%, secondaryColor 8.75%);
+  }
+  36% {
+    background-color: color-mix(in oklab, mainColor 91%, secondaryColor 9%);
+  }
+  37% {
+    background-color: color-mix(in oklab, mainColor 90.75%, secondaryColor 9.25%);
+  }
+  38% {
+    background-color: color-mix(in oklab, mainColor 90.5%, secondaryColor 9.5%);
+  }
+  39% {
+    background-color: color-mix(in oklab, mainColor 90.25%, secondaryColor 9.75%);
+  }
+  40% {
+    background-color: color-mix(in oklab, mainColor 90%, secondaryColor 10%);
+  }
+  41% {
+    background-color: color-mix(in oklab, mainColor 89.75%, secondaryColor 10.25%);
+  }
+  42% {
+    background-color: color-mix(in oklab, mainColor 89.5%, secondaryColor 10.5%);
+  }
+  43% {
+    background-color: color-mix(in oklab, mainColor 89.25%, secondaryColor 10.75%);
+  }
+  44% {
+    background-color: color-mix(in oklab, mainColor 89%, secondaryColor 11%);
+  }
+  45% {
+    background-color: color-mix(in oklab, mainColor 88.75%, secondaryColor 11.25%);
+  }
+  46% {
+    background-color: color-mix(in oklab, mainColor 88.5%, secondaryColor 11.5%);
+  }
+  47% {
+    background-color: color-mix(in oklab, mainColor 88.25%, secondaryColor 11.75%);
+  }
+  48% {
+    background-color: color-mix(in oklab, mainColor 88%, secondaryColor 12%);
+  }
+  49% {
+    background-color: color-mix(in oklab, mainColor 87.75%, secondaryColor 12.25%);
+  }
+  50% {
+    background-color: color-mix(in oklab, mainColor 87.5%, secondaryColor 12.5%);
+  }
+  51% {
+    background-color: color-mix(in oklab, mainColor 87.25%, secondaryColor 12.75%);
+  }
+  52% {
+    background-color: color-mix(in oklab, mainColor 87%, secondaryColor 13%);
+  }
+  53% {
+    background-color: color-mix(in oklab, mainColor 86.75%, secondaryColor 13.25%);
+  }
+  54% {
+    background-color: color-mix(in oklab, mainColor 86.5%, secondaryColor 13.5%);
+  }
+  55% {
+    background-color: color-mix(in oklab, mainColor 86.25%, secondaryColor 13.75%);
+  }
+  56% {
+    background-color: color-mix(in oklab, mainColor 86%, secondaryColor 14%);
+  }
+  57% {
+    background-color: color-mix(in oklab, mainColor 85.75%, secondaryColor 14.25%);
+  }
+  58% {
+    background-color: color-mix(in oklab, mainColor 85.5%, secondaryColor 14.5%);
+  }
+  59% {
+    background-color: color-mix(in oklab, mainColor 85.25%, secondaryColor 14.75%);
+  }
+  60% {
+    background-color: color-mix(in oklab, mainColor 85%, secondaryColor 15%);
+  }
+  61% {
+    background-color: color-mix(in oklab, mainColor 84.75%, secondaryColor 15.25%);
+  }
+  62% {
+    background-color: color-mix(in oklab, mainColor 84.5%, secondaryColor 15.5%);
+  }
+  63% {
+    background-color: color-mix(in oklab, mainColor 84.25%, secondaryColor 15.75%);
+  }
+  64% {
+    background-color: color-mix(in oklab, mainColor 84%, secondaryColor 16%);
+  }
+  65% {
+    background-color: color-mix(in oklab, mainColor 83.75%, secondaryColor 16.25%);
+  }
+  66% {
+    background-color: color-mix(in oklab, mainColor 83.5%, secondaryColor 16.5%);
+  }
+  67% {
+    background-color: color-mix(in oklab, mainColor 83.25%, secondaryColor 16.75%);
+  }
+  68% {
+    background-color: color-mix(in oklab, mainColor 83%, secondaryColor 17%);
+  }
+  69% {
+    background-color: color-mix(in oklab, mainColor 82.75%, secondaryColor 17.25%);
+  }
+  70% {
+    background-color: color-mix(in oklab, mainColor 82.5%, secondaryColor 17.5%);
+  }
+  71% {
+    background-color: color-mix(in oklab, mainColor 82.25%, secondaryColor 17.75%);
+  }
+  72% {
+    background-color: color-mix(in oklab, mainColor 82%, secondaryColor 18%);
+  }
+  73% {
+    background-color: color-mix(in oklab, mainColor 81.75%, secondaryColor 18.25%);
+  }
+  74% {
+    background-color: color-mix(in oklab, mainColor 81.5%, secondaryColor 18.5%);
+  }
+  75% {
+    background-color: color-mix(in oklab, mainColor 81.25%, secondaryColor 18.75%);
+  }
+  76% {
+    background-color: color-mix(in oklab, mainColor 81%, secondaryColor 19%);
+  }
+  77% {
+    background-color: color-mix(in oklab, mainColor 80.75%, secondaryColor 19.25%);
+  }
+  78% {
+    background-color: color-mix(in oklab, mainColor 80.5%, secondaryColor 19.5%);
+  }
+  79% {
+    background-color: color-mix(in oklab, mainColor 80.25%, secondaryColor 19.75%);
+  }
+  80% {
+    background-color: color-mix(in oklab, mainColor 80%, secondaryColor 20%);
+  }
+  81% {
+    background-color: color-mix(in oklab, mainColor 79.75%, secondaryColor 20.25%);
+  }
+  82% {
+    background-color: color-mix(in oklab, mainColor 79.5%, secondaryColor 20.5%);
+  }
+  83% {
+    background-color: color-mix(in oklab, mainColor 79.25%, secondaryColor 20.75%);
+  }
+  84% {
+    background-color: color-mix(in oklab, mainColor 79%, secondaryColor 21%);
+  }
+  85% {
+    background-color: color-mix(in oklab, mainColor 78.75%, secondaryColor 21.25%);
+  }
+  86% {
+    background-color: color-mix(in oklab, mainColor 78.5%, secondaryColor 21.5%);
+  }
+  87% {
+    background-color: color-mix(in oklab, mainColor 78.25%, secondaryColor 21.75%);
+  }
+  88% {
+    background-color: color-mix(in oklab, mainColor 78%, secondaryColor 22%);
+  }
+  89% {
+    background-color: color-mix(in oklab, mainColor 77.75%, secondaryColor 22.25%);
+  }
+  90% {
+    background-color: color-mix(in oklab, mainColor 77.5%, secondaryColor 22.5%);
+  }
+  91% {
+    background-color: color-mix(in oklab, mainColor 77.25%, secondaryColor 22.75%);
+  }
+  92% {
+    background-color: color-mix(in oklab, mainColor 77%, secondaryColor 23%);
+  }
+  93% {
+    background-color: color-mix(in oklab, mainColor 76.75%, secondaryColor 23.25%);
+  }
+  94% {
+    background-color: color-mix(in oklab, mainColor 76.5%, secondaryColor 23.5%);
+  }
+  95% {
+    background-color: color-mix(in oklab, mainColor 76.25%, secondaryColor 23.75%);
+  }
+  96% {
+    background-color: color-mix(in oklab, mainColor 76%, secondaryColor 24%);
+  }
+  97% {
+    background-color: color-mix(in oklab, mainColor 75.75%, secondaryColor 24.25%);
+  }
+  98% {
+    background-color: color-mix(in oklab, mainColor 75.5%, secondaryColor 24.5%);
+  }
+  99% {
+    background-color: color-mix(in oklab, mainColor 75.25%, secondaryColor 24.75%);
+  }
+  100% {
+    background-color: color-mix(in oklab, mainColor 75%, secondaryColor 25%);
+  }
+}
+@keyframes recuse-btn-signout-active {
+  0% {
+    background-color: color-mix(in oklab, mainColor 100%, secondaryColor 0%);
+  }
+  1% {
+    background-color: color-mix(in oklab, mainColor 99.75%, secondaryColor 0.25%);
+  }
+  2% {
+    background-color: color-mix(in oklab, mainColor 99.5%, secondaryColor 0.5%);
+  }
+  3% {
+    background-color: color-mix(in oklab, mainColor 99.25%, secondaryColor 0.75%);
+  }
+  4% {
+    background-color: color-mix(in oklab, mainColor 99%, secondaryColor 1%);
+  }
+  5% {
+    background-color: color-mix(in oklab, mainColor 98.75%, secondaryColor 1.25%);
+  }
+  6% {
+    background-color: color-mix(in oklab, mainColor 98.5%, secondaryColor 1.5%);
+  }
+  7% {
+    background-color: color-mix(in oklab, mainColor 98.25%, secondaryColor 1.75%);
+  }
+  8% {
+    background-color: color-mix(in oklab, mainColor 98%, secondaryColor 2%);
+  }
+  9% {
+    background-color: color-mix(in oklab, mainColor 97.75%, secondaryColor 2.25%);
+  }
+  10% {
+    background-color: color-mix(in oklab, mainColor 97.5%, secondaryColor 2.5%);
+  }
+  11% {
+    background-color: color-mix(in oklab, mainColor 97.25%, secondaryColor 2.75%);
+  }
+  12% {
+    background-color: color-mix(in oklab, mainColor 97%, secondaryColor 3%);
+  }
+  13% {
+    background-color: color-mix(in oklab, mainColor 96.75%, secondaryColor 3.25%);
+  }
+  14% {
+    background-color: color-mix(in oklab, mainColor 96.5%, secondaryColor 3.5%);
+  }
+  15% {
+    background-color: color-mix(in oklab, mainColor 96.25%, secondaryColor 3.75%);
+  }
+  16% {
+    background-color: color-mix(in oklab, mainColor 96%, secondaryColor 4%);
+  }
+  17% {
+    background-color: color-mix(in oklab, mainColor 95.75%, secondaryColor 4.25%);
+  }
+  18% {
+    background-color: color-mix(in oklab, mainColor 95.5%, secondaryColor 4.5%);
+  }
+  19% {
+    background-color: color-mix(in oklab, mainColor 95.25%, secondaryColor 4.75%);
+  }
+  20% {
+    background-color: color-mix(in oklab, mainColor 95%, secondaryColor 5%);
+  }
+  21% {
+    background-color: color-mix(in oklab, mainColor 94.75%, secondaryColor 5.25%);
+  }
+  22% {
+    background-color: color-mix(in oklab, mainColor 94.5%, secondaryColor 5.5%);
+  }
+  23% {
+    background-color: color-mix(in oklab, mainColor 94.25%, secondaryColor 5.75%);
+  }
+  24% {
+    background-color: color-mix(in oklab, mainColor 94%, secondaryColor 6%);
+  }
+  25% {
+    background-color: color-mix(in oklab, mainColor 93.75%, secondaryColor 6.25%);
+  }
+  26% {
+    background-color: color-mix(in oklab, mainColor 93.5%, secondaryColor 6.5%);
+  }
+  27% {
+    background-color: color-mix(in oklab, mainColor 93.25%, secondaryColor 6.75%);
+  }
+  28% {
+    background-color: color-mix(in oklab, mainColor 93%, secondaryColor 7%);
+  }
+  29% {
+    background-color: color-mix(in oklab, mainColor 92.75%, secondaryColor 7.25%);
+  }
+  30% {
+    background-color: color-mix(in oklab, mainColor 92.5%, secondaryColor 7.5%);
+  }
+  31% {
+    background-color: color-mix(in oklab, mainColor 92.25%, secondaryColor 7.75%);
+  }
+  32% {
+    background-color: color-mix(in oklab, mainColor 92%, secondaryColor 8%);
+  }
+  33% {
+    background-color: color-mix(in oklab, mainColor 91.75%, secondaryColor 8.25%);
+  }
+  34% {
+    background-color: color-mix(in oklab, mainColor 91.5%, secondaryColor 8.5%);
+  }
+  35% {
+    background-color: color-mix(in oklab, mainColor 91.25%, secondaryColor 8.75%);
+  }
+  36% {
+    background-color: color-mix(in oklab, mainColor 91%, secondaryColor 9%);
+  }
+  37% {
+    background-color: color-mix(in oklab, mainColor 90.75%, secondaryColor 9.25%);
+  }
+  38% {
+    background-color: color-mix(in oklab, mainColor 90.5%, secondaryColor 9.5%);
+  }
+  39% {
+    background-color: color-mix(in oklab, mainColor 90.25%, secondaryColor 9.75%);
+  }
+  40% {
+    background-color: color-mix(in oklab, mainColor 90%, secondaryColor 10%);
+  }
+  41% {
+    background-color: color-mix(in oklab, mainColor 89.75%, secondaryColor 10.25%);
+  }
+  42% {
+    background-color: color-mix(in oklab, mainColor 89.5%, secondaryColor 10.5%);
+  }
+  43% {
+    background-color: color-mix(in oklab, mainColor 89.25%, secondaryColor 10.75%);
+  }
+  44% {
+    background-color: color-mix(in oklab, mainColor 89%, secondaryColor 11%);
+  }
+  45% {
+    background-color: color-mix(in oklab, mainColor 88.75%, secondaryColor 11.25%);
+  }
+  46% {
+    background-color: color-mix(in oklab, mainColor 88.5%, secondaryColor 11.5%);
+  }
+  47% {
+    background-color: color-mix(in oklab, mainColor 88.25%, secondaryColor 11.75%);
+  }
+  48% {
+    background-color: color-mix(in oklab, mainColor 88%, secondaryColor 12%);
+  }
+  49% {
+    background-color: color-mix(in oklab, mainColor 87.75%, secondaryColor 12.25%);
+  }
+  50% {
+    background-color: color-mix(in oklab, mainColor 87.5%, secondaryColor 12.5%);
+  }
+  51% {
+    background-color: color-mix(in oklab, mainColor 87.25%, secondaryColor 12.75%);
+  }
+  52% {
+    background-color: color-mix(in oklab, mainColor 87%, secondaryColor 13%);
+  }
+  53% {
+    background-color: color-mix(in oklab, mainColor 86.75%, secondaryColor 13.25%);
+  }
+  54% {
+    background-color: color-mix(in oklab, mainColor 86.5%, secondaryColor 13.5%);
+  }
+  55% {
+    background-color: color-mix(in oklab, mainColor 86.25%, secondaryColor 13.75%);
+  }
+  56% {
+    background-color: color-mix(in oklab, mainColor 86%, secondaryColor 14%);
+  }
+  57% {
+    background-color: color-mix(in oklab, mainColor 85.75%, secondaryColor 14.25%);
+  }
+  58% {
+    background-color: color-mix(in oklab, mainColor 85.5%, secondaryColor 14.5%);
+  }
+  59% {
+    background-color: color-mix(in oklab, mainColor 85.25%, secondaryColor 14.75%);
+  }
+  60% {
+    background-color: color-mix(in oklab, mainColor 85%, secondaryColor 15%);
+  }
+  61% {
+    background-color: color-mix(in oklab, mainColor 84.75%, secondaryColor 15.25%);
+  }
+  62% {
+    background-color: color-mix(in oklab, mainColor 84.5%, secondaryColor 15.5%);
+  }
+  63% {
+    background-color: color-mix(in oklab, mainColor 84.25%, secondaryColor 15.75%);
+  }
+  64% {
+    background-color: color-mix(in oklab, mainColor 84%, secondaryColor 16%);
+  }
+  65% {
+    background-color: color-mix(in oklab, mainColor 83.75%, secondaryColor 16.25%);
+  }
+  66% {
+    background-color: color-mix(in oklab, mainColor 83.5%, secondaryColor 16.5%);
+  }
+  67% {
+    background-color: color-mix(in oklab, mainColor 83.25%, secondaryColor 16.75%);
+  }
+  68% {
+    background-color: color-mix(in oklab, mainColor 83%, secondaryColor 17%);
+  }
+  69% {
+    background-color: color-mix(in oklab, mainColor 82.75%, secondaryColor 17.25%);
+  }
+  70% {
+    background-color: color-mix(in oklab, mainColor 82.5%, secondaryColor 17.5%);
+  }
+  71% {
+    background-color: color-mix(in oklab, mainColor 82.25%, secondaryColor 17.75%);
+  }
+  72% {
+    background-color: color-mix(in oklab, mainColor 82%, secondaryColor 18%);
+  }
+  73% {
+    background-color: color-mix(in oklab, mainColor 81.75%, secondaryColor 18.25%);
+  }
+  74% {
+    background-color: color-mix(in oklab, mainColor 81.5%, secondaryColor 18.5%);
+  }
+  75% {
+    background-color: color-mix(in oklab, mainColor 81.25%, secondaryColor 18.75%);
+  }
+  76% {
+    background-color: color-mix(in oklab, mainColor 81%, secondaryColor 19%);
+  }
+  77% {
+    background-color: color-mix(in oklab, mainColor 80.75%, secondaryColor 19.25%);
+  }
+  78% {
+    background-color: color-mix(in oklab, mainColor 80.5%, secondaryColor 19.5%);
+  }
+  79% {
+    background-color: color-mix(in oklab, mainColor 80.25%, secondaryColor 19.75%);
+  }
+  80% {
+    background-color: color-mix(in oklab, mainColor 80%, secondaryColor 20%);
+  }
+  81% {
+    background-color: color-mix(in oklab, mainColor 79.75%, secondaryColor 20.25%);
+  }
+  82% {
+    background-color: color-mix(in oklab, mainColor 79.5%, secondaryColor 20.5%);
+  }
+  83% {
+    background-color: color-mix(in oklab, mainColor 79.25%, secondaryColor 20.75%);
+  }
+  84% {
+    background-color: color-mix(in oklab, mainColor 79%, secondaryColor 21%);
+  }
+  85% {
+    background-color: color-mix(in oklab, mainColor 78.75%, secondaryColor 21.25%);
+  }
+  86% {
+    background-color: color-mix(in oklab, mainColor 78.5%, secondaryColor 21.5%);
+  }
+  87% {
+    background-color: color-mix(in oklab, mainColor 78.25%, secondaryColor 21.75%);
+  }
+  88% {
+    background-color: color-mix(in oklab, mainColor 78%, secondaryColor 22%);
+  }
+  89% {
+    background-color: color-mix(in oklab, mainColor 77.75%, secondaryColor 22.25%);
+  }
+  90% {
+    background-color: color-mix(in oklab, mainColor 77.5%, secondaryColor 22.5%);
+  }
+  91% {
+    background-color: color-mix(in oklab, mainColor 77.25%, secondaryColor 22.75%);
+  }
+  92% {
+    background-color: color-mix(in oklab, mainColor 77%, secondaryColor 23%);
+  }
+  93% {
+    background-color: color-mix(in oklab, mainColor 76.75%, secondaryColor 23.25%);
+  }
+  94% {
+    background-color: color-mix(in oklab, mainColor 76.5%, secondaryColor 23.5%);
+  }
+  95% {
+    background-color: color-mix(in oklab, mainColor 76.25%, secondaryColor 23.75%);
+  }
+  96% {
+    background-color: color-mix(in oklab, mainColor 76%, secondaryColor 24%);
+  }
+  97% {
+    background-color: color-mix(in oklab, mainColor 75.75%, secondaryColor 24.25%);
+  }
+  98% {
+    background-color: color-mix(in oklab, mainColor 75.5%, secondaryColor 24.5%);
+  }
+  99% {
+    background-color: color-mix(in oklab, mainColor 75.25%, secondaryColor 24.75%);
+  }
+  100% {
+    background-color: color-mix(in oklab, mainColor 75%, secondaryColor 25%);
+  }
+}
+
+/*# sourceMappingURL=animations.css.map */

@@ -33,4 +33,6 @@
 
 :root{
     --btn-auth: color-mix(in oklab, blue 60%, white 40%);
+    --btn-accept-signout: greenyellow;
+    --btn-recuse-signout: red;
 }
