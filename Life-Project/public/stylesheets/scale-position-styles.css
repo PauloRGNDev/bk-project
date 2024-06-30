@@ -16,9 +16,9 @@ nav{
     justify-content: center;
     align-items: center;
 
-    background-image: url("images/logo.svg");
-    background-size: 64px 64px;
-    background-position: left 2vh top;
+    background-image: url("/images/logo.png");
+    background-size: 48px 48px;
+    background-position: left 2vh top calc((9vh - 48px) / 2);
     background-repeat: no-repeat;
 }
 
