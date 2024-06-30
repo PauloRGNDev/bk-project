@@ -84,6 +84,7 @@ export function alignCenterImgs(){
     images.forEach(image => {
         const w = image.clientWidth;
         const h = image.clientHeight;
+        image.style.position = 'relative';
 
         //parent configs
         const parentElement = image.parentNode;

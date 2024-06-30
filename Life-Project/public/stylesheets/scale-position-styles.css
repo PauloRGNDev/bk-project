@@ -159,7 +159,7 @@ div.logo{
     width: 64px;
     height: 64px;
     left: calc(50% - 64px);
-    background-image: url("./images/logo.svg");
+    background-image: url("/images/logo.png");
     background-size: 64px 64px;
     background-repeat: no-repeat;
 }
