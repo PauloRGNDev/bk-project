@@ -1,5 +1,5 @@
 /* Tentativa de codigo para obter numero de arquivos dinamicamente
-  const staticFolder = './public';
+  const staticFolder = '.';
   let numFiles = 0;
   let limiter;
   let endLimiterCalc = false;
@@ -88,7 +88,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const staticFolder = './public';
+const staticFolder = '.';
 let numFiles = 40;
 const numPageChanges = numFiles * 12/* número de mudanças */;
 const limiter = RateLimit({
