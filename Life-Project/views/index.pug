@@ -17,7 +17,7 @@ block body
            else
              - formatedFoodEnglishName += v.toLowerCase() 
        div(class=`offer-${formatedFoodEnglishName}`)
-         img.offer(src= food.urlImage)
+         iframe.offer(src= food.urlImage allow='autoplay')
          button() saiba mais
          img(src="../stylesheets/images/arrow-left.png")
          img(src="../stylesheets/images/arrow-right.png")
@@ -31,7 +31,7 @@ block body
             else
               - formatedFoodTypeEnglishName += v.toLowerCase()
         div(class=`food-suggestion-${formatedFoodTypeEnglishName}`)
-          img.suggestion(src= type.urlImage)
+          iframe.suggestion(src= type.urlImage allow='autoplay')
           form(method="POST")  
             - //input(type="hidden" name="type-url" value=type.url)
             button(type="submit") Ver mais

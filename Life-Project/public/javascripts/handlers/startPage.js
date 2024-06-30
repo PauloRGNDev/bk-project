@@ -1,5 +1,5 @@
 /* 
-ALGORITMO:
+ ALGORITMO:
  1 - pega um conjunto de imagens html
  2 - coloca um tamanho neles de forma que a imagem não fique distorcidade
   1 - com o maior lado com um tamanho relativo ao tamanho do pai
@@ -8,8 +8,8 @@ ALGORITMO:
 */
 
 //images variables
-const imagesOffer = document.querySelectorAll('html.initial-page img.offer');
-const imagesSuggestion = document.querySelectorAll('html.initial-page img.suggestion');
+const imagesOffer = document.querySelectorAll('html.initial-page iframe.offer');
+const imagesSuggestion = document.querySelectorAll('html.initial-page iframe.suggestion');
 const images = [
 ...imagesOffer,
 ...imagesSuggestion

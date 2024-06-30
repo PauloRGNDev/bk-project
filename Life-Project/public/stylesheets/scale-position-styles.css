@@ -114,7 +114,7 @@ div[class^="offer"]:nth-child(3){
     k = y / x where x is the original bigger side of image and y of the smallest
     add size to the smallest size in css, equal to = k * x
 */
-img.offer{
+iframe.offer{
     position: relative;
 }
 
@@ -128,7 +128,7 @@ article.food-suggestions{
     border-radius: 30px;
 }
 
-img.suggestion{
+iframe.suggestion{
     position: relative; 
 }
 
