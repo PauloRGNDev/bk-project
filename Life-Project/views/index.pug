@@ -5,7 +5,7 @@ block body
     a(href="/") Início 
     a(href="/menu") Cardápio
     div.user-info 
-      img(src="../stylesheets/images/login.png")
+      img(src="/public/images/login.png")
   main 
     article.offer  
       each food in foods 
@@ -19,8 +19,8 @@ block body
        div(class=`offer-${formatedFoodEnglishName}`)
          iframe.offer(src= food.urlImage allow='autoplay')
          button() saiba mais
-         img(src="../stylesheets/images/arrow-left.png")
-         img(src="../stylesheets/images/arrow-right.png")
+         img(src="/public/images/arrow-left.png")
+         img(src="/public/images/arrow-right.png")
     article.food-suggestions  
       each type in types
         - var formatedFoodTypeEnglishName = ""
@@ -35,8 +35,8 @@ block body
           form(method="POST")  
             - //input(type="hidden" name="type-url" value=type.url)
             button(type="submit") Ver mais
-          img(src="../stylesheets/images/arrow-left.png")
-          img(src="../stylesheets/images/arrow-right.png")
+          img(src="/public/images/arrow-left.png")
+          img(src="/public/images/arrow-right.png")
   footer  
     div.logo  
     div.user-politics  
@@ -54,6 +54,6 @@ block body
               - socialMediaName +="-"
             else 
               - socialMediaName += v.toLowerCase()
-          img(src=`../stylesheets/images/${socialMediaName}-logo.${socialMedia.iconFormat}`)
+          img(src=`/public/images/${socialMediaName}-logo.${socialMedia.iconFormat}`)
     div#image-rights  
       p Todos os direitos reservados
