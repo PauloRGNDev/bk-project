@@ -9,4 +9,4 @@ const typesFoodSchema = new Schema({
     formatImage: String,
 });
 
-module.exports = mongoose.model("type_food", foodSchema);
+module.exports = mongoose.model("type_food", typesFoodSchema);
