@@ -13,11 +13,12 @@ router.get('/', async function(req, res, next) {
   const socialMedias = await SocialMedia.find().exec();
   const foods = [];
   const types = [];
-  foodsD.forEach(food => {
+  foodsD.forEach(async food => {
      if(food.inPromotion == true){
        foods.push(food);
-       if(!types.includes({url: food.typeUrl, name: food.type, englishName: food.englishType})){
-         types.push({url: food.typeUrl, name: food.type, englishName: food.englishType});
+       const type = await food.populate('type_food').exec();
+       if(!types.includes({url: food.typeUrl, name: food.type, englishName: type.englishName})){
+         types.push({url: food.typeUrl, name: food.type, englishName: type.englishName});
        }
      }
   });

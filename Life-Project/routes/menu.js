@@ -8,8 +8,9 @@ router.get('/', async function(req, res, next) {
   const foodsD = await Food.find().exec();
   const categorizedFoods = [];
   const typesOfFoods = [];
-    foodsD.forEach(food => {
-    const {englishType, name} = food;
+  foodsD.forEach(async food => {
+    const type = await food.populate('type_food').exec();
+    const englishType = type.englishName;
     if (!typesOfFoods.includes(englishType)) {
       typesOfFoods.push(englishType);
     }
@@ -17,8 +18,8 @@ router.get('/', async function(req, res, next) {
         categorizedFoods[englishType] = [];
     }
 
-    categorizedFoods[englishType].push(name);
-});
+    categorizedFoods[englishType].push(food.name);
+  });
   res.render('menu', {typesOfFoods: typesOfFoods, categorizedFoods:categorizedFoods, pageType: 'menu-page'});
 });
 

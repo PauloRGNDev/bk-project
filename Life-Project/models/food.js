@@ -3,11 +3,12 @@ const mongoose = require ("mongoose");
 const Schema = mongoose.Schema;
 
 const foodSchema = new Schema({
-    type: String,
-    englishType: String,
     name: String,
-    englishName: String, 
-    inPromotion: {type: Boolean, default: false},
+    englishName: String,
+    type: {type: Schema.Types.ObjectId, refer: 'type_food'},
+    urlImage: String, 
+    formatImage: String,
+    inPromotion: {type: Boolean, default: false, required},
 });
 
 foodSchema.virtual("typeUrl").get(function (){
