@@ -63,7 +63,7 @@ app.use(
   helmet.contentSecurityPolicy({
     directives: {
       "script-src": ["'self'", "code.jquery.com", "cdn.jsdelivr.net"],
-      "iframe-src": ["'self'", "data:", "https://drive.google.com"],
+      "frame-src": ["'self'", "data:", "https://drive.google.com"],
     },
   }),
 );
