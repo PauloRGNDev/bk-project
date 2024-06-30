@@ -8,7 +8,7 @@ const foodSchema = new Schema({
     type: {type: Schema.Types.ObjectId, refer: 'type_food'},
     urlImage: String, 
     formatImage: String,
-    inPromotion: {type: Boolean, default: false, required},
+    inPromotion: {type: Boolean, default: false, required:true},
 });
 
 foodSchema.virtual("typeUrl").get(function (){
