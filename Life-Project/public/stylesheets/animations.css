@@ -1,5 +1,7 @@
 /* to setup aniamtions with keyframes */
 
+/* === INITIAL PAGE ANIMS CONFIG === */
+
 @keyframes background-anim{
   0%{
     background-position: 100% 50%;
@@ -11,6 +13,16 @@
 
    100%{
    background-position: 100% 50%;
+  }
+}
+
+@keyframes move-div{
+  from{
+    transform: translateX(0px);
+  }
+
+  to{
+    transform: translateX(var(--amount-move));
   }
 }
 

@@ -1,5 +1,6 @@
 /* attachs animations to specif elements with selectors and animation propierty */
 
+/* === INITIAL PAGE ANIMS CONFIG === */
 html.initial-page {
   animation-name: background-anim;
   animation-duration: 12s;
@@ -13,10 +14,17 @@ img[src*="arrow"]:hover{
     animation-duration: 3s;
 }
 
+html.initial-page article div.move{
+    animation-name: move-div;
+    animation-duration: 4s;
+}
+
+/* === AUTHENTICATION PAGE ANIMS CONFIG === */
+
 html.auth button:hover{
     animation-name: btn-auth;
     animation-delay: 0.2s;
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
 
 button.accept-end-session:hover{

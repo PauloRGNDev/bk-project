@@ -8,6 +8,8 @@ block body
       img(src="/images/login.png")
   main 
     article.offer  
+      img(src="/images/arrow-left.png")
+      img(src="/images/arrow-right.png")
       each food in foods 
        - foodEnglishName = food.englishName.toLowerCase();
        - formatedFoodEnglishName = "";
@@ -19,8 +21,6 @@ block body
        div(class=`offer-${formatedFoodEnglishName}`)
          img.offer(src= food.urlImage)
          button() saiba mais
-         img(src="/images/arrow-left.png")
-         img(src="/images/arrow-right.png")
     article.food-suggestions  
       each type in types
         - var formatedFoodTypeEnglishName = ""
